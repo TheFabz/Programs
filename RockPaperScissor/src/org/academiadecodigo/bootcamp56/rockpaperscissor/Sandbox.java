@@ -7,7 +7,6 @@ public class Sandbox {
         Game new_game = new Game();
 
         new_game.startGame();
-
     }
 
 }

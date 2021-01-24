@@ -4,52 +4,33 @@ import java.util.Scanner;
 
 public class Player {
 
-    private String chosenHand;
+    private int chosenHand;
+    Scanner userInput;
 
-    Scanner userInput = new Scanner(System.in);
+    public Player() {
+        this.chosenHand = -1;
+        userInput = new Scanner(System.in);
+    }
 
-    public String chooseHand(){
+    public Hand chooseHand() {
 
-        while(chosenHand != "a" || chosenHand != "b" || chosenHand != "c" ) {
+        while (true) {
 
-            System.out.println("\nChoose one of the following:\na)Rock\nb)Paper\nc)Scissors");
+            System.out.println("\nChoose one of the following:\n0) Rock\n1) Paper\n2) Scissors");
 
-            this.chosenHand = userInput.nextLine();
+            this.chosenHand = userInput.nextInt();
 
-            if (chosenHand.equals("a")) {
+            if (chosenHand == 0) {
                 break;
-            }
-            if (chosenHand.equals("b")) {
+            } else if (chosenHand == 1) {
                 break;
-            }
-            if (chosenHand.equals("c")) {
+            } else if (chosenHand == 2) {
                 break;
             } else {
                 System.out.println("invalid choice, try again.");
             }
-
         }
-    return chosenHand;
+        return Hand.fromIntToHand(chosenHand);
     }
-
-    public String defineHand(){
-
-        chooseHand();
-        String playerHand;
-
-        if (chosenHand.equals("a")){
-             playerHand = "Rock";
-            return playerHand;
-        }
-        else if (chosenHand.equals("b")){
-            playerHand = "Paper";
-            return playerHand;
-        }
-        else{
-            playerHand = "Scissor";
-            return playerHand;
-        }
-
-    }
-
 }
+
