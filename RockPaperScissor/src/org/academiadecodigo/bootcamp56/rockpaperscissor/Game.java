@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Game {
 
-    //Create CONSTRUCTOR;
+    //Create CONSTRUCTOR TO DO.
 
     String gameMode;
-    Hand players_hand;
-    Hand cpu_hand;
-    int p1Wins;
-    int p2Wins;
+    private Hand players_hand;
+    private Hand cpu_hand;
+    private int p1Wins;
+    private int p2Wins;
     private int gamesCount = 0;
-    boolean isGameModeSelected = false;
+    private boolean isGameModeSelected = false;
 
     Scanner menuSelectionInput = new Scanner(System.in);
-
     Player player1 = new Player();
 
+    // Loops menu screen until valid option is selected
     public void startGame() {
 
         while (!isGameModeSelected) {
@@ -48,6 +48,7 @@ public class Game {
 
     }
 
+    //Takes user input and defines game type. Random V random or player V random. Also, prints winner message.
     public void gameSet(String gameMode){
 
         while(gamesCount != 3) {
@@ -73,22 +74,28 @@ public class Game {
 
         if (p1Wins < p2Wins){
             System.out.println("\nPlayer 2 is victorious!");
-            isGameModeSelected = false;
-            startGame();
+            resetGame();
         }
         else if(p1Wins > p2Wins){
             System.out.println("\nPlayer 1 is victorious!");
-            isGameModeSelected = false;
-            startGame();
+            resetGame();
         }
         else{
             System.out.println("\nIt's a draw!");
-            isGameModeSelected = false;
-            startGame();
+            resetGame();
         }
 
     }
 
+    public void resetGame(){
+        isGameModeSelected = false;
+        p1Wins= 0;
+        p2Wins =0;
+        gamesCount = 0;
+        startGame();
+    }
+
+    //runs user hands through a compare function in hand class to find out who won.
     public void gameRules(){
 
         if (Hand.compare(players_hand, cpu_hand) > 0){

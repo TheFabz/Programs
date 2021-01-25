@@ -12,14 +12,13 @@ public class Player {
         userInput = new Scanner(System.in);
     }
 
+    //Allows user to choose hand. Takes int as input and calls hand class method to convert to a hand.
     public Hand chooseHand() {
 
         while (true) {
 
             System.out.println("\nChoose one of the following:\n0) Rock\n1) Paper\n2) Scissors");
-
             this.chosenHand = userInput.nextInt();
-
             if (chosenHand == 0) {
                 break;
             } else if (chosenHand == 1) {
