@@ -4,10 +4,9 @@ import java.util.Scanner;
 public class User {
 
     private String name;
-    private String pw;
-    private String confirmPw;
+    private static String pw;
+    private static String enteredPW;
     private String userChoice;
-    private boolean isPasswordCorrect = false;
     private Scanner userNameInput;
     private Scanner passwordInput;
     private Scanner userOption = new Scanner(System.in);
@@ -22,8 +21,8 @@ public class User {
     public void defineNamePWAndStart(){
         System.out.println("Please enter your name to start.");
         this.name = userNameInput.nextLine();
-        System.out.println("User Pin:");
-        this.pw = userNameInput.nextLine();
+        System.out.println("Set your Pin:");
+        this.pw = passwordInput.nextLine();
         userActions();
     }
 
@@ -43,6 +42,14 @@ public class User {
         BES.performWithdrawal(sum);
     }
 
+    public static String getPw(){
+        return pw;
+    }
+
+    public static String getEnteredPw(){
+        return enteredPW;
+    }
+
     private void userActions() {
 
         while (true) {
@@ -58,28 +65,22 @@ public class User {
                 }
             else if(userChoice.equals("c")) {
 
-                while(!isPasswordCorrect){
+                while(!Bank.isPasswordCorrect){
 
                     System.out.println("Please enter your password to perform this action.");
-                    confirmPw = passwordInput.nextLine();
-
-                    if(confirmPw.equals(pw)){
-                        System.out.println("\nPassword is correct! Thank you.");
-                        makeWithdrawal();
-                        isPasswordCorrect = true;
-                    }
-                    else{
-                        System.out.println("Password incorrect, try again.");
-                    }
+                    enteredPW = passwordInput.nextLine();
+                    BES.confirmPassword();
+                    makeWithdrawal();
                 }
             }
+
             else if (userChoice.equals("Q") || userChoice.equals("q")){
                     System.out.println("See you next time!");
                     break;
-                }
+            }
             else {
                     System.out.println("Invalid option, try again.");
-                }
+            }
 
             }
         }
