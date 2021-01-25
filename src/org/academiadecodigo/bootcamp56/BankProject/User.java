@@ -58,11 +58,26 @@ public class User {
             userChoice = userOption.nextLine();
 
             if(userChoice.equals("a")){
+                while(!Bank.isPasswordCorrect){
+
+                    System.out.println("Please enter your password to perform this action.");
+                    enteredPW = passwordInput.nextLine();
+                    BES.confirmPassword();
                     checkBalance();
                 }
-            else if(userChoice.equals("b")){
+                Bank.isPasswordCorrect = false;
+            }
+            else if(userChoice.equals("b")) {
+                while (!Bank.isPasswordCorrect) {
+
+                    System.out.println("Please enter your password to perform this action.");
+                    enteredPW = passwordInput.nextLine();
+                    BES.confirmPassword();
                     makeDeposit();
                 }
+                Bank.isPasswordCorrect = false;
+            }
+
             else if(userChoice.equals("c")) {
 
                 while(!Bank.isPasswordCorrect){
@@ -71,7 +86,9 @@ public class User {
                     enteredPW = passwordInput.nextLine();
                     BES.confirmPassword();
                     makeWithdrawal();
+
                 }
+                Bank.isPasswordCorrect = false;
             }
 
             else if (userChoice.equals("Q") || userChoice.equals("q")){
