@@ -13,7 +13,12 @@ public class Bank {
     }
 
     public void performWithdrawal(float sum){
+       if(balance - sum >= 0) {
         balance -= sum;
+       }
+       else{
+           System.out.println("You have insufficient funds.");
+       }
     }
 
 

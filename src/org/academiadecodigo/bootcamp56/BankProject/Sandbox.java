@@ -5,7 +5,6 @@ public class Sandbox {
     public static void main (String[] args) {
 
         User new_user = new User();
-        new_user.defineNameAndStart();
-
+        new_user.defineNamePWAndStart();
     }
 }

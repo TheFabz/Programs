@@ -3,20 +3,27 @@ import java.util.Scanner;
 
 public class User {
 
-    public String name;
-    Scanner userNameInput;
-    String userChoice;
-    Scanner userOption = new Scanner(System.in);
-    Scanner amount = new Scanner(System.in);
-    Bank BES = new Bank();
+    private String name;
+    private String pw;
+    private String confirmPw;
+    private String userChoice;
+    private boolean isPasswordCorrect = false;
+    private Scanner userNameInput;
+    private Scanner passwordInput;
+    private Scanner userOption = new Scanner(System.in);
+    private Scanner amount = new Scanner(System.in);
+    private Bank BES = new Bank();
 
     public User(){
         userNameInput = new Scanner(System.in);
+        passwordInput = new Scanner(System.in);
     }
 
-    public void defineNameAndStart(){
+    public void defineNamePWAndStart(){
         System.out.println("Please enter your name to start.");
         this.name = userNameInput.nextLine();
+        System.out.println("User Pin:");
+        this.pw = userNameInput.nextLine();
         userActions();
     }
 
@@ -36,7 +43,7 @@ public class User {
         BES.performWithdrawal(sum);
     }
 
-    public void userActions() {
+    private void userActions() {
 
         while (true) {
 
@@ -50,8 +57,22 @@ public class User {
                     makeDeposit();
                 }
             else if(userChoice.equals("c")) {
-                    makeWithdrawal();
+
+                while(!isPasswordCorrect){
+
+                    System.out.println("Please enter your password to perform this action.");
+                    confirmPw = passwordInput.nextLine();
+
+                    if(confirmPw.equals(pw)){
+                        System.out.println("\nPassword is correct! Thank you.");
+                        makeWithdrawal();
+                        isPasswordCorrect = true;
+                    }
+                    else{
+                        System.out.println("Password incorrect, try again.");
+                    }
                 }
+            }
             else if (userChoice.equals("Q") || userChoice.equals("q")){
                     System.out.println("See you next time!");
                     break;
