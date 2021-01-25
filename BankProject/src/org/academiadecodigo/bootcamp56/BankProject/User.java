@@ -63,8 +63,8 @@ public class User {
                     System.out.println("Please enter your password to perform this action.");
                     enteredPW = passwordInput.nextLine();
                     BES.confirmPassword();
-                    checkBalance();
                 }
+                checkBalance();
                 Bank.isPasswordCorrect = false;
             }
             else if(userChoice.equals("b")) {
@@ -73,8 +73,8 @@ public class User {
                     System.out.println("Please enter your password to perform this action.");
                     enteredPW = passwordInput.nextLine();
                     BES.confirmPassword();
-                    makeDeposit();
                 }
+                makeDeposit();
                 Bank.isPasswordCorrect = false;
             }
 
@@ -85,9 +85,8 @@ public class User {
                     System.out.println("Please enter your password to perform this action.");
                     enteredPW = passwordInput.nextLine();
                     BES.confirmPassword();
-                    makeWithdrawal();
-
                 }
+                makeWithdrawal();
                 Bank.isPasswordCorrect = false;
             }
 

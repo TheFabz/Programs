@@ -7,6 +7,12 @@ public class Bank {
     private String attemptedPassword;
     public static boolean isPasswordCorrect = false;
 
+    public Bank() {
+        String bankPW = "";
+        String attemptedPassword = "";
+
+    }
+
     public float giveBalance() {
         return balance;
     }
@@ -24,7 +30,6 @@ public class Bank {
     }
 
     public void confirmPassword() {
-        while (!isPasswordCorrect) {
             this.bankPW = User.getPw();
             this.attemptedPassword = User.getEnteredPw();
 
@@ -34,7 +39,5 @@ public class Bank {
             } else {
                 System.out.println("You have entered the wrong password.");
             }
-        }
-
     }
 }
