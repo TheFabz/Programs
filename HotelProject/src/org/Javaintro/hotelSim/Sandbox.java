@@ -4,10 +4,8 @@ public class Sandbox {
 
     public static void main(String[] args){
 
-        Customer newCustomer = new Customer();
+        Customer new_customer = new Customer();
 
-        newCustomer.defineNameStart();
 
     }
-
 }

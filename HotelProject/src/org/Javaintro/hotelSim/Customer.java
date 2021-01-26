@@ -6,14 +6,14 @@ public class Customer {
     private String name;
     private String choice;
     private boolean optionIsChosen = false;
-    private boolean isAvalibiltyChecked = false;
+    private boolean isAvailabilityChecked = false;
     private boolean isReservationMade = false;
     private Scanner customerNameInput = new Scanner(System.in);
     private Scanner customerOption = new Scanner(System.in);
     private Hotel rubensHotels = new Hotel("Ruben's Hotels");
 
 
-    public void defineNameStart() {
+    public Customer() {
         System.out.println("Please enter your name to begin.");
         name = customerNameInput.nextLine();
         customerActions();
@@ -45,25 +45,24 @@ public class Customer {
 
                 if (!isReservationMade) {
                     System.out.println("We are checking availability, please hold.\n");
-                    isAvalibiltyChecked = true;
+                    isAvailabilityChecked = true;
                     checkReservation();
                     customerActions();
                 }
                 else{
                     System.out.println("You already have a reservation.");
+                    rubensHotels.getRoomStatus();
                     customerActions();
                 }
             }
-
-
             else if (choice.equals("b")) {
 
-                if(isAvalibiltyChecked && !isReservationMade) {
+                if(isAvailabilityChecked && !isReservationMade) {
                     System.out.println("We are making a reservation, please hold.");
                     isReservationMade = true;
                     makeReservation();
                 }
-                else if (!isAvalibiltyChecked){
+                else if (!isAvailabilityChecked){
                     System.out.println("Please check availability first.");
                     customerActions();
                 }
@@ -72,7 +71,6 @@ public class Customer {
                     customerActions();
                 }
             }
-
             else if (choice.equals("c")){
 
                 if(!isReservationMade) {
@@ -80,20 +78,22 @@ public class Customer {
                     customerActions();
                 }
                 else {
-                    isAvalibiltyChecked = false;
+                    isAvailabilityChecked = false;
                     isReservationMade = false;
                     checkOut();
                 }
-
             }
-
             else if(choice.equals("Q")){
-                System.out.println("I never liked hotels anyway.");
-                break;
+                System.out.println("Quitting..\nGoodbye!");
+                optionIsChosen = true;
             }
-
+            else{
+                System.out.println("Please select a valid option.");
+                customerActions();
+            }
         }
     }
+
 
 }
 
