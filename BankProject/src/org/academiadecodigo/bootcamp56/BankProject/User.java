@@ -50,6 +50,7 @@ public class User {
         return enteredPW;
     }
 
+
     private void userActions() {
 
         while (true) {
