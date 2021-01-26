@@ -9,6 +9,7 @@ public class Room {
         this.name = name;
     }
 
+    //returns room state
     public boolean getRoomState(){
         return isRoomAvailable;
     }

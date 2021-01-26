@@ -12,22 +12,25 @@ public class Customer {
     private Scanner customerOption = new Scanner(System.in);
     private Hotel rubensHotels = new Hotel("Ruben's Hotels");
 
-
+    //sets user's name
     public Customer() {
         System.out.println("Please enter your name to begin.");
         name = customerNameInput.nextLine();
         customerActions();
     }
 
+    //Checks user in to first available room
     public void makeReservation() {
         rubensHotels.checkIn();
         customerActions();
 
     }
 
+    //Gives user list of all runs and their status
     public void checkReservation() {
         rubensHotels.confirmAvailability();
     }
+
 
     public void checkOut(){
     rubensHotels.checkout();

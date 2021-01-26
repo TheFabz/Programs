@@ -15,6 +15,7 @@ public class Hotel {
     private boolean[] availableRooms = new boolean[4];
     private boolean[] unAvailableRooms = new boolean[4];
 
+    //randomly provides true or false;
     private boolean getRandomState(){
         int random = (int) ((Math.random() * 2));
 
@@ -26,6 +27,7 @@ public class Hotel {
         }
     }
 
+    //gives rooms random state, available or unavailable;
     private void giveRoomRandomState(){
         for(int i = 0; i < arrayOfRooms.length; i++){
             arrayOfRooms[i] = getRandomState();
@@ -38,6 +40,7 @@ public class Hotel {
         giveRoomRandomState();
     }
 
+    //sends available rooms to array.availableRooms and unavailable rooms to array.unAvailable
     private void sortRoomByStatus(){
         for (int i = 0; i < arrayOfRooms.length; i++) {
 
@@ -49,6 +52,7 @@ public class Hotel {
         }
     }
 
+    //Gives customer list of all rooms and their status
     public void getRoomStatus(){
         System.out.println("Rooms status:\n");
 
@@ -62,11 +66,13 @@ public class Hotel {
         }
     }
 
+
     public void confirmAvailability() {
         sortRoomByStatus();
         getRoomStatus();
     }
 
+    //Turns first available room unavailable
     public void checkIn() {
         for (int x = 0; x < availableRooms.length; x++) {
             if (availableRooms[x]) {
@@ -75,15 +81,16 @@ public class Hotel {
                 break;
             }
             else if(!availableRooms[x]) {
-                System.out.println("\nRoom #" + (x+1) + " is not available.");
+                System.out.println("\nRoom #" + (x+1) + " is not available....");
             }
         }
     }
 
+    //Reverts user chosen room back to available
     public void checkout(){
         for (int y = 0; y < unAvailableRooms.length; y++) {
             if (!unAvailableRooms[y]) {
-                System.out.println("\nWe are checking you out of Room #" + (y+1) +". Thanks for choosing " + hotelName+".");
+                System.out.println("\nWe are checking you out of Room. Thanks for choosing " + hotelName+".");
                 unAvailableRooms[y] = availableRooms[y];
                 break;
             }
