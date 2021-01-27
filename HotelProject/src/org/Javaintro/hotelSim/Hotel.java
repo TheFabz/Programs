@@ -7,6 +7,7 @@ public class Hotel {
     private Room room2 = new Room("Room #2");
     private Room room3 = new Room("Room #3");
     private Room room4 = new Room("Room #4");
+    public int availableRoomCount;
     private boolean isRoom1Available = room1.getRoomState();
     private boolean isRoom2Available = room2.getRoomState();
     private boolean isRoom3Available = room3.getRoomState();
@@ -58,6 +59,7 @@ public class Hotel {
 
         for (int j = 0; j < availableRooms.length; j++) {
             if (availableRooms[j]) {
+                availableRoomCount++;
                 System.out.println((j + 1) + ") " + "Room #" + (j+1) + " is available.");
             }
             else if(!unAvailableRooms[j]) {
@@ -65,7 +67,6 @@ public class Hotel {
             }
         }
     }
-
 
     public void confirmAvailability() {
         sortRoomByStatus();

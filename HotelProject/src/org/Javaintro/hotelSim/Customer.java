@@ -7,7 +7,8 @@ public class Customer {
     private String choice;
     private boolean optionIsChosen = false;
     private boolean isAvailabilityChecked = false;
-    private boolean isReservationMade = false;
+    private boolean isReservationMade;
+    private boolean reservationAvailable;
     private Scanner customerNameInput = new Scanner(System.in);
     private Scanner customerOption = new Scanner(System.in);
     private Hotel rubensHotels = new Hotel("Ruben's Hotels");
@@ -19,22 +20,30 @@ public class Customer {
         customerActions();
     }
 
-    //Checks user in to first available room
-    public void makeReservation() {
+    //Checks user in to first available room.
+    private void makeReservation() {
         rubensHotels.checkIn();
         customerActions();
 
     }
 
+    public void checkOut(){
+        rubensHotels.checkout();
+        customerActions();
+    }
+
     //Gives user list of all runs and their status
-    public void checkReservation() {
+    private void checkReservation() {
         rubensHotels.confirmAvailability();
     }
 
-
-    public void checkOut(){
-    rubensHotels.checkout();
-    customerActions();
+    private void isReservationAvailable(){
+        if(rubensHotels.availableRoomCount > 0){
+            reservationAvailable = true;
+        }
+        else{
+            reservationAvailable = false;
+        }
     }
 
     public void customerActions() {
@@ -62,14 +71,22 @@ public class Customer {
 
                 if(isAvailabilityChecked && !isReservationMade) {
                     System.out.println("We are making a reservation, please hold.");
-                    isReservationMade = true;
-                    makeReservation();
+                    isReservationAvailable();
+                    if(reservationAvailable) {
+                        isReservationMade = true;
+                        makeReservation();
+                    }
+                    else if(!reservationAvailable){
+                        System.out.println("No reservations available. Try again later.");
+                        customerActions();
+                    }
                 }
+
                 else if (!isAvailabilityChecked){
                     System.out.println("Please check availability first.");
                     customerActions();
                 }
-                else {
+                else if (isAvailabilityChecked && isReservationMade){
                     System.out.println("You already have a reservation.");
                     customerActions();
                 }
