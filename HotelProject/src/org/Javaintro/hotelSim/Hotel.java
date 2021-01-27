@@ -77,7 +77,7 @@ public class Hotel {
     public void checkIn() {
         for (int x = 0; x < availableRooms.length; x++) {
             if (availableRooms[x]) {
-                System.out.println("Room #" + (x+1) + " is available! We are checking you in! Thanks for choosing " + hotelName + ".");
+                System.out.println("\nRoom #" + (x+1) + " is available! We are checking you in! Thanks for choosing " + hotelName + ".");
                 availableRooms[x] = unAvailableRooms[x] ;
                 break;
             }
