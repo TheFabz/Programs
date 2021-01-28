@@ -46,9 +46,9 @@ public class Main {
         System.out.println(lamp1.getRechargeCount());
         System.out.println(lamp2.getRechargeCount());
 
-        
+
 
 
     }
-    }
+}
 
