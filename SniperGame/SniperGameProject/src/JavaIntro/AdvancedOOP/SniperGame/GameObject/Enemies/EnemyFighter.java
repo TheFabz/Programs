@@ -1,9 +1,12 @@
 package JavaIntro.AdvancedOOP.SniperGame.GameObject.Enemies;
 
-public class EnemyFighter extends EnemyAbstract {
+import JavaIntro.AdvancedOOP.SniperGame.isShootable;
+
+public class EnemyFighter extends EnemyAbstract{
 
     public void printMessage(){
-        System.out.println("You hit an enemy.");
+        System.out.println("AIM FOCUSED, you've found a soldier ! ");
     }
+
 
 }

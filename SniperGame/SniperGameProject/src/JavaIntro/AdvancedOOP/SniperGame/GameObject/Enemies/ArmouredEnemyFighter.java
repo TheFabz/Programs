@@ -11,8 +11,7 @@ public class ArmouredEnemyFighter extends EnemyAbstract {
     }
 
     public void printMessage(){
-        System.out.println("You hit an armoured enemy.");
+        System.out.println("AIM FOCUSED, you've found an armoured soldier ! ");
     }
-
 
 }

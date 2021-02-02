@@ -1,15 +1,22 @@
 package JavaIntro.AdvancedOOP.SniperGame.GameObject.Enemies;
 
 import JavaIntro.AdvancedOOP.SniperGame.GameObject.GameObjectAbstract;
+import JavaIntro.AdvancedOOP.SniperGame.isShootable;
 
-public abstract class EnemyAbstract extends GameObjectAbstract {
+public abstract class EnemyAbstract extends GameObjectAbstract implements isShootable {
 
     private int health;
-    private boolean isDead;
 
     public EnemyAbstract(){
-        isDead = false;
         health = 100;
+    }
+
+    public boolean isDestroyed(){
+        if(health > 0){
+            return false;
+        } else{
+            return true;
+        }
     }
 
     public int getHealth() {
@@ -21,27 +28,8 @@ public abstract class EnemyAbstract extends GameObjectAbstract {
     return health;
     }
 
-    public boolean checkIfDead(){
-
-        if(health > 0){
-            isDead = false;
-        }
-
-        else{
-            isDead = true;
-        }
-        return isSoldierDead();
-
-    }
-
-    public boolean isSoldierDead(){
-        return isDead;
-    }
-
     public void healthAfterHit(int damageTaken){
-
         health = health - damageTaken;
-
     }
 
 

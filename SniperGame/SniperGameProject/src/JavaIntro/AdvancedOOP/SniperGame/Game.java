@@ -10,6 +10,7 @@ public class Game {
     GameObjectAbstract[] gameObjects;
     int gameObjectsAmount;
     int shotsFired;
+    int enemyCount;
     Sniper sniper = new Sniper();
 
     public Game(int objectCount) {
@@ -30,19 +31,18 @@ public class Game {
 
         for (int i = 0; i < gameObjectsAmount; i++)
 
-            if (gameObjects[i] instanceof EnemyFighter || gameObjects[i] instanceof ArmouredEnemyFighter) {
-                while (((EnemyAbstract) gameObjects[i]).checkIfDead() == false) {
+            if (gameObjects[i] instanceof isShootable) {
+                enemyCount++;
+                while ( !((isShootable) gameObjects[i]).isDestroyed() )  {
                     shotsFired++;
-                    System.out.println("\nEnemy #" + (i+1));
+                    System.out.println("\nEnemy #" + (enemyCount));
                     gameObjects[i].printMessage();
-                    ((EnemyAbstract) gameObjects[i]).healthAfterHit(sniper.shoot());
-                    System.out.println("Enemy health is: ");
-                    System.out.println(((EnemyAbstract) gameObjects[i]).getHealth());
+                    ((isShootable) gameObjects[i]).healthAfterHit(sniper.shoot());
+                    System.out.println("Enemy health is: " + ((isShootable) gameObjects[i]).getHealth());
                 }
-                System.out.println("The total number of shots was: " + shotsFired);
             }
+        System.out.println("\nThe total number of shots was: " + shotsFired);
         }
-
 
 }
 
