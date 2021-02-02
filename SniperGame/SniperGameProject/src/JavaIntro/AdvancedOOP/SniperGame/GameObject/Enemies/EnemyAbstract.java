@@ -23,13 +23,8 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements isShoo
         return health;
     }
 
-    public int setHealth(int health){
-    this.health = health;
-    return health;
-    }
-
     public void healthAfterHit(int damageTaken){
-        health = health - damageTaken;
+        health -= damageTaken;
     }
 
 

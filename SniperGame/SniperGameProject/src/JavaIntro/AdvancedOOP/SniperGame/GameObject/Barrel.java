@@ -5,24 +5,26 @@ import JavaIntro.AdvancedOOP.SniperGame.isShootable;
 public class Barrel extends GameObjectAbstract implements isShootable {
 
     private int health;
-    private boolean isDestroyed;
-
 
     public Barrel(){
         super();
+
         BarrelType barrel = BarrelType.getRandomBarrelType();
+
         switch(barrel){
             case WOOD:
-                health=70;
+                this.health=70;
                 break;
             case METAL:
-                health=150;
+                this.health=150;
                 break;
             case PLASTIC:
-                health = 25;
+                this.health = 25;
+                break;
             default:
-                health = 100;
+                this.health = 100;
         }
+
     }
 
     @Override

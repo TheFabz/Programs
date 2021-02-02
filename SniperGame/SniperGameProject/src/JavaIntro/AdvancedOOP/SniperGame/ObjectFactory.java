@@ -13,7 +13,6 @@ public class ObjectFactory {
         GameObjectAbstract[] objects = {new Tree(), new EnemyFighter(), new ArmouredEnemyFighter(), new Barrel()};
 
         return objects[(int) ((Math.random() * 4))];
-
     }
 
 

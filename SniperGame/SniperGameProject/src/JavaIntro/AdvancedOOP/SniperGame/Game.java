@@ -7,24 +7,23 @@ import JavaIntro.AdvancedOOP.SniperGame.GameObject.GameObjectAbstract;
 
 public class Game {
 
-    GameObjectAbstract[] gameObjects;
-    int gameObjectsAmount;
-    int shotsFired;
-    int enemyCount;
-    Sniper sniper = new Sniper();
+    private GameObjectAbstract[] gameObjects;
+    private int gameObjectsAmount;
+    private int shotsFired;
+    private int enemyCount;
+    private Sniper sniper = new Sniper();
 
     public Game(int objectCount) {
         this.gameObjectsAmount = objectCount;
     }
 
-    public void sendObjectsToGame() {
+    private void sendObjectsToGame() {
         gameObjects = new GameObjectAbstract[gameObjectsAmount];
 
         for (int i = 0; i < gameObjectsAmount; i++) {
             gameObjects[i] = new ObjectFactory().GameObjectFactory();
         }
     }
-
 
     public void start() {
         sendObjectsToGame();
@@ -43,6 +42,7 @@ public class Game {
             }
         System.out.println("\nThe total number of shots was: " + shotsFired);
         }
+
 
 }
 

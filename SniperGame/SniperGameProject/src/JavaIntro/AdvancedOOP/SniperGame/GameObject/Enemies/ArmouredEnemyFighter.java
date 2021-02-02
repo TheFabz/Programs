@@ -2,12 +2,15 @@ package JavaIntro.AdvancedOOP.SniperGame.GameObject.Enemies;
 
 public class ArmouredEnemyFighter extends EnemyAbstract {
 
-    private int armour;
+    private int armour = 50;
 
-    public ArmouredEnemyFighter(){
-        super();
-        armour = 50;
-        setHealth(100 + armour);
+    @Override
+    public void healthAfterHit(int damageTaken){
+        System.out.println("Armour health is " + armour);
+            while (armour > 0){
+                armour -= damageTaken;
+            }
+            super.healthAfterHit(damageTaken);
     }
 
     public void printMessage(){
