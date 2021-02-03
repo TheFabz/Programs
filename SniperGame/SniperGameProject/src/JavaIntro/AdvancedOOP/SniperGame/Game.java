@@ -13,10 +13,12 @@ public class Game {
     private int enemyCount;
     private Sniper sniper = new Sniper();
 
+    //gathers array size when instanced
     public Game(int objectCount) {
         this.gameObjectsAmount = objectCount;
     }
 
+    //populates array
     private void sendObjectsToGame() {
         gameObjects = new GameObjectAbstract[gameObjectsAmount];
 
@@ -25,6 +27,7 @@ public class Game {
         }
     }
 
+    //game rules, sniper only shoots shootable objs
     public void start() {
         sendObjectsToGame();
 

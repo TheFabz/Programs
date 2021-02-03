@@ -11,6 +11,7 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements Shoota
         health = 100;
     }
 
+    //checks on enemy health
     public boolean isDestroyed(){
         if(health > 0){
 
@@ -21,6 +22,7 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements Shoota
         }
     }
 
+    //returns current health and returns 0 if health is a negative number
     public int getHealth() {
         if(health > 0) {
             return health;
@@ -34,6 +36,7 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements Shoota
         }
         }
 
+    //subtracts health points
     public void healthAfterHit(int damageTaken){
         health -= damageTaken;
     }

@@ -8,6 +8,7 @@ import JavaIntro.AdvancedOOP.SniperGame.GameObject.Tree;
 
 public class ObjectFactory {
 
+    //randomly selects 1 of 4 obj possibilities
     public GameObjectAbstract GameObjectFactory(){
 
         GameObjectAbstract[] objects = {new Tree(), new EnemyFighter(), new ArmouredEnemyFighter(), new Barrel()};
