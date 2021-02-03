@@ -13,13 +13,7 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements Shoota
 
     //checks on enemy health
     public boolean isDestroyed(){
-        if(health > 0){
-
-            return false;
-        } else{
-
-            return true;
-        }
+        return health <= 0;
     }
 
     //returns current health and returns 0 if health is a negative number
@@ -27,7 +21,7 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements Shoota
         if(health > 0) {
             return health;
         }
-        else if(health <= 0){
+        else if(health < 0){
             health =0;
             return health;
         }

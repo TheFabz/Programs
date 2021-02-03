@@ -21,8 +21,8 @@ public class ArmouredEnemyFighter extends EnemyAbstract {
         if(armour > 0) {
             return armour;
         }
-        else if(armour <= 0){
-            armour =0;
+        else if(armour <0){
+            armour = 0;
             return armour;
         }
         else{

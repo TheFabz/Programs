@@ -2,7 +2,7 @@ package JavaIntro.AdvancedOOP.SniperGame.GameObject.Enemies;
 
 import JavaIntro.AdvancedOOP.SniperGame.Shootable;
 
-public class EnemyFighter extends EnemyAbstract{
+public class EnemyFighter extends EnemyAbstract implements Shootable{
 
     //prints msg
     public void printMessage(){

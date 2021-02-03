@@ -4,8 +4,8 @@ public interface Shootable {
 
 
     //shootable obj functions
-    public abstract void healthAfterHit(int damageTaken);
-    public abstract boolean isDestroyed();
-    public abstract int getHealth();
+    void healthAfterHit(int damageTaken);
+    boolean isDestroyed();
+    int getHealth();
 
 }
