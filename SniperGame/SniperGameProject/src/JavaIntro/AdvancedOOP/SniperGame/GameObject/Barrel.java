@@ -1,30 +1,15 @@
 package JavaIntro.AdvancedOOP.SniperGame.GameObject;
 
-import JavaIntro.AdvancedOOP.SniperGame.isShootable;
+import JavaIntro.AdvancedOOP.SniperGame.Shootable;
 
-public class Barrel extends GameObjectAbstract implements isShootable {
+public class Barrel extends GameObjectAbstract implements Shootable {
 
     private int health;
+    private BarrelType barrelType;
 
     public Barrel(){
         super();
-
-        BarrelType barrel = BarrelType.getRandomBarrelType();
-
-        switch(barrel){
-            case WOOD:
-                this.health=70;
-                break;
-            case METAL:
-                this.health=150;
-                break;
-            case PLASTIC:
-                this.health = 25;
-                break;
-            default:
-                this.health = 100;
-        }
-
+        this.health = barrelType.values()[((int) ((Math.random()*3)))].getBarrelHealth();
     }
 
     @Override

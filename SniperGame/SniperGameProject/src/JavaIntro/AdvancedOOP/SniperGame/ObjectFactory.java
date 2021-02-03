@@ -15,5 +15,4 @@ public class ObjectFactory {
         return objects[(int) ((Math.random() * 4))];
     }
 
-
 }

@@ -28,21 +28,21 @@ public class Game {
     public void start() {
         sendObjectsToGame();
 
-        for (int i = 0; i < gameObjectsAmount; i++)
+        for (int i = 0; i < gameObjectsAmount; i++) {
 
-            if (gameObjects[i] instanceof isShootable) {
+            if (gameObjects[i] instanceof Shootable) {
                 enemyCount++;
-                while ( !((isShootable) gameObjects[i]).isDestroyed() )  {
+                while (!((Shootable) gameObjects[i]).isDestroyed()) {
                     shotsFired++;
                     System.out.println("\nEnemy #" + (enemyCount));
                     gameObjects[i].printMessage();
-                    ((isShootable) gameObjects[i]).healthAfterHit(sniper.shoot());
-                    System.out.println("Enemy health is: " + ((isShootable) gameObjects[i]).getHealth());
+                    ((Shootable) gameObjects[i]).healthAfterHit(sniper.shoot());
+                    System.out.println("Enemy health is: " + ((Shootable) gameObjects[i]).getHealth());
                 }
             }
-        System.out.println("\nThe total number of shots was: " + shotsFired);
         }
-
+        System.out.println("\nThe total number of shots was: " + shotsFired);
+    }
 
 }
 

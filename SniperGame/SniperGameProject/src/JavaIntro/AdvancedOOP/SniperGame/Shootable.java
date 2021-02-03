@@ -1,6 +1,6 @@
 package JavaIntro.AdvancedOOP.SniperGame;
 
-public interface isShootable {
+public interface Shootable {
 
     public abstract void healthAfterHit(int damageTaken);
 

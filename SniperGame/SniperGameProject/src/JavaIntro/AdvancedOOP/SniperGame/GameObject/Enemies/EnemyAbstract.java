@@ -1,9 +1,9 @@
 package JavaIntro.AdvancedOOP.SniperGame.GameObject.Enemies;
 
 import JavaIntro.AdvancedOOP.SniperGame.GameObject.GameObjectAbstract;
-import JavaIntro.AdvancedOOP.SniperGame.isShootable;
+import JavaIntro.AdvancedOOP.SniperGame.Shootable;
 
-public abstract class EnemyAbstract extends GameObjectAbstract implements isShootable {
+public abstract class EnemyAbstract extends GameObjectAbstract implements Shootable {
 
     private int health;
 
@@ -26,6 +26,5 @@ public abstract class EnemyAbstract extends GameObjectAbstract implements isShoo
     public void healthAfterHit(int damageTaken){
         health -= damageTaken;
     }
-
 
 }
