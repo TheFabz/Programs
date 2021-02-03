@@ -6,13 +6,26 @@ public class ArmouredEnemyFighter extends EnemyAbstract {
 
     @Override
     public void healthAfterHit(int damageTaken){
-        System.out.println("Armour health is " + armour);
+        System.out.println("Armour health is " + getArmour());
             if(armour > 0){
                 armour -= damageTaken;
             }
             else {
                 super.healthAfterHit(damageTaken);
             }
+    }
+
+    public int getArmour() {
+        if(armour > 0) {
+            return armour;
+        }
+        else if(armour <= 0){
+            armour =0;
+            return armour;
+        }
+        else{
+            return armour;
+        }
     }
 
     public void printMessage(){

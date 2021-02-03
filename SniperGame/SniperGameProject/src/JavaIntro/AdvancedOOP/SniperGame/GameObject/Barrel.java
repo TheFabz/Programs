@@ -26,14 +26,24 @@ public class Barrel extends GameObjectAbstract implements Shootable {
     public boolean isDestroyed(){
         if(health > 0){
             return false;
-        } else{
+        }
+        else{
             return true;
         }
     }
 
     @Override
     public int getHealth() {
-        return health;
+        if(health > 0) {
+            return health;
+        }
+        else if(health <= 0){
+            health =0;
+            return health;
+        }
+        else{
+            return health;
+        }
     }
 
 
