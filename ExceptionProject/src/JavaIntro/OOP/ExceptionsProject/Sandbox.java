@@ -10,7 +10,7 @@ public class Sandbox {
         FileManager manager = new FileManager();
 
 
-        manager.logIn();
+        /*manager.logIn();
 
         manager.createFile("1");
         manager.createFile("2");
@@ -23,7 +23,14 @@ public class Sandbox {
        }
        catch (FileNotFoundException batata){
            System.out.println(batata.getMessage());
-       }
+       }*/
+
+        try{
+            manager.logOut();
+        }
+        catch (NotEnoughPermissionsException exemplo){
+            System.out.println(exemplo.getMessage());
+        }
 
 
     }
