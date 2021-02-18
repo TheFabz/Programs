@@ -4,7 +4,7 @@ public class Sandbox {
 
     public static void main(String[] args) {
 
-        String string = "Test morango Banana Banana Banana banana banana test Test";
+        String string = "Test morango Banana Banana Banana banana banana test Test test";
 
         WordCounter wordCounter = new WordCounter(string);
 

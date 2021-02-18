@@ -12,9 +12,9 @@ import javax.swing.event.AncestorEvent;
 public class Game {
 
 
-    public static final int MANUFACTURED_CARS = 10;
-    public static final int MANUFACTURED_AMBULANCES = 10;
-    public static final int MANUFACTURED_AMBULANCES_KILLERS = 10;
+    public static final int MANUFACTURED_CARS = 20;
+    public static final int MANUFACTURED_AMBULANCES = 1;
+    public static final int MANUFACTURED_AMBULANCES_KILLERS = 0;
     /**
      * Container of Cars
      */

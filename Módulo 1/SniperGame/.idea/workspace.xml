@@ -2,8 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c84649de-f7ac-4596-8e85-dff7865c4a61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DemónioReciclável/out/production/DemónioReciclável/org/javaIntro/OOP/DemonioReciclável/DemonGenie.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DemónioReciclável/out/production/DemónioReciclável/org/javaIntro/OOP/DemonioReciclável/DemonGenie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DemónioReciclável/out/production/DemónioReciclável/org/javaIntro/OOP/DemonioReciclável/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DemónioReciclável/out/production/DemónioReciclável/org/javaIntro/OOP/DemonioReciclável/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Libs/graphics-lib/simpleGraphicsManual.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CopyDataFromFile/out/production/CopyDataFromFile/AdvancedOOP/CopyDataFromFile/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CopyDataFromFile/out/production/CopyDataFromFile/AdvancedOOP/CopyDataFromFile/Sandbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CopyDataFromFile/src/AdvancedOOP/CopyDataFromFile/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CopyDataFromFile/src/AdvancedOOP/CopyDataFromFile/Sandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExceptionProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExceptionProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HistoGramProject/out/production/HistoGramProject/AdvancedOOP/Sandbox.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HistoGramProject/out/production/HistoGramProject/AdvancedOOP/Sandbox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HistoGramProject/out/production/HistoGramProject/AdvancedOOP/WordCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HistoGramProject/out/production/HistoGramProject/AdvancedOOP/WordCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HistoGramProject/src/AdvancedOOP/Sandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HistoGramProject/src/AdvancedOOP/Sandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HistoGramProject/src/AdvancedOOP/WordCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HistoGramProject/src/AdvancedOOP/WordCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PongGame/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PongGame/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PongGame/out/production/PongGame/AdvancedOOP/AcademiaDeCodigo/PongGame/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PongGame/out/production/PongGame/AdvancedOOP/AcademiaDeCodigo/PongGame/Ball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PongGame/out/production/PongGame/AdvancedOOP/AcademiaDeCodigo/PongGame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PongGame/out/production/PongGame/AdvancedOOP/AcademiaDeCodigo/PongGame/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PongGame/src/AdvancedOOP/AcademiaDeCodigo/PongGame/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PongGame/src/AdvancedOOP/AcademiaDeCodigo/PongGame/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PongGame/src/AdvancedOOP/AcademiaDeCodigo/PongGame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PongGame/src/AdvancedOOP/AcademiaDeCodigo/PongGame/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/SniperGameProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/Barrel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/BarrelType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/ArmouredEnemyFighter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/EnemyAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/EnemyFighter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/GameObjectAbstract.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/GameObject/Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/ObjectFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/Sandbox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/Shootable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/out/production/SniperGameProject/JavaIntro/AdvancedOOP/SniperGame/Sniper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/Barrel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/BarrelType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/ArmouredEnemyFighter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/EnemyAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/Enemies/EnemyFighter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/GameObjectAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/GameObject/Tree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/Sandbox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/Shootable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SniperGameProject/src/JavaIntro/AdvancedOOP/SniperGame/Sniper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/ToDoList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/ToDoList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/ToDoListItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/out/production/TodoListProject/AdvancedOOP/TodoList/ToDoListItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/PriorityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/PriorityType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/ToDoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/ToDoList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/ToDoListItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TodoListProject/src/AdvancedOOP/TodoList/ToDoListItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car-crash-skeleton/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../car-crash-skeleton/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car-crash-skeleton/out/production/car-crash-skeleton/org/academiadecodigo/carcrash/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../car-crash-skeleton/out/production/car-crash-skeleton/org/academiadecodigo/carcrash/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../car-crash-skeleton/src/org/academiadecodigo/carcrash/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../car-crash-skeleton/src/org/academiadecodigo/carcrash/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +64,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1nvE1k68EqJn71OZQj5wO6sjL9m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,5 +101,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

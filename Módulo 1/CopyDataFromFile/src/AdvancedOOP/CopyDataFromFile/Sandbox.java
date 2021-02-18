@@ -11,7 +11,7 @@ public class Sandbox {
 
     public static void main(String[] args) throws IOException {
 
-        FileInputStream inputStream = new FileInputStream("resources/GameOsdfgthujgyfhtgdsyujgtfdsver.wav");
+        FileInputStream inputStream = new FileInputStream("resources/GameOver.wav");
         FileOutputStream outputStream = new FileOutputStream("resources/test.wav");
 
         byte[] buffer = new byte[1024];

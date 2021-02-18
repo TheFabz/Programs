@@ -10,11 +10,9 @@ public class ToDoList {
         queue = new PriorityQueue<>();
     }
 
-
     public void add(PriorityType priority){
         queue.add(new ToDoListItem(priority));
     }
-
 
     public void remove() {
         System.out.println(queue.remove());
@@ -28,10 +26,6 @@ public class ToDoList {
     public void getSize(){
         System.out.println(queue.size());
     }
-
 */
-
-
-
 
 }

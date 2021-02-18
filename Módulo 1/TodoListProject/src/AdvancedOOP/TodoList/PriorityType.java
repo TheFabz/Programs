@@ -5,5 +5,4 @@ public enum PriorityType {
     HIGH,
     MED,
     LOW
-
 }

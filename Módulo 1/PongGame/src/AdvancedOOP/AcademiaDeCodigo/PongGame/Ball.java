@@ -23,8 +23,11 @@ public class Ball {
     private final Text score1 = new Text(15,10, p1ScoreMessage);
     private final Text score2 = new Text(890,10,p2ScoreMessage);
 
-    public Ball() throws InterruptedException {
-        ball = new Ellipse(500,345,55,55);
+    int caralho;
+
+    public Ball(int putaquepariu) throws InterruptedException {
+        this.caralho = putaquepariu;
+        ball = new Ellipse(500,345,caralho,caralho);
         ball.setColor(Color.BLACK);
         ball.fill();
         ball.draw();

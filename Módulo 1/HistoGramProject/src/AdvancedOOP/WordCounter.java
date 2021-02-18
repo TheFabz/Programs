@@ -6,7 +6,6 @@ import java.util.*;
 public class WordCounter implements Iterable<String>{
 
     private final LinkedHashMap<String, Integer> hashMap;
-    private int counter = 1;
     private String chainString;
     private String[] words;
 
@@ -24,8 +23,6 @@ public class WordCounter implements Iterable<String>{
                 else if (!hashMap.containsKey(element)) {
                     hashMap.put(element, 1);
                 }
-
-
             }
         }
 
