@@ -2,7 +2,6 @@ package org.advancedOOP.paintProgram;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
@@ -92,20 +91,15 @@ public class Paint extends KeyBoardManager {
         }
     }
 
-    public void load () throws IOException {
+    public void load() throws IOException {
         FileManager fileManager = new FileManager();
         fileManager.startInput();
         String l;
         while ((l = fileManager.inputStream.readLine()) != null) {
             String[] lineWords = l.split(" ");
-            for (Cell[] cell : cells) {
-                for (Cell value : cell) {
-                    cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].setColor(stringToColor(lineWords[2]));
-                    cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].fill();
-                    cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].setColored(true);
-
-                }
-            }
+            cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].setColor(stringToColor(lineWords[2]));
+            cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].fill();
+            cells[Integer.parseInt(lineWords[0])][Integer.parseInt(lineWords[1])].setColored(true);
         }
     }
 
@@ -117,9 +111,9 @@ public class Paint extends KeyBoardManager {
                 if (cells[i][j].getIsColored()) {
                     //add color to save document ***********
                     String data = i + " " + j + " " + colorToString(cells[i][j].getColor()) +"\n";
-                    byte[] test;
-                    test = data.getBytes(StandardCharsets.UTF_8);
-                    fileManager.outputStream.write(test);
+                    byte[] saveData;
+                    saveData = data.getBytes(StandardCharsets.UTF_8);
+                    fileManager.outputStream.write(saveData);
                     fileManager.outputStream.flush();
                 }
             }
@@ -168,7 +162,6 @@ public class Paint extends KeyBoardManager {
     }
 
     public void close() throws IOException {
-        System.out.println("test");
         System.exit(0);
     }
 
@@ -177,7 +170,6 @@ public class Paint extends KeyBoardManager {
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_SPACE) {
             paint();
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_C) {
             try {
                 setClear();
@@ -185,47 +177,36 @@ public class Paint extends KeyBoardManager {
                 e.printStackTrace();
             }
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_1) {
             changeColor(Color.BLACK);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_2) {
             changeColor(Color.RED);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_3) {
             changeColor(Color.GREEN);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_4) {
             changeColor(Color.BLUE);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_5) {
             changeColor(Color.YELLOW);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_6) {
             changeColor(Color.PINK);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_7) {
             changeColor(Color.MAGENTA);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_8) {
             changeColor(Color.CYAN);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_9) {
             changeColor(Color.ORANGE);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_0) {
             changeColor(Color.GRAY);
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_S) {
             try {
                 save();
@@ -233,7 +214,6 @@ public class Paint extends KeyBoardManager {
                 e.printStackTrace();
             }
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_L) {
             try {
                 load();
@@ -248,7 +228,6 @@ public class Paint extends KeyBoardManager {
                 e.printStackTrace();
             }
         }
-
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_T) {
             getFilledValues();
         }

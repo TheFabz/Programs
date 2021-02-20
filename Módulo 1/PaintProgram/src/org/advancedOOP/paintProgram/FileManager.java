@@ -9,17 +9,10 @@ public class FileManager {
     FileOutputStream outputStream;
     BufferedReader inputStream;
 
-    public FileManager() throws IOException {
+    public FileManager() throws IOException { }
 
-    }
-
-    public void startOutput() throws FileNotFoundException {
-        outputStream = new FileOutputStream(newFileName);
-    }
-
-    public void startInput() throws FileNotFoundException {
-        inputStream = new BufferedReader(new FileReader(newFileName));
-    }
+    public void startOutput() throws FileNotFoundException { outputStream = new FileOutputStream(newFileName); }
+    public void startInput() throws FileNotFoundException { inputStream = new BufferedReader(new FileReader(newFileName)); }
 
 }
 

@@ -89,6 +89,11 @@ public class KeyBoardManager implements KeyboardHandler {
         close.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(close);
 
+        KeyboardEvent test = new KeyboardEvent();
+        test.setKey(KeyboardEvent.KEY_T);
+        test.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(test);
+
     }
 
     @Override
@@ -96,6 +101,6 @@ public class KeyBoardManager implements KeyboardHandler {
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
-
     }
+
 }
