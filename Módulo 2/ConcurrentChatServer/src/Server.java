@@ -18,10 +18,8 @@ public class Server {
     }
 
     public void start() throws IOException {
-
         System.out.println("Server started: " + serverSocket);
         System.out.println("Waiting for a client connection");
-
         while (serverSocket.isBound()) {
             UserHandler userHandler = new UserHandler(serverSocket.accept(), list);
             fixedPool.submit(userHandler);

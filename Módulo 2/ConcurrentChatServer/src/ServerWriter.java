@@ -8,11 +8,11 @@ public class ServerWriter implements Runnable {
 
     private Socket socket;
     private DataOutputStream write;
-    private Scanner scanner;
+    private Scanner input;
 
     public ServerWriter(Socket socket) {
         this.socket = socket;
-        scanner = new Scanner(System.in);
+        input = new Scanner(System.in);
     }
 
     @Override
@@ -23,9 +23,12 @@ public class ServerWriter implements Runnable {
             e.printStackTrace();
         }
 
+        /*System.out.println("Enter your username: ");
+        String userName = name.nextLine();*/
+
         while (true) {
-            System.out.println("Enter your message: ");
-            String sentence = scanner.nextLine();
+
+            String sentence = input.nextLine();
 
             try {
                 write.writeBytes(sentence + '\n');
