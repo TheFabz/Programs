@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f776a70a375, pid=11006, tid=11016
+#
+# JRE version: OpenJDK Runtime Environment (15.0.2+7) (build 15.0.2+7-27)
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4375]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x65
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/fabio/Programs/Módulo 1/PongGame/core.11006)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:/snap/intellij-idea-community/273/lib/idea_rt.jar=35471:/snap/intellij-idea-community/273/bin -Dfile.encoding=UTF-8 AdvancedOOP.AcademiaDeCodigo.PongGame.Sandbox
+
+Host: 
