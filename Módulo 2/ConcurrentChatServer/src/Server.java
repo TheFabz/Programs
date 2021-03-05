@@ -13,7 +13,7 @@ public class Server {
     public Server(LinkedList<UserHandler> list) throws IOException {
         this.list = list;
         serverSocket = new ServerSocket(8083);
-        fixedPool = Executors.newFixedThreadPool(10);
+        fixedPool = Executors.newFixedThreadPool(2);
         start();
     }
 

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/academywars3/lib/simplegraphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/academywars3/lib/sound-library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

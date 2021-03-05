@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="newGame">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/academywars3/build/newGame.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
