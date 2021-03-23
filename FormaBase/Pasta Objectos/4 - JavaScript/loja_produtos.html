@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let arrayProdutos = [];
+        adicionarProduto("Monitor");
+        adicionarProduto("Teclado");
+        adicionarProduto("Frigorífico");
+        adicionarProduto("Televisão");
+        adicionarProduto("Aspirador");
+        adicionarProduto("Máquina de lavar");
+
+
+        function adicionarProduto(nome) {
+            let novoProduto = {
+                nome: nome,
+                preco: Math.round(Math.random() * 150)
+            };
+            arrayProdutos.push(novoProduto);
+        }
+		
+		function atualizarTabela(array) {
+            const tabelaProdutos = document.querySelector("#listaProdutos tbody");
+
+            tabelaProdutos.innerHTML = "";
+            for (const produto of array) {
+                tabelaProdutos.innerHTML += `
+                    <tr>
+                        <td>${produto.nome}</td>
+                        <td>${produto.preco} €</td>
+                    </tr>
+                `;
+            }
+        }
+
+        window.onload = function () {
+            atualizarTabela(arrayProdutos);
+        }
+
+    </script>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 3em;
+        }
+
+        #contentor {
+            width: 90%;
+            height: 500px;
+            margin: 0px 5% 0px 5%;
+            border-radius: 15px;
+            background-color: #f7f7f7;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            display: flex;
+        }
+
+        #contentorPrincipal {
+            width: 80%;
+        }
+
+        #contentor h1 {
+            font-size: 2em;
+        }
+
+        #contentorFiltrar {
+            background-color: #caccd2;
+            width: 20%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            display: block;
+        }
+
+        #contentorFiltrar label {
+            font-family: sans-serif;
+            margin-bottom: 10px;
+        }
+
+        #contentorFiltrar input,
+        #contentorFiltrar select {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        #botaoProcurar {
+            width: 100%;
+            border: 0;
+            background-color: #f54141;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        #listaProdutos {
+            width: 90%;
+            background-color: #ffffffad;
+            border-radius: 10px;
+            margin-left: 5%;
+            font-family: sans-serif;
+            margin-right: 5%;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        #listaProdutos td,
+        #listaProdutos th {
+            padding: 6px;
+            cursor: pointer;
+        }
+
+        #listaProdutos tbody tr:nth-child(even) {
+            background-color: #ead5d580;
+        }
+
+        #listaProdutos td:nth-child(2) {
+            text-align: right;
+            padding-right: 70px;
+            width: 100px;
+        }
+
+        #contentorPrincipal footer h1 {
+            text-align: right;
+            margin-right: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Produtos</h1>
+    </header>
+
+    <div id="contentor">
+        <aside id="contentorFiltrar">
+            <h1>Filtros</h1>
+
+            <div style="margin: auto; width: 85%">
+                <label for="nomeProduto">Nome produto</label>
+                <input type="text" name="nomeProduto" id="nomeProduto">
+                <br>
+                <br>
+                <label for="precoMinimo">Valor mínimo</label>
+                <input type="number" name="precoMinimo" id="precoMinimo">
+                <br>
+                <br>
+                <label for="precoMaximo">Valor máximo</label>
+                <input type="number" name="precoMaximo" id="precoMaximo">
+                <br>
+                <br>
+                <label for="ordenacao">Ordenar Por:</label>
+                <select name="ordenacao" id="ordenacao">
+                    <option value="nome">Nome do produto</option>
+                    <option value="preco">Preço</option>
+                </select>
+                <br>
+                <br>
+                <input type="button" value="Procurar" id="botaoProcurar" onclick="filtrar()">
+
+            </div>
+
+        </aside>
+        <section id="contentorPrincipal">
+            <h1>Disponíveis</h1>
+
+            <table id="listaProdutos">
+                <thead>
+                    <tr>
+                        <th>Descrição do produto</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+            <footer>
+                <h1 id="totalFinal">Total: </h1>
+            </footer>
+        </section>
+    </div>
+
+</body>
+
+</html>

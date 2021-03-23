@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais 3</title>
+</head>
+<body>
+    
+<script>  
+
+var temp_graus = parseInt(prompt("Insira a temperatura em graus celsius"));
+
+if (temp_graus >= 0 && temp_graus < 10) {
+    document.write("frio de rachar");
+}
+else if (temp_graus >= 10 && temp_graus <= 20) {
+    document.write("Ameno"); 
+}
+else if (temp_graus > 20 && temp_graus <= 25){
+    document.write("Bom tempo");
+}
+
+else if (temp_graus > 25 && temp_graus <= 30){
+    document.write("Óptimo tempo")
+} 
+else if (temp_graus > 30 && temp_graus <= 35){
+    document.write("Calor forte")
+}
+else if(temp_graus > 35 ) {
+    document.write("Calor Abrasador")
+}
+else {
+    document.write("valor inválido")
+}
+
+</script>  
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        #contentor {
+            overflow: hidden;
+            background: rgb(241, 196, 15);
+            width: 260px;
+            height: 240px;
+            padding: 15px;
+            text-align: center;
+            border-radius: .5em .5em 0 0;
+            position: absolute;
+            margin-right: 1.5%;
+            bottom: 0;
+            right: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #contentor h3 {
+            font-size: 1.7em;
+            color: #222;
+        }
+
+        #contentor p {
+            color: #333333;
+        }
+
+        #contentor a {
+            color: #0048a9;
+            border-bottom-width: 1px;
+            border-bottom-style: dotted;
+            font-weight: bold;
+        }
+
+        #marcarSG {
+            padding: 1em 2.5em;
+            border: 0;
+            border-radius: .5em;
+            background-color: rgba(96, 158, 234, 1);
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 1.714em;
+            cursor: pointer;
+        }
+
+        #contentor img {
+            max-width: 12px;
+            position: fixed;
+            right: 2.2%;
+			cursor: pointer;
+        }
+    </style>
+
+<script>
+        let posicaoCaixa = -250;
+
+        function caixaAparece(){
+            let objecto = document.getElementById("contentor");
+            let caixa = setInterval(function () {
+            objecto.style.bottom = posicaoCaixa + "px";
+            posicaoCaixa++;
+
+            if (posicaoCaixa == 15) {
+            clearInterval(caixa);
+        }
+            
+        }, 5);
+        }
+
+        function caixaDesaparece(){
+            let objecto = document.getElementById("contentor");
+            let caixa = setInterval(function () {
+            objecto.style.bottom = posicaoCaixa + "px";
+            posicaoCaixa--;
+
+            if (posicaoCaixa == -270) {
+            clearInterval(caixa);
+        }
+            
+        }, 5);
+        }
+</script>
+
+</head>
+
+<body>
+
+    <div id="contentor">
+        <img src="img/delete.png" alt="Cancelar" id="fecharCaixa" onclick="caixaDesaparece()">
+        <h3>SESSÃO GRÁTIS</h3>
+        <p>Marque já a sua sessão gratuita, sem compromisso, e venha experimentar o nosso <a href="#">método</a>.</p>
+        <input type="button" id="marcarSG" value="Marcar">
+        <p>Ou <a href="#">peça-nos informações</a>.</p>
+    </div>
+<script>
+    caixaAparece();
+</script>
+
+</body>
+
+</html>

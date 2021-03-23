@@ -1,0 +1,21 @@
+.upper_alpha{
+    list-style-type: upper-alpha;
+}
+
+.lower_roman{
+    list-style-type: lower-roman;
+    list-style-position: inside;
+}
+
+.decimal{
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+.imagem_marca{
+    list-style-image: url(http://www.formabase.com/imagens/bullet1.gif);
+    font-size: 14px;
+    color: gray;
+    font-family: Verdana;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    input{
+        margin: 10px;
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objectos</title>
+</head>
+<body>
+
+<script>
+    
+let cliente = {
+    nome: "",
+    morada: "",
+    mostrarInformações: function () {
+    document.write(`O cliente ${this.nome} vive em ${this.morada}<br>`);
+    }
+};
+
+function guardarInformacoes() {
+    let nome = document.formularioCliente.nome.value;
+    let morada = document.formularioCliente.morada.value;
+    let idade = parseInt(document.formularioCliente.idade.value);
+    let data = document.formularioCliente.dataNascimento.value;
+
+    cliente.nome = nome;
+    cliente.morada = morada;
+
+    if (idade != "") {
+        cliente.idade = idade;
+    }
+    if (data != "") {
+        cliente.dataRegisto = data;
+    }
+}
+
+
+</script>    
+
+<form name="formularioCliente" id="formularioCliente">
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td><input type="text" name="nome"/></td>
+        </tr>
+        <tr>
+            <td>Morada</td>
+            <td><input type="text" name="morada"/></td>
+        </tr>
+        <tr>
+            <td>Idade</td>
+            <td><input type="number" name="idade"/></td>
+        </tr>
+        <tr>
+            <td>Data Registo</td>
+            <td><input type="date" name="dataNascimento"/></td>
+        </tr>
+    </table>
+    <input type="button" value="Guardar Cliente" onclick="guardarInformacoes()"/>
+</form>
+
+<input type="button" value="imprimir" onclick="print()">
+<input type="button" value="Mostrar dimensões da janela" onclick="alert(`A janela tem ${window.innerHeight} px de altura e ${window.innerWidth} de largura.`)">
+<input type="button" value="Abrir nova janela" onclick="window.open('http://www.formabase.com')">
+
+
+</body>
+</html>

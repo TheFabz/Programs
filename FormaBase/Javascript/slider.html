@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    body {
+    margin:0;
+    padding:0;
+    }
+
+    .centrar-horizontal {
+    display:flex;
+    justify-content: center;
+    }
+
+    .centrar-vertical {
+    display:flex;
+    align-items: center;
+    }
+
+    .azul{
+    background: #5e97d2;
+    }
+
+    .cinza {
+    background-color: #eaeaea;
+    }  
+
+    header > h1 {
+    padding:30px 0 30px 0;
+    margin-top:0;
+    color:white;
+    text-align: center;
+    }      
+
+    #conteudo {
+    margin:100px;
+    }
+		
+	.slide {
+    width: 700px;
+    height: 300px;
+    display: none;
+    }
+        
+    #seta-esquerda, #seta-direita {
+    width: 50px;
+    cursor: pointer;
+    }
+    #seta-esquerda {
+    margin-right: 20px;
+    }
+    #seta-direita {
+    margin-left: 20px;
+    }
+
+    #pontos > div {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #aaa;
+    margin: 10px;
+    cursor: pointer;
+    }
+
+    .slide-descricao {
+    display: none;
+}
+
+
+    #descricao-visivel {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    color: white;
+    margin-top: 0px;
+    }
+
+    #slider {
+    position: relative; 
+    }
+        
+    </style>
+
+<script>
+
+let slides, slideVisivel, slideCorrente = 0, pontos;
+let descricoes, descricaoVisivel, descricaoCorrente = 0;
+
+window.onload = function () {
+    slides = document.getElementsByClassName("slide");
+    slideVisivel = document.getElementById("slide-visivel");
+    descricoes = document.getElementsByClassName("slide-descricao"); 
+    descricaoVisivel = document.getElementById("descricao-visivel");
+
+    pontos = document.querySelectorAll("#pontos > div");
+
+    //atribuir a função de click a todos os pontos
+    for (let i = 0; i < pontos.length; i++) {
+        pontos[i].addEventListener("click", function () {
+            slideCorrente = i;
+            ativarSlide(i);
+        });
+    }
+
+    ativarSlide(0); //começar no slide 0
+
+    setInterval(function(){
+        avancarSlide();
+    }, 4000);
+
+    const setaDireita = document.getElementById("seta-direita");
+    setaDireita.addEventListener("click", avancarSlide);
+
+    const setaEsquerda = document.getElementById("seta-esquerda");
+    setaEsquerda.addEventListener("click", retrocederSlide);
+};
+
+function avancarSlide() {
+    slideCorrente++;
+    if (slideCorrente >= slides.length) {
+        //se passou o último volta ao primeiro
+        slideCorrente = 0;
+    }
+    ativarSlide(slideCorrente);
+}
+
+function retrocederSlide(){
+    slideCorrente--;
+    if (slideCorrente < 0) {
+        //se passou o primeiro volta ao último
+        slideCorrente = slides.length - 1;
+    }
+    ativarSlide(slideCorrente);
+}
+
+function ativarSlide(numSlide) {
+    
+    let srcSlideEscolhido = slides[numSlide].getAttribute("src");
+    slideVisivel.setAttribute("src", srcSlideEscolhido);
+
+    let textoEscolhido =  descricoes[numSlide];
+    descricaoVisivel.innerText = textoEscolhido.innerText;
+
+    //colocar todos os pontos a cinza claro
+    for (let ponto of pontos) {
+        ponto.style.backgroundColor = "#aaa";
+    }
+
+    pontos[numSlide].style.backgroundColor = "#777"; //colocar o ponto escolhido a cinza escuro
+}
+
+</script>
+
+   
+</head>
+<body>
+    <header class="fundo azul">
+        <h1>Venha conhecer os nossos automóveis</h1>
+    </header>
+    
+    <!--image slider-->
+
+    <div class="centrar-horizontal">
+        <h1 id="descricao-visivel">texto</h1>
+        <div id="slider" class="centrar-vertical">
+
+            <img src="img/slider/seta_esquerda.png" alt="Seta esquerda" id="seta-esquerda">
+            <img id="slide-visivel">
+            <img src="img/slider/seta_direita.png" alt="Seta direita" id="seta-direita">
+
+            <img src="img/slider/carro1.jpg" alt="carro1" class="slide">
+            <h1 class="slide-descricao">Nissan</h1>
+            <img src="img/slider/carro2.jpg" alt="carro2" class="slide">
+            <h1 class="slide-descricao">Mclaren F1</h1>
+            <img src="img/slider/carro3.jpg" alt="carro3" class="slide">
+            <h1 class="slide-descricao">Nissan GTR</h1>
+            <img src="img/slider/carro4.png" alt="carro4" class="slide">
+            <h1 class="slide-descricao">Wolksvagen WXR</h1>
+        </div>
+    </div>
+    <div id="pontos" class="centrar-horizontal">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="fundo cinza centrar-horizontal">
+        <div id="conteudo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quaerat alias dolores eius quisquam, magnam vero at, ab odio atque ut aliquam itaque ipsam architecto eveniet consectetur beatae sequi expedita!<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam praesentium repellat maxime, magni nesciunt mollitia animi saepe, dolorem similique exercitationem, nemo eius ad earum illum beatae enim est atque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nisi voluptas impedit praesentium eligendi doloremque amet blanditiis nobis atque at id soluta reprehenderit, incidunt iusto quidem sint laborum, dolor architecto!
+        </div>
+    </div>
+</body>
+</html>

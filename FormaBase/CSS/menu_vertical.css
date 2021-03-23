@@ -1,0 +1,75 @@
+#menu {
+    width: 12em;
+    /* largura do menu */
+}
+
+#menu ul {
+    /* remover marcas e indentações de lista */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilo, cor e tamanho das ligações e cabeçalhos */
+#menu a,
+#menu h2 {
+    font: bold 11px/16px arial, helvetica, sans-serif;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #949494;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+#menu li {
+    background-image: url(imagens/fundo_item.gif);
+    background-repeat: repeat-x;
+}
+
+#menu h2 {
+    background-image: url(imagens/fundo_titulo.gif);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #606060;
+    text-transform: uppercase;
+}
+
+#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #4e4e4e;
+    background: #f0f0f0;
+}
+
+/* estilo para seta nos itens dos menus que têm sub-menus associados */
+#menu li .mais {
+    background-image: url(imagens/seta.gif);
+    background-repeat: no-repeat;
+    background-position: 16em;
+}
+
+#menu li { 
+    /* tornar os elementos da lista um bloco contentor para as sub-listas */
+    position: relative;
+}
+
+#menu ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%; /* posicionar as sub-listas à direita do bloco respetivo */
+    width: 100%; /* a largura é baseada na do bloco contentor */
+}
+
+#menu ul ul ul, /*esconder a terceira lista quando a página começa*/
+#menu ul ul li:hover ul ul { /*esconder a quarta lista quando o rato passa na segunda*/
+    display: none; /*esconder*/
+}
+
+#menu ul ul li:hover ul, /*mostrar a terceira lista quando o rato passa na segunda*/
+#menu ul ul ul li:hover ul { /*mostrar a quarta lista quando o rato passa na terceira*/
+     display: block; /*mostrar*/
+}

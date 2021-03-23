@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="form_styles_sheet.css">
+
+<title>Formulário</title>
+
+</head>
+<body>
+<div class="center-content">
+	<h1 class="title">Formulário</h1>
+	
+	<form>
+		<fieldset><legend>Legenda</legend>
+			<dl>
+				<dt><label for="caixa-grande">Caixa de Texto Grande</label></dt>
+				<dd><input type="text" name="caixa-grande" id="caixa-grande" class="input-big"></dd>
+				
+				<dt><label for="caixa-media">Caixa de Texto Média</label></dt>
+				<dd><input type="text" name="caixa-media" id="caixa-media" class="input-medium"></dd>
+				
+				<dt><label for="caixa-pequena">Caixa de Texto Pequena</label></dt>
+				<dd><input type="text" name="caixa-pequena" id="caixa-pequena" class="input-small"></dd>
+				
+				<dt><label for="caixa-muito-pequena">Caixa de Texto Muito Pequena</label></dt>
+				<dd><input type="text" name="caixa-muito-pequena" id="caixa-muito-pequena" class="input-tiny"></dd>
+				
+				<dt>Escolha Única</dt>
+				<dd>
+					<label><input type="radio" name="escolha-unica" value="valor1"> Valor 1</label>
+					<label><input type="radio" name="escolha-unica" value="valor2"> Valor 2</label>
+					<label><input type="radio" name="escolha-unica" value="valor3"> Valor 3</label>
+					<label><input type="radio" name="escolha-unica" value="valor4"> Valor 4</label>
+					<label><input type="radio" name="escolha-unica" value="valor5"> Valor 5</label>
+				</dd>
+				
+				<dt>Escolha Múltipla</dt>
+				<dd class="options-inline">
+					<label><input type="checkbox" name="escolha-multipla" value="valor1"> Valor 1</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor2"> Valor 2</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor3"> Valor 3</label>
+				</dd>
+				
+				<dt><label for="caixa-selecao">País</label></dt>
+				<dd>
+					<select name="caixa-selecao" id="caixa-selecao" class="input-medium">
+						<option value="">- Opções -</option>
+						<option value="valor1">Valor 1</option>
+						<option value="valor2">Valor 2</option>
+						<option value="valor3">Valor 3</option>
+					</select>
+				</dd>
+				
+				<dt><label for="area-texto">Área de Texto</label></dt>
+				<dd><textarea name="area-texto" id="area-texto" class="input-big"></textarea></dd>
+				
+				<dt><label for="ficheiro">Ficheiro</label></dt>
+				<dd><input type="file" name="ficheiro" id="ficheiro"></dd>
+				
+				<dd>
+					<input type="submit" name="botao-principal" class="button-main" id="botao-principal" value="Botão Principal">
+					<input type="button" name="botao-secundario" id="botao-secundario" value="Botão Secundário">
+				</dd>
+
+				<dt><label for="caixa-grande">Nome:</label></dt>
+				<dd><input type="text" name="nome_utilizador" id="nome_utilizador" class="input-big"></dd>
+				
+				<dt><label for="caixa-media">E-mail</label></dt>
+				<dd><input type="e-mail" name="e_mail" id="e_mail" class="input-medium"></dd>
+				
+				<dt><label for="caixa-pequena">Telefone</label></dt>
+				<dd><input type="tel" name="telefone" id="telefone" class="input-small"></dd>
+				
+				<dt><label for="caixa-muito-pequena">Hora de Conveniência</label></dt>
+				<dd><input type="time" name="hora" id="hora" class="input-tiny"></dd>
+				
+			</dl>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+<form name="form_html5" novalidate>
+    Data: <input type="date" name="data"><br>
+    Hora: <input type="time" name="hora"><br>
+    Data e hora local: <input type="datetime-local" name="data_hora_local"><br>
+    Mês: <input type="month" name="mes"><br>
+    Semana: <input type="week" name="semana"><br>
+    E-mail: <input type="email" name="e_mail" multiple placeholder="example@email.com" required><br>
+    Telefone: <input type="tel" name="telefone" placeholder="000000000" required pattern="[0-9][3][/-][0-9][9]"><br>
+    Website: <input type="url" name="website"><br>
+    Número incremental: 
+    <input type="number" min="10" max="100" step="5" value="20" name="numero"><br>
+    Barra deslizante:
+    <input type="range" min="0" max="100" step="2" value="5" name="barra"><br>
+    Cor: <input type="color" name="cor"><br>
+    Pesquisar: <input type="search" name="pesquisar" autofocus autocomplete="off"><br>
+    <br><br>
+    Lista de países:
+    <input type="text" list="listaPaises">
+    <datalist id="listaPaises">
+    <option value="Áustria">
+    <option value="Bélgica">
+    <option value="Croácia">
+    <option value="Dinamarca">
+    <option value="Finlândia">
+    <option value="Geórgia">
+    <option value="Hungria">
+    <option value="Islândia">
+    <option value="Letónia">
+    <option value="Macedónia">
+    <option value="Malta">
+    <option value="Noruega">
+    <option value="Sérvia">
+    <option value="Portugal">
+    <option value="Reino Unido">
+    <option value="Ucrânia">
+</datalist><br><br>
+
+<input type="email" name="enviar_para" list="listaEmails">
+<datalist id="listaEmails">
+    <option label="Joaquim" value="joaquim0123@mail.no">
+    <option label="Manuela" value="manuela987@e-mail.no">
+    <option label="Maria" value="maria098@email.on">
+</datalist><br>
+
+    <button type="submit" name="enviar">Enviar</button>
+</form>    
+    
+</body>
+</html>

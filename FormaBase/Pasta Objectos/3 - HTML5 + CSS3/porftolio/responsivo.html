@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsivo</title>
+<style>
+	body{font-family: Tahoma, Geneva, sans-serif}
+	
+	a{
+		text-decoration: none;
+		color:#FF6600
+	}
+	
+	#main-title h1 {font-size: 50px;}
+	#main-title h3 {font-size: 20px; font-weight:normal}
+	
+	a:hover { text-decoration: underline; }
+	
+	#logo, #main-title {text-align:center;}
+	
+	#main-menu, #main-menu ul, #footer-menu {
+		list-style:none; 
+		padding:0;
+		margin:0;
+	}
+	
+	#main-menu li {
+		display: block;
+		/*text-align: center;*/
+		border: 2px solid #e5e5e5;
+		border-bottom: none;
+	}
+	
+	#main-menu ul li {
+		border-left: none;
+		border-right: none;
+	}
+
+	#main-menu > li:last-child { border-bottom: 2px solid #e5e5e5; }
+	
+	#main-menu li a {
+		padding: 10px 20px;
+		display:block;
+		background-color: #f5f5f5;
+	}
+	
+	#main-menu ul li a {
+		padding-left: 40px;
+		background-color: #ededed;
+	}
+	
+	#footer-menu li{
+		display: inline;
+		padding: 0 5px;
+	}
+	
+	#intro, #noticias, #eventos, #sobre, body > footer, #footer-menu { padding: 20px 0; }
+	
+	#sobre { background-color: #eee; }
+	
+	#anuncios article { background-color: #eee; padding: 10px;margin:20px 0;}
+	#anuncios article h6 {margin:0;}
+	
+	body > footer { background-color: #ccc; }
+	
+	.button {
+		display: block;
+		text-align: center;
+		font-size: 30px;
+		padding: 10px;
+		background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+		border-radius: 10px;
+		border: 2px solid #ccc;
+		margin-bottom: 40px; 
+		color: #aaa;
+		text-shadow: 1px 1px white, -1px -1px black;
+	}
+	
+	.align-left{
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+	
+</style>
+</head>
+<body>
+<header>
+	<h1 id="logo"><img style="width:400px" src="img/responsive_web_design.png"></h1>
+	<hgroup id="main-title">
+		<h1>Página Responsiva</h1>
+		<h3>As melhores técnicas para desenvolver Websites de última geração estão aqui!</h3>
+	</hgroup>
+	<nav>
+		<ul id="main-menu">
+			<li><a href="#">Início</a></li>
+			<li><a href="#noticias-menu">Notícias</a>
+				<ul id="noticias-menu">
+					<li><a href="#evento1">Notícia 1</a></li>
+					<li><a href="#evento2">Notícia 2</a></li>
+				</ul>
+			</li>
+			<li><a href="#eventos-menu">Eventos</a>
+				<ul id="eventos-menu">
+					<li><a href="#evento1">Evento 1</a></li>
+					<li><a href="#evento2">Evento 2</a></li>
+					<li><a href="#evento3">Evento 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#contactos">Contactos</a></li>
+		</ul>
+	</nav>
+</header>
+<div id="conteudo">
+	<section id="intro">
+		<article>
+			<h2>Bem-vindo</h2>
+			<p>
+				Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer cursus libero urna, eu
+				 imperdiet velit laoreet in. Vestibulum eget odio eget odio lobortis varius. Proin purus augue,
+				  tempor at congue nec, posuere et massa. Etiam auctor tortor ac lacus fermentum elementum. 
+				  Nulla tellus metus, ultricies in sagittis nec, porttitor non lacus. Cras quis metus diam. 
+				  Ut dapibus pellentesque sem, at malesuada urna suscipit sit amet. Donec volutpat varius 
+				  quam et vestibulum. 
+			</p>
+		</article>
+	</section>
+
+	<section id="sobre">
+		<article>
+			<h3>Onde</h3>
+			<p>Cras vulputate quam nulla, faucibus varius felis digsim.</p>
+			<img src="img/where.png" style="width:400px">
+		</article>
+		<article>
+			<h3>Como</h3>
+			<p>Vestibulum pretium ultrices uris eu ante nec risus ornare.</p>
+			<img src="img/how.png" style="width:400px">
+		</article>
+		<article>
+			<h3>Quando</h3>
+			<p>Proin ac leo consequat, porta mauris eget, mollis mi</p>
+			<img src="img/when.png" style="width:400px">
+		</article>
+	</section>
+	
+	<section id="noticias">
+		<h2>Últimas notícias</h2>
+		<article>
+			<h4>Notícia 1</h4>
+			<p>
+				<img src="img/news_01.png" class="align-left">Integer sit amet porttitor mauris. Maecenas blandit mauris quis diam fringilla, ut dignissim ipsum dignissim. 
+				Cras vulputate quam nulla, faucibus varius felis dignissim sed. In sed faucibus mauris. Nulla quis velit purus. 
+				Praesent molestie faucibus varius. Nunc at tincidunt felis, ullamcorper convallis neque. Duis egestas consectetur 
+				diam, quis suscipit eros. Etiam fermentum magna quis urna bibendum, non molestie sem aliquam. Aliquam volutpat 
+				odio ac lorem feugiat pulvinar. Vestibulum pretium ultrices consequat. Mauris eu ante nec risus ornare tincidunt 
+				auctor ac ipsum. 
+			</p>
+		</article>
+		<article>
+			<h4>Notícia 2</h4>
+			<p>
+				<img src="img/news_02.png" class="align-left">Praesent et lacus a massa eleifend tempus ac ut neque. Ut ac viverra dui, sed varius leo. Morbi non 
+				vestibulum quam, sed ornare dui. Donec sit amet faucibus tellus, a vestibulum est. Proin a enim egestas, 
+				varius lectus vitae, elementum lorem. Proin ac leo consequat, porta mauris eget, mollis mi.
+				Proin ac leo consequat, porta mauris eget, mollis mi quam volutpat odio ac lorem feugiat pulvinar.
+				Nunc at tincidunt felis, ullamcorper convallis neque. Duis egestas consectetur diam, quis eros.
+			</p>
+		</article>
+		<p><a href="#">Mais notícias</a></p>
+	</section>
+	<section id="eventos">
+		<h2>Próximos eventos</h2>
+		<article id="evento1">
+			<h4>Evento 1</h4>
+			<p>
+				Etiam fermentum magna quis urna bibendum, non molestie sem aliquam. Aliquam volutpat 
+				odio ac lorem.  
+			</p>
+		</article>
+		<article id="evento2">
+			<h4>Evento 2</h4>
+			<p>
+				Proin a enim egestas, varius lectus vitae, elementum lorem. Proin ac leo consequat, porta mauris eget, 
+				mollis mi.
+			</p>
+		</article>
+		<article id="evento3">
+			<h4>Evento 3</h4>
+			<p>
+				Nulla quis velit purus. 
+				Praesent molestie faucibus varius. Nunc at tincidunt felis, ullamcorper convallis.  
+			</p>
+		</article>
+		<p><a href="#">Mais eventos</a></p>
+	</section>
+</div>
+<footer>
+	<address>
+		Em tal rua nº 0, RC Dir<br>
+		0000-001 Cidade<br>
+		E-mail: <a href="mailto:info@servico.com">info@servico.com</a>
+	</address>
+	<nav id="contactos">
+		<ul id="footer-menu">
+			<li><a href="#">Início</a></li>
+			<li><a href="#noticias">Notícias</a></li>
+			<li><a href="#eventos">Eventos</a></li>
+			<li><a href="#contactos">Contactos</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos 2</title>
+</head>
+<body>
+
+<script>
+
+var contadorArtigos = 0 ;
+var precoFinal = 0 ;
+
+
+while (decisaoMenu != "N") {
+
+
+var nomeProduto = prompt("Insira o nome de um produto:");    
+var precoProduto = parseInt(prompt(`Preço do produto: ${nomeProduto}, em euros `));
+var decisaoMenu = prompt("Deseja escolher mais produtos? (S/N)");
+
+if (nomeProduto != " ")
+    {contadorArtigos = contadorArtigos+1 }
+
+
+if (precoProduto > 0)
+    { precoFinal = (precoFinal + precoProduto) }
+
+}
+
+document.write(`O número total de artigos: ${contadorArtigos} e o valor a pagar: ${precoFinal}€.`);
+
+</script>    
+    
+</body>
+</html>

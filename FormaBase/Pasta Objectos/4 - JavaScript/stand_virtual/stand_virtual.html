@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Stand Virtual</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header" class="wrapper">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>Stand Virtual</h1>
+			</div>
+
+		</section>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style2">
+			<div class="title">Adicionar Carro</div>
+			<div class="container">
+
+				<!-- Content -->
+				<div id="content">
+					<div id="formulario">
+						<form name="formulario_carro">
+							<h1>Inserir novo Automóvel</h1>
+							<dl>
+								<dt>
+									<label for="marca_carro">Marca:</label>
+								</dt>
+								<dd>
+									<select name="marca_carro">
+										<option value="Audi">Audi</option>
+										<option value="Mercedes">Mercedes</option>
+										<option value="BMW">BMW</option>
+										<option value="Volvo">Volvo</option>
+										<option value="Seat">Seat</option>
+										<option value="Fiat">Fiat</option>
+										<option value="Volkswagen">Volkswagen</option>
+										<option value="Citroen">Citroen</option>
+									</select>
+								</dd>
+
+								<dt>
+									<label for="modelo_carro">Modelo:</label>
+								</dt>
+								<dd>
+									<input type="text" name="modelo_carro">
+								</dd>
+
+								<dt>
+									<label for="ano_fabrico">Ano de Fabrico:</label>
+								</dt>
+								<dd>
+
+									<select name="ano_fabrico">
+										<script>
+											for (let i = new Date().getFullYear(); i >= 1990; i--) {
+												document.write(`<option value="${i}">${i}</option>`)
+											}
+										</script>
+									</select>
+								</dd>
+								<dt>
+									<label for="matricula_carro">Matricula:</label>
+								</dt>
+								<dd>
+									<input type="text" placeholder="XX-YY-XX" name="matricula_carro">
+								</dd>
+								<dt>
+
+									<label for="cor_carro">Cor:</label>
+								</dt>
+								<dd>
+									<select name="cor_carro">
+										<option value="Branco">Branco</option>
+										<option value="Preto">Preto</option>
+										<option value="Cinzento">Cinzento</option>
+										<option value="Azul">Azul</option>
+										<option value="Amarelo">Amarelo</option>
+										<option value="Verde">Verde</option>
+										<option value="Amarelo">Amarelo</option>
+										<option value="Laranja">Laranja</option>
+									</select>
+								</dd>
+								<dt>
+									<label for="combustivel_carro">Combustivel:</label>
+								</dt>
+								<dd>
+									<select name="combustivel_carro">
+										<option value="Gasolina">Gasolina</option>
+										<option value="Diesel">Diesel</option>
+									</select>
+								</dd>
+								<dt>
+									<label for="numero_cavalos">Numero de Cavalos:</label>
+								</dt>
+								<dd>
+									<input type="number" name="numero_cavalos">
+								</dd>
+								<dt>
+									<label for="preco_carro">Preço:</label>
+								</dt>
+								<dd>
+									<input type="number" name="preco_carro">
+								</dd>
+
+								<dd>
+									<input type="button" value="Inserir Automóvel" onclick="criarNovoCarro();">
+								</dd>
+
+							</dl>
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Highlights -->
+		<section id="highlights" class="wrapper style3">
+			<div class="title">Loja </div>
+			<div class="container">
+				<div class="row aln-center">
+				</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer" class="wrapper">
+
+		</section>
+	</div>
+</body>
+
+</html>

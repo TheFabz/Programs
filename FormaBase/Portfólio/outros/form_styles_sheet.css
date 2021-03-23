@@ -1,0 +1,117 @@
+#main-title {
+	background: transparent url(img/separator-globe.png) no-repeat center bottom;
+	padding-bottom: 60px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.article {
+	margin-bottom: 40px;
+}
+
+#main-aside {
+	color: #9b9b9b;
+	background-color: #2d2d2d;
+	padding-top: 40px;
+}
+
+#main-aside h5 { color: white; }
+
+#main-footer {
+	padding-bottom: 20px; 
+	color: #9b9b9b;
+	background-color: #222222;
+}
+
+#content { margin: 40px 0; }
+
+.align-right {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+.align-left {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+figure {
+	background-color: #f8f8f8;
+	text-align: center;
+	padding: 10px;
+}
+
+figcaption {
+	color: #9B9B9B;
+	text-align: center;
+	margin: 10px 0;
+}
+
+time { color: #2c66d2; }
+
+video{
+    place-content: right;
+}
+
+
+form dt {
+	float: left;
+	width: 190px;
+	text-align: right;
+	padding: 6px 0;
+	font-weight: normal;
+}
+
+form dd {
+	margin-left: 200px;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+legend {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+dd label {
+	padding: 6px 20px 6px 0;
+	display: block;
+}
+
+dd.options-inline label { display: inline-block; }
+
+input, textarea, select {
+	border: 1px solid #ccc;
+	padding: 6px;
+	font-size: 14px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #ffffff;
+}
+
+input:focus, textarea:focus, select:focus, button {
+	border-color: #0FA2FF;
+	outline: none;
+}
+
+input[type="submit"], input[type="button"], button {
+	color: #2E2E2E;
+	border: 1px solid #ccc;
+	padding: 6px 20px;
+	margin-right: 20px;
+	background: #ebebeb;
+}
+
+input.button-main, button.button-main {
+	color: #FFFFFF;
+	border-color: #0FA2FF;
+	background: #0FA2FF;
+}
+
+.input-big { width: 400px; }
+.input-medium { width: 200px; }
+.input-small { width: 100px; }
+.input-tiny { width: 50px; }

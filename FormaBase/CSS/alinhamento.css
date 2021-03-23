@@ -1,0 +1,40 @@
+.centrado{
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.esquerda{
+    text-align: left;
+    word-spacing: 20px;
+}
+
+.direita{
+    text-align: right;
+    line-height: 2em;
+}
+
+.justificado{
+    text-align: justify;
+    text-indent: 100px;
+}
+
+
+img {
+    align-items: center;
+}
+
+.topo{
+    vertical-align: top;
+}
+
+.meio{
+    vertical-align: middle;
+}
+
+.superior{
+    vertical-align: super;
+}
+
+
+
+

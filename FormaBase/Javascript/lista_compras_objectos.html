@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    * {
+        padding: 5px;
+    }
+</style>
+<script>
+    var arrayProdutos = [];
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+</head>
+<body>
+
+<script>   
+</script>
+
+<form name="formulario">
+    <input type="text" name="nomeProduto" placeholder="Produto">
+    <input type="text" name="precoProduto" placeholder="Preço">
+    <input type="button" value="Adicionar Produto" 
+    onclick="
+    
+    let produto = {
+        nome: '',
+        preco: '',
+        mostrarDados: function () {
+            document.formulario.listaProdutos.value += (`${this.nome} --> ${this.preco}€ \n`);
+
+        }
+    }
+    
+    produto.nome = document.formulario.nomeProduto.value; 
+    produto.preco = document.formulario.precoProduto.value; 
+  
+    /* checkdupes / push produto */
+    var duplicado = false
+
+    for(var contador = 0 ; contador < arrayProdutos.length; contador++){
+        if (arrayProdutos[contador] == produto.nome){
+            duplicado = true;
+        }
+    }
+
+    if (duplicado == false && produto.preco != ''){
+        arrayProdutos.push(produto);
+    }
+
+    else{
+        alert('Já introduziu este valor.')
+    }
+
+    document.formulario.listaProdutos.value = '';
+
+    
+    for (produto of arrayProdutos){
+    produto.mostrarDados();
+    }
+
+    document.formulario.listaProdutos.value += `\n\nNúmero Total de Produtos: ${arrayProdutos.length}`;
+
+    /* -limpa- caixas de texto e textarea */
+    document.formulario.nomeProduto.value = '';
+    document.formulario.precoProduto.value = '';
+    
+    ">
+
+    <br><br>
+
+    <textarea name="listaProdutos" cols="40" rows="10" readonly></textarea>
+
+</form>
+
+</body>
+</html>

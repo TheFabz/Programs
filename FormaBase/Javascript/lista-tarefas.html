@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="lista-tarefas.js"></script>
+
+<style>
+
+
+body{
+    background-color: #e3e3e3;
+}
+
+#caixaLista{
+    overflow-y: scroll;
+    height: 70%;
+}
+
+#lista{
+    font-size: 2em;
+    margin: auto;
+}
+
+
+#caixaPrincipal{
+    width: 400px;
+    height: 450px;
+    margin: 5% auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px black;
+}
+
+#caixaPrincipal > div{
+    display: flex;
+}
+
+#caixaNovoItem{
+    width: 80%;
+    height: 30px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+#adicionarBotao{
+    width: 10%;
+    height: 10%;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+#divisoria{
+    width: 100%;
+}
+
+.botao{
+    background-color: #3F88C5;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5%;
+}
+
+.botao[disabled] {
+    opacity: 0.5;
+}
+
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+<div id="caixaPrincipal">
+    <div>
+        <input type="text" name="item" id="caixaNovoItem" placeholder="Novo item">
+        <img src="img/add-button.png" alt="adicionar" id="adicionarBotao"   >
+    </div>
+    <img src="img/separator-globe.png" alt="separador" id="divisoria">
+    <div id="caixaLista">
+        <ul id="lista"></ul>
+    </div>
+    <input disabled type="button" value="Limpar Lista" class="botao"  >
+</div>    
+    
+</body>
+</html>

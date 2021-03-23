@@ -1,0 +1,37 @@
+.caixa{
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    background-color: yellow;
+    border: 3px #e36c0a solid;
+}
+
+.limites1 {
+    background-color: #FFCC99; 
+    margin: 20px; 
+    padding: 10px; 
+    float: left; 
+    height: 200px; 
+    width: 100px; 
+    border: thick dotted #006699; 
+}
+.limites2 {
+    background-color: #CCFF99; 
+    margin: 20px; 
+    padding: 10px; 
+    float: left; 
+    border-top-width: 5px; 
+    border-right-width: 5px; 
+    border-bottom-width: 5px; 
+    border-left-width: 5px; 
+    border-top-style: dashed; 
+    border-right-style: solid; 
+    border-bottom-style: double; 
+    border-left-style: solid; 
+    border-top-color: #006600; 
+    border-right-color: #99CC00; 
+    border-bottom-color: #CCCC00; 
+    border-left-color: #FF9900; 
+    height: 200px; 
+    width: 100px; 
+}

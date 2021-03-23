@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+    let texto = 'Formabase rocks!';
+    document.write(`Número de carateres: <strong>${texto.indexOf('rocks')}</strong><br>`);
+    document.write(`Número de carateres: <strong>${texto.indexOf('o')}</strong><br>`);
+    document.write(`Posição do último "o": <strong>${texto.lastIndexOf('o')}</strong><br>`);
+    document.write(`substituição de "rocks" para "rules": <strong>${texto.replace('rocks','rules')}</strong><br>`);
+    document.write(`Os 10 carateres a partir da posição 5: <strong>${texto.substr(5,10)}</strong><br>`);
+    document.write(`Todos os carateres a partir da posição 10: <strong>${texto.substr(10)}</strong><br>`);
+    document.write(`Ultimos 2 carateres: <strong>${texto.substr(-2)}</strong><br>`);
+    document.write(`Ultimos 2 carateres: <strong>${texto.substring(3,11)}</strong><br>`);
+    document.write(`Texto em minúsculas: <strong>${texto.toLocaleLowerCase()}</strong><br>`);
+    document.write(`Texto em minúsculas: <strong>${texto.toLocaleUpperCase()}</strong><br>`);
+    document.write(`A palavra "base" está no texto? <strong>${texto.includes('base')}</strong><br>`);
+
+    let palavras = texto.split(" ");
+    document.write(`Primeira palavra: ${palavras[0]}<br>`);
+    document.write(`Segunda palavra: ${palavras[1]}<br>`);
+
+    document.write(`Repetir o texto 10 vezes: <strong>${texto.repeat(10)}</strong><br>`);
+
+    let textoComEspacos = "        FormaBase ! ! ! "
+    document.write(`Mostrar sem trim(): <strong><pre>${textoComEspacos}</pre></strong><br>`);
+    document.write(`Mostrar com trim(): <strong><pre>${textoComEspacos.trim()}</pre></strong><br>`);
+
+    document.write(`Texto inicial: <strong>${texto}</strong><br>`);
+</script>    
+
+
+</body>
+</html>

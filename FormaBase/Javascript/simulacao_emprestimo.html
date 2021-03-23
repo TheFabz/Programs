@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    form {
+        width: 40%;
+        margin: 3%;
+    }
+    form dt {
+        float: left;
+        width: 220px;
+        text-align: right;
+    }
+    form dd {
+        margin-left: 250px;
+        margin-bottom: 20px;
+    }
+    legend {
+        font-size: 24px;
+    }
+    input[type="button"]{
+        margin-left: 35%;
+    }
+</style>
+
+<script>
+
+
+    function simularEmprestimo() {
+      
+    let nome = document.simulacao_emprestimo.nome_completo.value;
+    let email = document.simulacao_emprestimo.email.value;
+    let valor = parseInt(document.simulacao_emprestimo.valor_emprestimo.value);
+    let taxa = parseFloat(document.simulacao_emprestimo.taxa_juro.value);
+    let prazo = parseInt(document.simulacao_emprestimo.prazo_anos.value);
+
+
+    if(validarDados(nome, email, valor, taxa, prazo)== true) {
+    let juros = taxa / 100 * valor;
+    let valorTotal = juros + valor;
+    let numMeses = prazo * 12;
+    let prestacao = valorTotal / numMeses;
+    let resultado = `Caro ${nome}, a sua prestação mensal será de ${prestacao} euros!`;
+
+    document.simulacao_emprestimo.resultado.value = resultado;
+    }
+}
+
+    function nomeValido(nomeInserido) {
+        nomeInserido = nomeInserido.trim();
+    if (nomeInserido.includes(' ') == true) {
+        return true;
+    }
+    return false;
+}
+
+function emailValido(emailInserido) {
+    emailInserido = emailInserido.trim();
+    let posicaoArroba = emailInserido.indexOf("@");
+    let posicaoUltimoPonto = emailInserido.lastIndexOf(".");
+
+    if (posicaoArroba > 0 && posicaoUltimoPonto > (posicaoArroba + 2) 
+        && (posicaoUltimoPonto + 2) < emailInserido.length) {
+            return true;
+    }
+    else {
+            return false;
+    }
+}
+
+
+
+// Validação de todos os dados
+function validarDados(nomeIntroduzido, emailIntroduzido, valorIntroduzido, taxaIntroduzida, prazoIntroduzido) {
+
+    if (nomeValido(nomeIntroduzido) == false) {
+        alert("Nome invalido");
+        return false;
+    }
+
+    else if (emailIntroduzido != '' && emailValido(emailIntroduzido) == false) {
+        alert("Email invalido");
+        return false;
+    }
+    else if (Number.isNaN(valorIntroduzido) == true) {
+        alert("Valor invalido");
+        return false;
+    }
+    else if (Number.isNaN(taxaIntroduzida) == true) {
+        alert("Taxa invalido");
+        return false;
+    }
+    else if (Number.isNaN(prazoIntroduzido) == true) {
+        alert("Prazo invalido");
+        return false;
+    }
+    return true;
+};
+
+
+
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="simulacao_emprestimo">
+    <fieldset>
+        <legend>Simulação de Crédito</legend>
+        <dl>
+            <dt><label for="nome_completo">Nome Completo:</label></dt>
+            <dd><input type="text" name="nome_completo"/></dd>
+
+            <dt><label for="email">E-mail:</label></dt>
+            <dd><input type="text" name="email"/></dd>
+
+            <dt><label for="valor_emprestimo">Valor Total do Empréstimo (€):</label></dt>
+            <dd><input type="text" name="valor_emprestimo"/></dd>
+
+            <dt><label for="taxa_juro">Taxa de Juro (%):</label></dt>
+            <dd><input type="text" name="taxa_juro"/></dd>
+
+            <dt><label for="prazo_anos">Prazo (Anos):</label></dt>
+            <dd><input type="text" name="prazo_anos"/></dd>
+
+            <dt><label for="resultado">Resultado:</label></dt>
+            <dd><textarea cols="30" rows="5" name="resultado"></textarea></dd>
+
+
+        </dl>
+       <input type="button" value="Calcular Prestação" onclick="simularEmprestimo()">
+
+    </fieldset>
+</form>
+    
+</body>
+</html>

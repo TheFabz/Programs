@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function alertaDemorado() {
+            let tempo = document.getElementById("caixatempo").value;
+            setTimeout(function () {
+                document.querySelector('body')
+                    .append(`Clicou no botão há ${tempo} segundos atrás`);
+            }, tempo * 1000);
+        }
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+</head>
+<body>
+
+<input type="button" onclick="alertaDemorado()" value="Alerta em X segundos"> 
+Tempo (segundos): <input type="text" id="caixatempo">   
+   
+    
+
+</body>
+</html>

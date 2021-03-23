@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Base XHTML</title>
+
+</head>
+<body link="#0fa2ff" bgcolor="#eee" text="#444444" style="font-family:'Trebuchet MS',Helvetica,sans-serif; font-size:14px; line-height:20px">
+<div class="center-content">
+	<h1 class="title">Títulos</h1>
+	<style>
+		.center-content {
+			clear: both;
+			margin: 0px auto;
+			width: 980px;
+			display: table;
+		}
+		
+		.title {
+			font-size: 50px;
+			padding-bottom: 20px;
+			margin: 100px 0 20px;
+			border-bottom: 1px solid #aaa;
+			font-weight: bold;
+			color: #aaa;
+		}
+		
+		p { margin: 20px 0; }
+		
+		code {
+			font-family: "Courier New", Courier, monospace;
+			border: 1px solid #ccc;
+			padding: 0 4px;
+			background-color: white;
+		}
+		
+		a { text-decoration: none; }
+		
+		a:hover { text-decoration: underline; }
+		
+		ul, ol {
+			padding-left: 20px;
+			margin-bottom: 20px;
+		}
+		
+		ol ol, 
+		ol ul, 
+		ul ul, 
+		ul ol {
+			padding-left: 20px; 
+			margin-bottom: 0;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-family: Tahoma,Geneva,sans-serif;
+			line-height: normal;
+			font-weight: normal;
+			margin: 0;
+		}
+	</style>
+	
+	<h1 style="color:#0fa2ff; font-size:60px; margin-bottom:20px">
+		h1. Titulo 1
+	</h1>
+	
+	<h2 style="font-size:40px; margin-bottom:20px">
+		h2. Titulo 2
+	</h2>
+	
+	<h3 style="margin-bottom:10px; color:#aaa; font-size:32px; line-height:40px">
+		h3. Titulo 3
+	</h3>
+	
+	<h4 style="font-size:24px">
+		h4. Titulo 4
+	</h4>
+	
+	<h5 style="margin-bottom:10px; font-size:20px">
+		h5. Titulo 5
+	</h5>
+	
+	<h6 style="margin-bottom:10px; color:#9b9b9b; font-size:18px">
+		h6. Titulo 6
+	</h6>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Texto e Parágrafos</h1>
+	
+	<p>
+		Parágrafo que contém texto <strong style="font-weight:bold">importante</strong>, com algum 
+		<em style="font-style:italic">êmfase</em> e até <a href="#">ligações</a></p>
+	<p>
+		Aqui temos uma sigla ou abreviatura como <abbr style="border-bottom:1px dashed #444444" title="World Wide Web">WWW</abbr>. 
+		A palavra <i style="font-style:italic">browser</i> trata-se de um estrangeirismo e <b style="font-weight:bold">Formabase</b> 
+		é o nome de um serviço. Uma vez que não possuem relevância no contexto do parágrafo, foram usadas as 
+		etiquetas <code>&lt;i&gt;</code> e <code>&lt;b&gt;</code> apenas para que o utilizador preste alguma atenção.
+	</p>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Endereço</h1>
+
+	<address style="font-style:normal">
+		Av. Conde Valbom 18-b 2-b <br>
+		1050-068 Lisboa <br>
+		<b style="font-size:24px; line-height:30px">213 304 017</b> <br>
+		<b style="font-size:24px; line-height:30px"><a href="mailto:info@formabase.com">info@formabase.com</a></b>
+	</address>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Texto Pré-formatado</h1>
+	
+	<pre style="font-family:'Courier New',monospace; background-color:#2D2D2D; color:#9B9B9B; padding:20px; white-space: pre-wrap">Deste deste bloco
+podemos escrever livremente       espaços,
+	tabulações e 
+	
+	quebras de linha, que serão mostradas sempre no browser.
+	
+Especialmente útil para representar código de computador e
+linhas de programação.</pre>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Comentários e Citações</h1>
+	<style>
+		blockquote p { margin-top: 0; }
+		
+		blockquote:before {
+			content: '\201C'; 
+			font-size: 60px; 
+			position: absolute;
+			margin-left: -40px;
+			margin-top: 15px;
+		}
+	</style>
+	<blockquote cite="o comentador" style="padding-left: 40px">
+		<p>Aqui temos um comentário ou uma citação. Um comentário pode conter vários parágrafos.</p>
+		<p>Pode constar o autor do comentário.</p>
+		<cite style="font-weight: bold">O comentador</cite>
+	</blockquote>
+	<p>
+	   Podemos também fazer pequenas citações ao longo do texto como: 
+	   <q style="font-style:italic; border-bottom:1px dotted #444444" cite="Quem disse isto">Isto é uma pequena citação!</q>
+	</p>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Lista de definições</h1>
+
+	<dl>
+		<dt style="font-weight: bold">Lista de definições</dt>
+		<dd style="margin-left: 20px">É uma lista composta por termos ou expressões e respetiva descrição.</dd>
+		<dt style="font-weight: bold">Lista ordenada</dt>
+		<dd style="margin-left: 20px">Trata-se de uma lista numerada de itens. Cada item pode conter sub-listas.</dd>
+		<dt style="font-weight: bold">Lista não ordenada</dt>
+		<dd style="margin-left: 20px">Trata-se de uma lista de itens sem qualquer numeração. Cada item pode conter sub-listas.</dd>
+	</dl>
+</div>
+
+<div class="center-content">	
+	<h1 class="title">Lista Ordenada</h1>
+	
+	<ol style="list-style:decimal">
+		<li>Primeiro Item</li>
+		<li>Segundo Item com sub-lista
+			<ol style="list-style:decimal">
+				<li>Primeiro Item da sub-lista</li>
+				<li>Segundo Item da sub-lista com outra sub-lista
+					<ol style="list-style:decimal">
+						<li>Primeiro Item da sub-sub-lista</li>		
+						<li>Segundo Item da sub-sub-lista</li>			
+					</ol>
+				</li>
+				<li>Terceiro Item da sub-lista</li>
+			</ol>
+		</li>
+		<li>Terceiro Item</li>
+		<li>Quarto Item</li>
+		<li>Quinto Item</li>
+	</ol>
+</div>
+
+<div class="center-content">	
+	<h1 class="title">Lista Não Ordenada</h1>
+
+	<ul style="list-style:disc">
+		<li>Item da lista</li>
+		<li>Item da lista</li>
+		<li>Item da lista</li>
+		<li>Este Item tem uma sub-lista
+			<ul style="list-style:square">
+				<li>Item da sub-lista</li>		
+				<li>Este Item tem também uma sub-lista
+					<ul style="list-style:circle">
+						<li>Item da sub-sub-lista</li>
+						<li>Item da sub-sub-lista</li>
+					</ul>
+				</li>	
+				<li>Item da sub-lista</li>	
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Lista em Linha</h1>
+	
+	<ul class="inline-list" style="margin:0; padding: 0; margin-top: 20px">
+		<li style="padding-right:20px; display:inline"><a href="#">Item 1</a></li>
+		<li style="padding-right:20px; display:inline"><a href="#">Item 2</a></li>
+		<li style="padding-right:20px; display:inline"><a href="#">Item 3</a></li>
+		<li style="padding-right:20px; display:inline"><a href="#">Item 4</a></li>
+	</ul>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Lista de Etiquetas</h1>
+	
+	<style>
+		.tag-cloud {
+			padding: 0;
+			display: inline;
+		}
+		
+		.tag-cloud li {
+			display: inline;
+			list-style: none;
+		}
+		
+		.tag-cloud li a {
+			padding: 6px;
+			background-color: #f7f7f7;
+			margin: 0 10px 10px 0;
+			display: inline-block;
+		}
+		
+		.tag-cloud li a:hover {
+			background-color: #0fa2ff;
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+	
+	<ul class="inline-list tag-cloud">
+		<li><a href="#">Etiqueta 1</a></li>
+		<li><a href="#">Etiqueta 2</a></li>
+		<li><a href="#">Etiqueta 3</a></li>
+		<li><a href="#">Etiqueta 4</a></li>
+		<li><a href="#">Etiqueta 5</a></li>
+		<li><a href="#">Etiqueta 6</a></li>
+	</ul>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Bloco com destaque</h1>
+	
+	<div class="container" style="background-color:#ffffff; border:1px solid #E0E0E0; padding:20px; margin-bottom:40px;">
+		<h5>Caixa com outro destaque</h5>
+		<ul>
+			<li><a href="#">Item 1</a></li>
+			<li><a href="#">Item 2</a></li>
+			<li><a href="#">Item 3</a></li>
+			<li><a href="#">Item 4</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<script>
+
+
+function alertaDemorado() {
+    let numeroSegundos = parseInt(document.getElementById("caixatempo").value);
+
+    let temporizador = setInterval(function () {
+        document.getElementById("tempoRestante").innerHTML = `${numeroSegundos} segundos`;
+
+        numeroSegundos--;
+        if (numeroSegundos < 0) {
+            clearInterval(temporizador);
+        }
+    }, 1000);
+}
+</script>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+    
+<h1 id="tempoRestante"></h1>
+<input type="button" onclick="alertaDemorado()" value="Comecar Temporizador">
+Tempo (segundos): <input type="text" id="caixatempo">    
+ 
+    
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsivo</title>
+<style>
+	body{font-family: Tahoma, Geneva, sans-serif}
+	
+	a{
+		text-decoration: none;
+		color:#FF6600
+	}
+	
+	#main-title h1 {font-size: 50px;}
+	#main-title h3 {font-size: 20px; font-weight:normal}
+	
+	a:hover { text-decoration: underline; }
+	
+	#logo, #main-title {text-align:center;}
+	
+	#main-menu, #main-menu ul, #footer-menu {
+		list-style:none; 
+		padding:0;
+		margin:0;
+	}
+	
+	#main-menu li {
+		display: block;
+		/*text-align: center;*/
+		border: 2px solid #e5e5e5;
+		border-bottom: none;
+	}
+	
+	#main-menu ul li {
+		border-left: none;
+		border-right: none;
+	}
+
+	#main-menu > li:last-child { border-bottom: 2px solid #e5e5e5; }
+	
+	#main-menu li a {
+		padding: 10px 20px;
+		display:block;
+		background-color: #f5f5f5;
+	}
+	
+	#main-menu ul li a {
+		padding-left: 40px;
+		background-color: #ededed;
+	}
+	
+	#footer-menu li{
+		display: inline;
+		padding: 0 5px;
+	}
+	
+	#intro, #noticias, #eventos, #sobre, body > footer, #footer-menu { padding: 20px 0; }
+	
+	#sobre { background-color: #eee; }
+	
+	#anuncios article { background-color: #eee; padding: 10px;margin:20px 0;}
+	#anuncios article h6 {margin:0;}
+	
+	body > footer { background-color: #ccc; }
+	
+	.button {
+		display: block;
+		text-align: center;
+		font-size: 30px;
+		padding: 10px;
+		background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+		border-radius: 10px;
+		border: 2px solid #ccc;
+		margin-bottom: 40px; 
+		color: #aaa;
+		text-shadow: 1px 1px white, -1px -1px black;
+	}
+	
+	.align-left{
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+
+	
+.row {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: auto;
+}
+.column {
+    float: left;
+    width: 100%;
+}
+
+.no-mobile { display: none }
+
+.only-mobile {display:block}
+
+#main-menu ul {display:none; }
+
+#main-menu ul:target {display:block; }
+
+#main-menu-select {
+    width:100%;
+    padding:10px;
+    font-size:18px;
+    background-color: #f5f5f5;
+    border: 2px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .row {
+        width: 710px; 
+    }
+    .column {
+        margin-left: 5%; 
+    }
+    .column.occupies_3_of_3 {
+        width: 100%; 
+    }
+    .column.occupies_2_of_3 {
+        width: 65%; 
+    }
+    .column.occupies_1_of_3 {
+        width: 30%; 
+    }
+    .row > .column:first-child {
+        margin-left: 0; 
+    }
+
+.row::after{clear: both; content: ""; display: block;}
+	
+.full {max-width: 100%;}
+
+.no-mobile { display: block }
+
+.only-mobile{display: none;}
+
+#main-menu li {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        float:left;
+        width: 25%;
+        border: 2px solid #e5e5e5;
+        border-right: none;
+        position: relative;
+        text-align: center;
+    }
+
+    #main-menu ul {
+        position: absolute;
+        padding: 0;
+        border: 2px solid #e5e5e5;
+        border-top: none;
+        display: none;
+    }
+
+    #main-menu ul li {
+        text-align: left;
+        display: block;
+        float: none;
+        width: 240px;
+    }
+
+	#main-menu li:hover ul { display: block; }
+	
+	#main-menu > li:last-child { border-right: 2px solid #e5e5e5; } 
+
+	#main-menu ul:target {display:none;}
+}
+
+@media (min-width: 992px) {
+    .row {
+        width: 942px;
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+	<section id="anuncios" class="no-mobile">
+
+	<div class="row">
+		<div class="column occupies_1_of_3">
+            <article>
+                <h6>Anúncio</h6>
+                <h4><a href="#">Curso de Web Creation</a></h4>
+                <p>Últimas tecnologias aos melhores preços.</p>
+            </article>
+        </div>
+        <div class="column occupies_1_of_3">
+            <article>
+                <h6>Anúncio</h6>
+                <h4><a href="#">Formação em Excel</a></h4>
+                <p>Folhas de cálculo. Nível fundamental e avançado.</p>
+            </article>
+        </div>
+        <div class="column occupies_1_of_3">
+            <article>
+                <h6>Anúncio</h6>
+                <h4><a href="">Curso de Java</a></h4>
+                <p>Prepare-se para o futuro! Curso certificado</p>
+            </article>
+		</div>
+	</div>	
+	</section>
+
+	<div class="row">
+
+		<div class="column occupies_1_of_3">
+			<header>
+			<h1 id="logo"><img style="width:100px" src="img/responsive_web_design.png"></h1>
+		</div>
+
+	<div class="column occupies_2_of_3">
+		<hgroup id="main-title">
+			<h1>Página Responsiva</h1>
+			<h3>As melhores técnicas para desenvolver Websites de última geração estão aqui!</h3>
+		</hgroup>
+	</div>
+	
+	</div>
+
+	<div class="row">
+	<div class="column occupies_3_of_3">
+	<nav>
+		<ul id="main-menu" class="no-mobile">
+			<li><a href="#">Início</a></li>
+			<li><a href="#noticias-menu">Notícias</a>
+				<ul id="noticias-menu">
+					<li><a href="#noticia1">Notícia 1</a></li>
+					<li><a href="#noticia2">Notícia 2</a></li>
+				</ul>
+			</li>
+			<li><a href="#eventos-menu">Eventos</a>
+				<ul id="eventos-menu">
+					<li><a href="#evento1">Evento 1</a></li>
+					<li><a href="#evento2">Evento 2</a></li>
+					<li><a href="#evento3">Evento 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#contactos">Contactos</a></li>
+		</ul>
+
+		<select id="main-menu-select" class="only-mobile" onChange="window.location.replace(this.options[this.selectedIndex].value)">
+        <option value="" selected>Início</option>
+        <option value="#noticias">Notícias</option>
+        <option value="#noticia1"> -- Notícia 1</option>
+        <option value="#noticia2"> -- Notícia 2</option>
+        <option value="#eventos">Eventos</option>
+        <option value="#evento1"> -- Evento 1</option>
+        <option value="#evento2"> -- Evento 2</option>
+        <option value="#evento3"> -- Evento 3</option>
+        <option value="#contactos">Contactos</option>
+	</select>
+
+	</nav>
+</div>
+</div>
+
+</header>
+
+
+<div id="conteudo">
+	<div class="row">
+	<div class="column occupies_3_of_3">
+	<section id="intro">
+		<article>
+			<h2>Bem-vindo</h2>
+			<p>
+				Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer cursus libero urna, eu
+				 imperdiet velit laoreet in. Vestibulum eget odio eget odio lobortis varius. Proin purus augue,
+				  tempor at congue nec, posuere et massa. Etiam auctor tortor ac lacus fermentum elementum. 
+				  Nulla tellus metus, ultricies in sagittis nec, porttitor non lacus. Cras quis metus diam. 
+				  Ut dapibus pellentesque sem, at malesuada urna suscipit sit amet. Donec volutpat varius 
+				  quam et vestibulum. 
+			</p>
+		</article>
+		</section>
+		</div>
+		</div>
+
+	<div class="row">
+		<div class="column occupies_1_of_3">
+		<section id="sobre">
+			<article>
+				<h3>Onde</h3>
+				<p>Cras vulputate quam nulla, faucibus varius felis digsim.</p>
+				<img src="img/where.png" style="width:400px" class="full">
+			</article>
+			</div>
+		
+		<div class="column occupies_1_of_3">
+			<article>
+				<h3>Como</h3>
+				<p>Vestibulum pretium ultrices uris eu ante nec risus ornare.</p>
+				<img src="img/how.png" style="width:400px"  class="full">
+			</article>
+		</div>
+		
+		<div class="column occupies_1_of_3">
+			<article>
+				<h3>Quando</h3>
+				<p>Proin ac leo consequat, porta mauris eget, mollis mi</p>
+				<img src="img/when.png" style="width:400px"  class="full">
+			</article>
+		</section>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+	<div class="column occupies_2_of_3">
+		<section id="noticias">
+			<h2>Últimas notícias</h2>
+			<article>
+			<h4>Notícia 1</h4>
+			<p>
+				<img src="img/news_01.png" class="align-left">Integer sit amet porttitor mauris. Maecenas blandit mauris quis diam fringilla, ut dignissim ipsum dignissim. 
+				Cras vulputate quam nulla, faucibus varius felis dignissim sed. In sed faucibus mauris. Nulla quis velit purus. 
+				Praesent molestie faucibus varius. Nunc at tincidunt felis, ullamcorper convallis neque. Duis egestas consectetur 
+				diam, quis suscipit eros. Etiam fermentum magna quis urna bibendum, non molestie sem aliquam. Aliquam volutpat 
+				odio ac lorem feugiat pulvinar. Vestibulum pretium ultrices consequat. Mauris eu ante nec risus ornare tincidunt 
+				auctor ac ipsum. 
+			</p>
+		</article>
+	
+		<article>
+			<h4>Notícia 2</h4>
+			<p>
+				<img src="img/news_02.png" class="align-left">Praesent et lacus a massa eleifend tempus ac ut neque. Ut ac viverra dui, sed varius leo. Morbi non 
+				vestibulum quam, sed ornare dui. Donec sit amet faucibus tellus, a vestibulum est. Proin a enim egestas, 
+				varius lectus vitae, elementum lorem. Proin ac leo consequat, porta mauris eget, mollis mi.
+				Proin ac leo consequat, porta mauris eget, mollis mi quam volutpat odio ac lorem feugiat pulvinar.
+				Nunc at tincidunt felis, ullamcorper convallis neque. Duis egestas consectetur diam, quis eros.
+			</p>
+		</article>
+		
+		<p><a href="#">Mais notícias</a></p>
+	</section>
+	</div>
+
+	<div class="column occupies_1_of_3">
+	<section id="eventos">
+		<h2>Próximos eventos</h2>
+		<article id="evento1">
+			<h4>Evento 1</h4>
+			<p>
+				Etiam fermentum magna quis urna bibendum, non molestie sem aliquam. Aliquam volutpat 
+				odio ac lorem.  
+			</p>
+		</article>
+	
+		<article id="evento2">
+			<h4>Evento 2</h4>
+			<p>
+				Proin a enim egestas, varius lectus vitae, elementum lorem. Proin ac leo consequat, porta mauris eget, 
+				mollis mi.
+			</p>
+		</article>
+	
+		<article id="evento3">
+			<h4>Evento 3</h4>
+			<p>
+				Nulla quis velit purus. 
+				Praesent molestie faucibus varius. Nunc at tincidunt felis, ullamcorper convallis.  
+			</p>
+		</article>
+		<p><a href="#">Mais eventos</a></p>
+	</section>
+	</div>
+</div>
+
+<div class="row only-mobile">
+    <div class="column occupies_3_of_3">
+        <p><a class="button" href="tel:000000000">Ligue-me agora!</a></p>
+    </div>
+</div>
+
+<footer>
+
+	<div class="row">
+		<div class="column occupies_2_of_3">
+		<address>
+		Em tal rua nº 0, RC Dir<br>
+		0000-001 Cidade<br>
+		E-mail: <a href="mailto:info@servico.com">info@servico.com</a>
+		</address>
+		</div>
+
+		<div class="column occupies_1_of_3">
+		<nav id="contactos">
+		<ul id="footer-menu">
+			<li><a href="#">Início</a></li>
+			<li><a href="#noticias">Notícias</a></li>
+			<li><a href="#eventos">Eventos</a></li>
+			<li><a href="#contactos">Contactos</a></li>
+		</ul>
+		</nav>
+		</div>
+
+	</div>
+
+</footer>
+
+</body>
+</html>

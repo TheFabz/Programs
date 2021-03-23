@@ -1,0 +1,32 @@
+- create a website - 
+
+X About me;
+X downloadable CV; 
+X Journey; 
+X Skills & Projects;
+X "message me" option; 
+
+--------------------------------- 
+
+* skills buttons;
+X Smooth scroll;
+* "message me" works;
+* view counter works;~
+
+---------------------------------
+
+
+button group
+https://mdbootstrap.com/docs/jquery/components/button-group/
+
+
+skills:
+https://getbootstrap.com/docs/4.5/components/progress/
+
+https://mdbootstrap.com/snippets/jquery/marta-szymanska/1399816
+
+Tutorial:
+https://mdbootstrap.com/education/bootstrap/
+
+UI KIT
+https://mdbootstrap.com/docs/jquery/

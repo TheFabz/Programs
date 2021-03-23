@@ -1,0 +1,96 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    color: #333333; 
+    background-color: #F2F2F2; 
+    text-align: center;
+}
+
+
+#geral {
+    width: 760px; 
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+#cabecalho{
+    background-color: #3399CC; 
+    padding: 20px; 
+    height: 100px; 
+}
+
+
+#menu {
+    width: 200px; 
+    background-color: #FFCC66; 
+}
+
+
+#menu ul{
+    padding: 0px; 
+    margin: 0px; 
+}
+
+
+#menu li{
+    list-style-type:none; 
+}
+
+
+#menu a{
+    height: 20px; 
+    width: 100%; 
+    color:#CA5100; 
+    text-decoration:none; 
+    background-color: #FFFFCC; 
+    display:block; 
+    padding-left: 20px; 
+    float:left;
+}
+
+
+#menu a:hover{
+    text-decoration:underline; 
+    background-color: #FFFFF4; 
+}
+
+
+#contactos {
+    width: 180px; 
+    height: 250px; 
+    padding: 20px; 
+    background-color: #6699FF; 
+}
+
+
+#conteudo {
+    top: 250px;
+    width: 500px; 
+    background-color:#FFFFFF;
+    padding: 20px; 
+    float:right;
+}
+
+
+#rodape {
+    width: 760px; 
+    text-align:center; 
+    font-size:11px; 
+    color:#999999; 
+    background-color:#333333; 
+    height: 30px; 
+    padding-top: 10px; 
+    float: none; 
+}
+
+#info {
+    position: absolute; 
+    top: 20px; 
+    right: 400px; 
+    background-color: #ffffff;
+    width: 200px; 
+    height: 80px; 
+    padding: 20px;
+}
+

@@ -1,0 +1,29 @@
+body {
+    font: 24px Arial;
+}
+h1 {
+    text-align: center; 
+    color: steelBlue; 
+    font-size: 60px; 
+}
+p {
+    text-align: center; 
+    color: slateGrey; 
+}
+
+@media print {
+    h1, p {
+        color: black; 
+    }
+    img {
+        display:none; 
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px; 
+    }
+    img {
+        width: 100%; 
+    } 
+}

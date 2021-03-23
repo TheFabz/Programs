@@ -1,0 +1,183 @@
+h1 {
+    color:teal;
+}
+
+.vermelho_hex{
+    color:#FF0000;
+}
+
+.vermelho_cor{
+    color:red
+}
+
+.azul_hex{
+    color:#0000FF
+}
+
+.azul_cor{
+    color:blue
+}
+
+.amarelo_cor{
+    color:yellow
+}
+
+
+.laranja_cor{
+    color:orange
+}
+
+
+.verde_cor{
+    color:green
+}
+
+
+ul {
+    font-family: verdana, Arial, Helvetica, sans-serif;
+}
+
+.em_1_5{
+    font-size: 1.5em;
+}
+
+.em_2{
+    font-size: 2em;
+}
+
+.em_0_5{
+    font-size: 0.5em;
+}
+
+.pontos_20{
+    font-size:20pt
+}
+
+.pontos_5{
+    font-size:5pt
+}
+
+.pontos_12{
+    font-size:120pt
+}
+
+.pixels_40{
+    font-size: 40px;
+}
+
+.pixels_20{
+    font-size: 20px;
+}
+
+.pixels_11{
+    font-size: 11px;
+}
+
+.palavra_chave1{
+    font-size: xx-small
+}
+
+.palavra_chave2{
+    font-size: x-small
+}
+
+.palavra_chave3{
+    font-size: small
+}
+
+.palavra_chave4{
+    font-size: medium
+}
+
+.palavra_chave5{
+    font-size: large
+}
+
+.palavra_chave6{
+    font-size: x-large
+}
+
+.palavra_chave7{
+    font-size: xx-large
+}
+
+.percentagem_200{
+    font-size: 200%;
+}
+
+.percentagem_75{
+    font-size: 75%;
+}
+
+.percentagem_50{
+    font-size: 50%;
+}
+
+.italico_italic{
+    font-style:italic
+}
+
+.italico_oblique{
+    font-style:oblique
+}
+
+.italico_normal{
+    font-style:normal
+}
+
+.negrito_100{
+    font-weight: 100;
+}
+
+.negrito_400{
+    font-weight: 400;
+}
+
+.negrito_600{
+    font-weight: 600;
+}
+
+.negrito_900{
+    font-weight: 900;
+}
+
+.negrito_bold{
+    font-weight: bold;
+}
+
+.maiusculas_pequenas{
+    font-variant: small-caps
+}
+
+.maiusculas{
+    text-transform: uppercase
+}
+
+.minusculas{
+    text-transform: lowercase;
+}
+
+.letra_1_maiuscula{
+    text-transform: capitalize;
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+.linha_acima{
+    text-decoration: overline;
+}
+
+.rasurado{
+    text-decoration: line-through;
+}
+
+.sem_efeitos a{
+    text-decoration: none;
+}
+
+.pisca{
+    text-decoration: blink;
+}
+

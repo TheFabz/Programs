@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #282C34;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #mainContainer {
+            width: 40%;
+            margin: 40px auto;
+            background-color: rgb(70, 76, 88);
+            border-radius: 7%;
+            height: 400px;
+        }
+
+        #data table {
+            margin: auto;
+            width: 80%;
+            color: white;
+            font-family: fantasy, Courier, monospace;
+        }
+
+        #data table td {
+            padding: 5px;
+        }
+
+        #botaoSimular:active {
+            background-color: rgb(156, 204, 216);
+        }
+
+        #botaoSimular {
+            width: 90%;
+            padding: 10px;
+            margin: 20px 10%;
+            border: none;
+            background-color: #ce7e7e;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #result {
+            padding-left: 20px;
+            color: #bbbbbb;
+            font-family: monospace;
+            font-size: 1em;
+        }
+    </style>
+
+    <script>
+        const desconto18 = 0.21;
+        const desconto60 = 0.12;
+        let precoBaseBilhete = 7;
+		
+    </script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <h1>Cinema Formabase</h1>
+        <div id="data">
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="" id="nomeCliente"></td>
+                </tr>
+                <tr>
+                    <td>Data Nascimento:</td>
+                    <td><input type="date" name="" id="datanascimentoCliente"></td>
+                </tr>
+                <tr>
+                    <td>Filme</td>
+                    <td><select name="" id="filmeEscolhido">
+                            <option value="Rei Leão">Rei Leão</option>
+                            <option value="Joker">Joker</option>
+                            <option value="It 2">It</option>
+                            <option value="Assalto ao Poder">Assalto ao Poder</option>
+                            <option value="Era Uma Vez... em Hollywood">Era Uma Vez... em Hollywood</option>
+                            <option value="47 Metros: Medo Profundo">47 Metros: Medo Profundo</option>
+                            <option value="O Falcão Manteiga de Amendoim">O Falcão Manteiga de Amendoim</option>
+                            <option value="A Vida de um Campeão">A Vida de um Campeão</option>
+                            <option value="Mas que Avó é Esta?!">Mas que Avó é Esta?!</option>
+                            <option value="Variações">Variações</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Data sessão:</td>
+                    <td><input type="date" id="dataEscolhida"><span id="dias"></span></td>
+                </tr>
+                <tr>
+                    <td>Hora sessão:</td>
+                    <td><input type="time" id="horaEscolhida"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Simular Reserva" id="botaoSimular">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+</body>
+
+</html>

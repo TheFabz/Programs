@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+
+<script>
+    function imprimirQuadrado(caratere){
+        for (var contador = 0; contador < 4; contador++){
+            document.write(`${caratere}${caratere}${caratere}${caratere}<br>`);
+        }
+        document.write(`<br>`);
+    }
+
+    imprimirQuadrado("X");
+    imprimirQuadrado("Y");
+    imprimirQuadrado("Z");
+    imprimirQuadrado("O");
+
+    function somarDoisNumeros (a,b){
+        var resultadoSoma = a + b;
+        return resultadoSoma;
+    }
+
+    var retorno = somarDoisNumeros(5,10)
+
+    document.write(retorno)
+</script>
+
+
+
+<script>
+    var numCliques = 0;
+    function aumentaEMostraCliques(){
+        numCliques = numCliques +1;
+        alert(`ja clicou ${numCliques} vezes`);
+    }
+</script>
+
+<p><input type="button" value="Número cliques" onclick="aumentaEMostraCliques()"></p>
+    
+</body>
+</html>

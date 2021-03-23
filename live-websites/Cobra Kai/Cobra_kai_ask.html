@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="cobra_styles.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon.png" />
+
+    <title>Cobra Kai</title>
+</head>
+<body>
+
+<div class="ask_sensei_container"><img src="imagens/ask_sensei_background_5.jpg"></div> 
+  
+    <nav class="no-mobile">
+        <div class="menu-horizontal">
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Learn the Art</a>
+                    <ul>
+                       <li><a href="https://www.youtube.com/channel/UCe9DTWmhhxeKyYHL4mldGcA" target="_blank">Youtube</a></li>
+                       <li><a href="Cobra_visit_dojo.html">Visit Dojo</a></li>
+                       <li><a href="Cobra_kai_ask.html">Ask Sensei</a></li>
+                   </ul>
+               </li>
+            </ul>
+            <ul>
+               <li><a href="#">Services</a>
+                   <ul>
+                        <li><a href="#">Karate Lessons</a></li>
+                        <li><a href="#">Self Defense</a></li>
+                        <li><a href="#">Master Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="cobra_sign_in.html">Manage Account</a>
+                   <ul>
+                       <li><a href="cobra_sign_in.html">Sign in</a></li>
+                       <li><a href="cobra_create_account.html">Create Account</a></li>
+                   </ul>
+                   </li>
+            </ul>
+            <ul>
+               <li><a href="cobra_contacts.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>   
+   
+    <nav class="only-mobile">
+        <div class="menu-vertical">
+            <ul>
+                <li><a href="index.html">HomePage</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Learn the Art</a>
+                    <ul>
+                       <li><a href="https://www.youtube.com/channel/UCe9DTWmhhxeKyYHL4mldGcA" target="_blank">Youtube</a></li>
+                       <li><a href="Cobra_visit_dojo.html">Visit Dojo</a></li>
+                       <li><a href="Cobra_kai_ask.html">Ask Sensei</a></li>
+                   </ul>
+               </li>
+            </ul>
+            <ul>
+               <li><a href="#">Services</a>
+                   <ul>
+                        <li><a href="#">Karate Lessons</a></li>
+                        <li><a href="#">Self Defense</a></li>
+                        <li><a href="#">Master Classes</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+               <li><a href="#">Manage Account</a>
+                   <ul>
+                       <li><a href="cobra_sign_in.html">Sign in</a></li>
+                       <li><a href="cobra_create_account.html">Create Account</a></li>
+                   </ul>
+                   </li>
+            </ul>
+            <ul>
+               <li><a href="cobra_contacts.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+       
+
+<br><br><br>
+
+<div class="no-mobile">   
+    <div class="form_animation">
+        <form class="form_styling">
+		    <legend><h2>Ask Sensei</h2></legend>
+			    <dl>
+				<dt><label for="caixa-grande">Name:</label></dt>
+                <dd><input type="text" name="caixa-grande" id="caixa-grande" class="input-medium" placeholder="Your name here" required autofocus></dd>
+                <br><br>
+                <dt><label for="caixa-media">E-mail:</label></dt>
+                <dd><input type="e-mail" name="e_mail" id="e_mail" class="input-medium" placeholder="example@email.com" required></dd>
+                <br><br>
+                <dt>Country:</dt>
+                <dd></dd>
+                <input type="text" list="listaPaises">
+                <datalist id="listaPaises">
+                <option value="Austria">
+                <option value="Belgium">
+                <option value="Croatia">
+                <option value="Denmark">
+                <option value="Finland">
+                <option value="Georgia">
+                <option value="Hungary">
+                <option value="Iceland">
+                <option value="Lithuania">
+                <option value="Macedonia">
+                <option value="Malta">
+                <option value="Norway">
+                <option value="Portugal">
+                <option value="Great Britain">
+                <option value="Ukraine">
+                </datalist></dd><br><br>
+                
+                <dt><label>Rank:</label></dt>
+				<dd class="options-inline">
+					<label><input type="radio" name="escolha-multipla" value="valor1">Inexperienced</label>
+					<label><input type="radio" name="escolha-multipla" value="valor2">Rookie</label>
+					<label><input type="radio" name="escolha-multipla" value="valor3">Advanced</label>
+				</dd>
+				<br><br>
+                <dt><label for="caixa-media">Your Message:</label></dt>
+                <br><br>
+				<dd><textarea name="caixa-media" id="caixa-media" class="input-big" placeholder="Type here..." required></textarea></dd>
+                <br><br>
+                <dd>
+					<input type="submit" name="botao-principal" class="button-main" id="botao-principal" value="Submit">
+					<input type="reset" name="botao-secundario" id="botao-secundario" value="Reset">
+                </dd>
+                <br>
+			</dl>
+	    </form>
+    </div>
+</div> 
+
+<div class="only-mobile">   
+    <div class="form_animation">
+        <form class="form_mobile_styling">
+		    <legend><h2>Ask Sensei</h2></legend>
+			    <dl>
+				<dt><label for="caixa-grande">Name:</label></dt>
+                <dd><input type="text" name="caixa-grande" id="caixa-grande" class="input-medium_mobile" placeholder="Your name here" required autofocus></dd>
+                <br><br>
+                <dt><label for="caixa-media">E-mail:</label></dt>
+                <dd><input type="e-mail" name="e_mail" id="e_mail" class="input-medium_mobile" placeholder="example@email.com" required></dd>
+                <br><br>
+                <dt>Country:</dt>
+                <dd></dd>
+                <input type="text" list="listaPaises" class="input-medium_mobile2">
+                <datalist id="listaPaises">
+                <option value="Austria">
+                <option value="Belgium">
+                <option value="Criacia">
+                <option value="Denmark">
+                <option value="Finland">
+                <option value="Georgia">
+                <option value="Hungary">
+                <option value="Iceland">
+                <option value="Lithuania">
+                <option value="Macedonia">
+                <option value="Malta">
+                <option value="Norway">
+                <option value="Portugal">
+                <option value="Great Britain">
+                <option value="Ukraine">
+                </datalist></dd><br><br>
+                <br><br>
+				<dd><textarea name="caixa-media" id="caixa-media" class="input-big" placeholder="Type here..." required></textarea></dd>
+                <br><br>
+                <dd>
+					<input type="submit" name="botao-principal" class="button-main" id="botao-principal" value="Submit">
+					<input type="reset" name="botao-secundario" id="botao-secundario" value="Reset">
+                </dd>
+                <br>
+			</dl>
+	    </form>
+    </div>
+</div> 
+
+
+
+</body>
+</html>

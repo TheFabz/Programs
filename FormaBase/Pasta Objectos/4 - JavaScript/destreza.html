@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #contentor {
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            display: block;
+        }
+
+        .opcao {
+            width: 15%;
+            border-radius: 5%;
+            height: 120px;
+            background-color: #e3e3e3;
+            margin-left: 5%;
+            cursor: pointer;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .opcao:active {
+            background-color: rgb(201, 58, 58);
+        }
+
+        #contentor_opcoes {
+            margin: auto;
+            display: flex;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma;
+        }
+
+        #pergunta,
+        #tempo {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contentor">
+        <header>
+            <h1 class="titulo">Jogo de Destreza</h1>
+            <h2 id="tempo">01:00</h2>
+            <h2 id="pergunta">Escolha o numero mais alto</h2>
+        </header>
+        <div id="contentor_opcoes">
+            <div class="opcao"></div>
+            <div class="opcao"></div>
+            <div class="opcao"></div>
+            <div class="opcao"></div>
+            <div class="opcao"></div>
+            <div class="opcao"></div>
+        </div>
+    </div>
+</body>
+
+</html>

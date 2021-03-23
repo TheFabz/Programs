@@ -1,0 +1,37 @@
+var terminal = require('terminal');
+var toolkit = require('hacker-toolkit');
+var accounts = require('blackmarket-accounts');
+
+var unencryptedAccounts = [];
+
+for (var i = 0 ; i < accounts.length ; i++){
+    var res = accounts[i].split(":");
+    var user = res[0];
+    var pw = toolkit.rot13(res[1]);
+    unencryptedAccounts.push({
+        username: user,
+        password: pw
+    });
+};
+
+var next = function(action){
+    console.log(action);
+}
+
+
+
+/*
+toolkit.bruteForce(terminal, unencryptedAccounts, function(username, password) {
+    
+    if (terminal.login(username, password)) {
+       toolkit.spy(terminal, username, console.log);
+        toolkit.spy(terminal, 'root', next);
+    }
+});*/
+
+
+
+var success = terminal.login('root', '!@6YA)*81A');
+
+terminal.printFile('/var/logs/ecorp.txt');
+

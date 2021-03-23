@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro);
+@import url(https://fonts.googleapis.com/css?family=actor);
+
+@font-face{
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    src: url(merienda.woff) format(woff);
+}
+
+
+body{font-family: 'actor', sans-serif;}
+
+h1{font-family: 'Advent Pro', sans-serif;}
+
+h2{font-family: 'Merienda', sans-serif;}
+

@@ -1,0 +1,473 @@
+/* Color palette: https://colorhunt.co/palette/202267 */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker');
+
+/* multi-device */
+
+.no-mobile {
+    display: block;
+}
+.only-mobile{
+    display: none;
+}
+
+/* smartphone formatting */
+@media (max-width: 768px) {
+
+    .no-mobile {
+        display: none;
+    }
+    .only-mobile{
+        display: block;
+    }
+   
+    img.resize {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .form_mobile_styling{
+        justify-items: auto;
+        background-image: url(imagens/ask_sensei.jpg);
+        border: 2px;
+        border-style: ridge;
+        border-color: black;
+        position: fixed;
+        margin-right: 1%;
+        margin-left: 2%;
+        margin-top: -15%;
+        border-radius: 50px;
+        padding: 3px;
+    }
+
+    .form_mobile_styling textarea {
+        width: 250px;
+        height: 75px;
+    }
+    
+    /* sign-in screen */
+    form.sign_in_mobile {
+    justify-items: auto;
+    position: relative;
+    color:#F5EFEF;
+    background-image: url(imagens/red_texture_2.jpg);
+    border: 2px;
+    border-style: ridge;
+    border-color: #FFCB8E;
+    margin-left: 1%;
+    margin-top: 4%;
+    border-radius: 60px;
+    opacity: 0.85;
+}
+
+.input-big_2 { width: 250px; height: 150px; }
+.input-big { width: 500px; height: 150px; }
+.input-medium_mobile { width: 150px; }
+.input-medium_mobile2 {width: 130px;}
+
+
+.contacts_text_mobile{
+    position: static;
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    background-color: blueviolet;
+    text-align: left;
+    opacity: 0.6;
+    border-radius: 30px;
+    padding: 2%;
+    animation-name: contacts_animation_mobile_1;
+    animation-duration: 1s;
+
+}
+
+.contacts_form_mobile{
+    position: absolute;
+    background-color: cornflowerblue ;
+    border: 2px;
+    margin: 2%;
+    border-style: ridge;
+    border-color: black;
+    width:350px;
+    border-radius: 30px;
+    opacity: 0.75;
+    z-index: 0;
+    animation-name: contacts_animation_mobile_2;
+    animation-duration: 1s;
+}
+
+}
+
+/* END: multi-device */
+
+
+
+/* affects all pages */
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Hammersmith One', 'calibri';
+    color: #faf3dd;
+    text-align: center;
+    font-size: large;
+}
+
+a {
+    color: #FFCB8E;
+    text-decoration:none;
+    font-size: small;
+}
+
+a:hover{
+    color: #f8f800;
+    text-decoration: underline;
+}
+
+form dt,dd {
+    display: inline-table;    
+}
+
+input[type="submit"], input[type="text"], input[type="password"], input[type="e-mail"], textarea, input[type="reset"],  button {
+	color: #052569;
+	border: 2px solid;
+	padding: 6px 20px;
+	margin-right: 20px;
+    background: #c8d5b9;
+    display: inline;
+    border-radius: 50px;
+    position: relative;
+    border-color: #E97171;
+}
+
+input.button-main, button.button-main {
+    color: #ffffff;
+    font-size: medium;
+}
+
+.input-big { width: 500px; height: 150px; }
+.input-medium { width: 200px; }
+.input-medium-2 {width: 200px;}
+
+
+
+/* - end of: affects all pages - */
+
+
+
+/* Horizontal menu atributes */
+
+.menu-horizontal {
+    left: 15%; 
+    position: fixed;
+    width: 100%;
+    float: none;
+    z-index: 1;
+}
+
+.menu-horizontal ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 12em;
+    float: left;
+    opacity: .95;
+}
+
+.menu-horizontal a {
+    font-family:'Permanent Marker', 'calibri';
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    color: #FFCB8E;
+    border-color: #000000;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px 0px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    background-color: #68b0ab;
+    box-shadow:  2px 2px 6px 0px #c8d5b9;
+    -moz-box-shadow:  2px 2px 6px 0px  #c8d5b9;
+    -webkit-box-shadow:  2px 2px 6px 0px  #c8d5b9;
+    text-decoration: none;
+}
+
+
+.menu-horizontal a:hover {
+    color: #8fc0a9;
+    background: #c8d5b9;
+}
+
+.menu-horizontal a:active {
+    box-shadow:  inset 2px -3px 4px 0px #faf3dd;
+    -moz-box-shadow: inset 2px -3px 4px 0px #faf3dd;
+    -webkit-box-shadow: inset 2px -3px 4px 0px #faf3dd;
+}
+    
+
+.menu-horizontal li {
+    position: relative;
+}
+
+.menu-horizontal ul ul {
+    position: absolute;   
+}
+
+.menu-horizontal ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.menu-horizontal ul ul, /*a página começa com a segunda lista e descendentes escondidas*/
+.menu-horizontal ul li:hover ul ul, /*esconder a terceira lista quando o rato passa na primeira*/
+.menu-horizontal ul ul li:hover ul ul { /*esconder a quarta lista quando o rato passa na segunda*/
+    display: none; /*esconder*/
+}
+
+.menu-horizontal ul li:hover ul, /*mostrar a segunda lista quando o rato passa na primeira*/ 
+.menu-horizontal ul ul li:hover ul, /*mostrar a terceira lista quando o rato passa na segunda*/ 
+.menu-horizontal ul ul ul li:hover ul { /*mostrar a quarta lista quando o rato passa na terceira*/
+    display: block; /*mostrar*/
+}
+
+/* END: Horizontal menu atributes */
+
+
+/* Vertical menu atributes */
+.menu-vertical {
+    left: 15%; 
+    position: static;
+    width: auto;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    opacity: .95;
+}
+
+.menu-vertical a {
+    font-family:'Permanent Marker', 'calibri';
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    color: #FFCB8E;
+    border-color: #000000;
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px 0px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    background-color: #68b0ab;
+    box-shadow:  2px 2px 6px 0px #c8d5b9;
+    -moz-box-shadow:  2px 2px 6px 0px  #c8d5b9;
+    -webkit-box-shadow:  2px 2px 6px 0px  #c8d5b9;
+    text-decoration: none;
+}
+
+.menu-vertical a:hover {
+    color: #8fc0a9;
+    background: #c8d5b9;
+}
+
+.menu-vertical a:active {
+    box-shadow:  inset 2px -3px 4px 0px #faf3dd;
+    -moz-box-shadow: inset 2px -3px 4px 0px #faf3dd;
+    -webkit-box-shadow: inset 2px -3px 4px 0px #faf3dd;
+}
+    
+.menu-vertical ul ul, /*a página começa com a segunda lista e descendentes escondidas*/
+.menu-vertical ul li:hover ul ul, /*esconder a terceira lista quando o rato passa na primeira*/
+.menu-vertical ul ul li:hover ul ul { /*esconder a quarta lista quando o rato passa na segunda*/
+    display: none; /*esconder*/
+}
+
+.menu-vertical ul li:hover ul, /*mostrar a segunda lista quando o rato passa na primeira*/ 
+.menu-vertical ul ul li:hover ul, /*mostrar a terceira lista quando o rato passa na segunda*/ 
+.menu-vertical ul ul ul li:hover ul { /*mostrar a quarta lista quando o rato passa na terceira*/
+    display: block; /*mostrar*/
+}
+/* END: Vertical menu atributes */
+
+
+/* animations & backgrounds */
+
+
+
+@keyframes contacts_animation_mobile_2 {
+    0%   {bottom:200px;}
+    100%  {bottom:-328px;}
+}
+
+@keyframes contacts_animation_1 {
+    0%   {top:-85px;}
+    100%  {top:18px;}
+}
+
+@keyframes contacts_animation_2 {
+    0%   {bottom:-50px;}
+    100%  {bottom:115px;}
+}
+
+@keyframes sign_in_animation {
+    0%   {bottom:75px;}
+    100%  {bottom:0px;}
+}  
+
+@keyframes form_animation {
+    0%   {left:75px; top:0px;}
+    100%  {left:0px; top:0;}
+}  
+
+@keyframes cobra_animation {
+    0%   {left:-75px; top:0px;}
+    100%  {left:0px; top:0px;}
+}
+
+@keyframes cobra_animation_mobile {
+    0%   {left:-75px; top:0px;}
+    100%  {left:0px; top:0px;}
+}  
+
+.form_animation{
+    animation-name: form_animation;
+    animation-duration: 1s;
+    position: relative;
+}
+
+.cobra_background{
+    animation-name: cobra_animation;
+    animation-duration: 1s;
+    margin-right: 5%;
+    margin-top: 2%;
+    position: relative;
+}
+
+.cobra_background_mobile {
+    animation-name: cobra_animation_mobile;
+    animation-duration: 1s;  
+    position: relative;    
+    margin-top: -4%;
+}
+
+.sign_in_animation{
+    animation-name: sign_in_animation;
+    animation-duration: 1s;
+    position: relative;
+}
+
+/*end of animations & backgrounds */
+
+
+
+.index_container {
+    position: fixed;
+    margin-top: -5%;
+    margin-left: -2%;
+}
+
+
+/* sign-in screen */
+form.sign_in{
+    justify-items: auto;
+    position: relative;
+    color:#F5EFEF;
+    background-image: url(imagens/red_texture_2.jpg);
+    border: 2px;
+    border-style: ridge;
+    border-color: #FFCB8E;
+    margin-left: 32%;
+    margin-right: 32%;
+    margin-bottom: 15%;
+    margin-top: 12%;
+    border-radius: 75px; 
+    opacity: 0.85;
+}
+
+.sign_in_container {
+    position: fixed;
+    margin-top: -5%;
+    margin-left: -2%;
+}
+/* End of - sign in screen */ 
+
+
+/* contacts screen */
+.contacts_container{
+    position: fixed;   
+    margin-top: -5%;
+    margin-left: -2%;
+}
+
+.contacts_text{
+    position: fixed;
+    margin-top: 13.5%;
+    margin-left: 10%;
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    background-color: blueviolet;
+    text-align: left;
+    opacity: 0.6;
+    border-radius: 30px;
+    padding: 2%;
+    animation-name: contacts_animation_1;
+    animation-duration: 1s;
+
+}
+
+.contacts_form{
+    background-color: cornflowerblue ;
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    position: fixed;
+    width:610px;
+    margin-top: 10%;
+    margin-left: 45%;
+    border-radius: 75px;
+    opacity: 0.75;
+    z-index: 0;
+    animation-name: contacts_animation_2;
+    animation-duration: 1s;
+}
+
+/*End of - Contacts screen*/
+
+/* Ask sensei screen */
+.ask_sensei_container {
+    position: fixed;
+    margin-top: -5%;
+    margin-left: -2%;
+}
+
+form.form_styling{
+    background-image: url(imagens/ask_sensei.jpg);
+    border: 2px;
+    border-style: ridge;
+    border-color: black;
+    position: fixed;
+    width:900px;
+    margin-top: 35px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 75px;
+    opacity: 0.85;
+    z-index: 0;
+}
+/* End of - Ask sensei screen */
+
+
+/* Dojo screen */
+.dojo_page{
+    display: block;
+    z-index: -1;
+    margin: auto;
+}
+/* End of Dojo screen */

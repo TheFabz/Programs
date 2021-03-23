@@ -1,0 +1,86 @@
+var extractPassword = function (string){
+    
+    var final_word = "";
+    var extractPassword = function (string){
+    
+    var final_word = "";
+    
+    var isNumber = function(x){
+    
+	for(var i = 0; i < x.length; i++){
+         
+    if (x[i] == "0" || x[i] == "1" || x[i] == "2" || x[i] == "3" || x[i] == "4" || x[i] == "5" || x[i] == "6" || x[i] == "7" || x[i] == "8" || x[i] == "9"){
+        return true;
+    }
+    
+    else if (x[i] != "0" || x[i] != "1" || x[i] != "2" || x[i] != "3" || x[i] != "4" || x[i] != "5" || x[i] != "6" || x[i] != "7" || x[i] != "8" || x[i] != "9"){
+        return false;
+         
+    }
+    else {
+        return false;
+    }
+     }
+};
+    
+	var isLetter = function(x){
+    
+     for(var i = 0; i < x.length; i++){
+         
+    if (x[i] == "a" || x[i] == "b" || x[i] == "c" || x[i] == "d" || x[i] == "e" || x[i] == "f" || x[i] == "g" || x[i] == "h" || x[i] == "i" || x[i] == "j" || x[i] == "k" || x[i] == "l" || x[i] == "m" || x[i] == "n" || x[i] == "o" || x[i] == "p" || x[i] == "q" || x[i] == "r" || x[i] == "s" || x[i] == "t" || x[i] == "u" || x[i] == "v" || x[i] == "x" || x[i] == "y" || x[i] == "w" || x[i] == "z" ){
+        return true;
+    }
+    
+    else if (x[i] != "a" || x[i] != "b" || x[i] != "c" || x[i] != "d" || x[i] != "e" || x[i] != "f" || x[i] != "g" || x[i] != "h" || x[i] != "i" || x[i] != "j" || x[i] != "k" || x[i] != "l" || x[i] != "m" || x[i] != "n" || x[i] != "o" || x[i] != "p" || x[i] != "q" || x[i] != "r" || x[i] != "s" || x[i] != "t" || x[i] != "u" || x[i] != "v" || x[i] != "x" || x[i] != "y" || x[i] != "w" || x[i] != "z" ){
+        return false;
+         
+    }
+    else {
+        return false;
+    }
+     }
+};    
+    
+	var isCapital = function(x){
+    
+     for(var i = 0; i < x.length; i++){
+         
+    if (x[i] == "A" || x[i] == "B" || x[i] == "C" || x[i] == "D" || x[i] == "E" || x[i] == "F" || x[i] == "G" || x[i] == "H" || x[i] == "I" || x[i] == "J" || x[i] == "K" || x[i] == "L" || x[i] == "M" || x[i] == "N" || x[i] == "O" || x[i] == "P" || x[i] == "Q" || x[i] == "R" || x[i] == "S" || x[i] == "T" || x[i] == "U" || x[i] == "V" || x[i] == "X" || x[i] == "Y" || x[i] == "W" || x[i] == "Z" ){
+        return true;
+    }
+    
+    else if (x[i] != "A" || x[i] != "B" || x[i] != "C" || x[i] != "D" || x[i] != "E" || x[i] != "F" || x[i] != "G" || x[i] != "H" || x[i] != "I" || x[i] != "J" || x[i] != "K" || x[i] != "L" || x[i] != "M" || x[i] != "N" || x[i] != "O" || x[i] != "P" || x[i] != "Q" || x[i] != "R" || x[i] != "S" || x[i] != "T" || x[i] != "U" || x[i] != "V" || x[i] != "X" || x[i] != "Y" || x[i] != "W" || x[i] != "Z" ){
+        return false;
+         
+    }
+    else {
+        return false;
+    }
+     }
+};        
+    
+    
+for (var i = 0; i < string.length ; i++){    
+    
+    
+    if (isNumber(string[i])){
+    	final_word += string[i];
+        }
+    if (isLetter(string[i])){
+        final_word += string[i];
+    }
+    if(isCapital(string[i])){
+        final_word += string[i];
+    }
+}
+    
+console.log(final_word);
+    
+    
+};
+
+
+var word = ["@" , "a" , "4" , "f" , "s","d","F"];
+
+extractPassword(word);
+

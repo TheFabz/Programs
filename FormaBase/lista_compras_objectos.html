@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    * {
+        padding: 5px;
+    }
+</style>
+<script>
+    var arrayProdutos = [];
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+</head>
+<body>
+
+<script>   
+</script>
+
+<form name="formulario">
+    <input type="text" name="nomeProduto" placeholder="Produto">
+    <input type="text" name="precoProduto" placeholder="Preço">
+    <input type="button" value="Adicionar Produto" 
+    onclick="
+    
+    const produto = {
+        nome: document.formulario.nomeProduto.value,
+        preco: parseInt(document.formulario.precoProduto.value),
+        mostrarDados: function () {
+            document.formulario.listaProdutos.value += (`${this.nome} --> ${this.preco}€ \n`);
+        }
+    }
+
+    /* checkdupes / push produto */
+    var duplicado = false
+
+    for (produtoDummy of arrayProdutos){
+        if (produtoDummy.nome == produto.nome && produtoDummy.preco == produto.preco){
+            duplicado = true;
+        }
+    }
+
+    if (!duplicado && produto.preco != ''){
+        arrayProdutos.push(produto);
+    }
+
+    else{
+        alert('Já introduziu este valor.')
+    }
+
+    document.formulario.listaProdutos.value = '';
+
+    
+    for (batatas of arrayProdutos){
+        batatas.mostrarDados();
+    };
+
+    
+
+    document.formulario.listaProdutos.value += `\n\nNúmero Total de Produtos: ${arrayProdutos.length}`;
+
+    /* -limpa- caixas de texto e textarea */
+    document.formulario.nomeProduto.value = '';
+    document.formulario.precoProduto.value = '';
+">
+
+    <br><br>
+
+    <textarea name="listaProdutos" cols="57" rows="10" readonly></textarea>
+
+</form>
+
+</body>
+</html>

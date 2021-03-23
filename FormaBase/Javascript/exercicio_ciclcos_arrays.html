@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var arrayNotas = []
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Ciclos/Arrays</title>
+</head>
+<body>
+
+    <form name="formulario">
+    <input type="text" name="introduzirNota" placeholder="Introduza a nota">
+    <input type="button" value="Introduzir nota do aluno:" 
+    onclick="
+    var novaNota = parseInt( document.formulario.introduzirNota.value ); 
+    var somaNotas= 0;
+    if (novaNota != ''){
+        arrayNotas.push(novaNota);
+    }
+    document.formulario.listaNotas.value = '';
+    for (var nota of arrayNotas) {
+        document.formulario.listaNotas.value += nota + '\n';
+    }
+    for (var contador = 0; contador < arrayNotas.length; contador++) {
+        somaNotas += arrayNotas[contador];
+    }
+    document.formulario.listaNotas.value += `\n\nMédia das notas: ${somaNotas / arrayNotas.length}`;
+    document.formulario.introduzirNota.value = '';
+    ">
+    <br>
+    <br>
+    <textarea name="listaNotas" cols="40" rows="10" readonly></textarea>
+    </form>
+    
+</body>
+</html>

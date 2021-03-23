@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10.1</title>
+</head>
+<body>
+    
+    <form name="registo" method="post" action="mailto:o_seu_email@servico.com">
+
+        <fieldset><legend>Dados Pessoais</legend>
+        <br>
+        
+        <table>
+            <tr>
+                <td align="right">Nome:</td> 
+                <td><input type="text" tabindex="1" name="nome" size="40" maxlength="50" value="introduza o seu nome completo" /></td>
+            </tr>
+
+            <tr>
+
+                <td valign="top" align="right">Morada:</td>
+                <td><textarea cols="50" rows="4" name="morada"></textarea></td>
+
+            </tr>
+
+            <tr>
+
+                <td align="right">Código Postal:</td>
+                <td><input type="text" name="cod_postal" size="10" maxlength="10" /></td>
+
+            </tr>
+            
+            <tr>
+
+                <td align="right">Localidade:</td>
+                <td><input type="text" name="localidade" size="30" maxlength="30" /></td>
+
+            </tr>
+
+            <tr>
+
+                <td align="right">Telefone</td>
+                <td><input type="text" tabindex="2" name="telefone" size="10" /></td>
+
+            </tr>
+
+            <tr>
+
+                <td align="right">E-mail</td>
+                <td><input type="text" tabindex="3" name="email" size="30" /></td>
+
+            </tr>
+
+        </table>
+        </fieldset>
+
+        <br>
+        
+        <fieldset><legend>Origem</legend>
+        <br>
+
+        <table>
+
+        <tr>
+
+            Nacionalidade:<br>
+            <input type="radio" id="nac_pt" name="nacionalidade" value="pt" checked="checked"/> 
+            <label for="nac_pt">Portuguesa </label>
+            <input type="radio" id="nac_br" name="nacionalidade" value="br" /> 
+            <label for="nac_br">Brasileira </label>
+            <input type="radio" id="nac_es" name="nacionalidade" value="es" />
+            <label for="nac_es">Espanhola </label>
+        </tr>
+        
+        <tr>
+
+        <td>Línguas faladas:</td>
+
+        </tr>
+
+        <tr>        
+            <td>
+
+            <input type="checkbox" name="linguas" value="pt" checked="checked"/>Português
+            <input type="checkbox" name="linguas" value="es" />Espanhol
+            <input type="checkbox" name="linguas" value="uk" />Inglês
+            <input type="checkbox" name="linguas" value="fr" />Francês
+            <input type="checkbox" name="linguas" value="de" />Alemão
+
+            </td>
+        </tr>
+
+        <br>
+
+        <tr>
+
+           <td align="left">Área Profissional:</td>
+
+        </tr>
+        
+        <tr>
+
+            <td>
+
+                <select name="area_prof">
+                    <option value="">--Escolha uma opção--</option>
+                    <option value="educacao">Educação</option>
+                    <option value="informatica">Informática</option>
+                    <option value="gestao">Gestão</option>
+                    <option value="vendas">Vendas</option>
+                    <option value="rh">Recursos Humanos</option>
+                    <option value="outra">outra</option>
+        
+                </select>
+
+            </td>
+        </tr>
+
+        
+
+       <tr>
+
+        <td align="left">Função</td>
+
+       </tr>
+
+       <tr>
+        <td>
+
+            <select name="funcao" size="4">
+            <option value="direcao">Direção</option>
+            <option value="gerencia">Gerencia</option>
+            <option value="secretariado">Secretariado</option>
+            <option value="chefia">Chefia</option>
+            </select>
+
+        </td>
+
+       </tr>
+    
+        <tr>    
+            <td><p align="left">
+   
+                <input type="submit" name="enviar" value="Enviar"/>
+                <input type="reset" name="limpar" value="Limpar"/>
+                <input type="button" name="imprimir" value="Imprimir" onClick="window.print();"/>
+    
+    
+            </p>    
+            </td>
+
+        </tr>
+
+
+        </table>   
+
+    </fieldset>    
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<script>
+
+function alterarCor1(cabecalho){
+cabecalho.style.color = "green";
+}
+function alterarCor2(cabecalho){
+cabecalho.style.color = "black";
+}
+
+window.onload = function (){
+
+var cabecalho = document.getElementsByTagName("h1"); 
+
+for (var i = 0; i < 7 ; i++) {
+    cabecalho[i].addEventListener("mouseenter", function(){alterarCor1 (this)});
+    cabecalho[i].addEventListener("mouseleave", function(){alterarCor2 (this)});
+}
+
+
+
+var teclasPrimidas = document.getElementsByTagName("input")[0];
+
+teclasPrimidas.addEventListener("keydown", (event) => {
+    if (event.key === '0'
+    ||  event.key === '1'
+    ||  event.key === '2'
+    ||  event.key === '3'
+    ||  event.key === '4'
+    ||  event.key === '5'
+    ||  event.key === '6'
+    ||  event.key === '7'
+    ||  event.key === '8'
+    ||  event.key === '9'){
+        event.preventDefault();
+    }
+})
+
+}
+
+
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Titulo1</h1>
+    <h1>Titulo2</h1>
+    <h1>Titulo3</h1>
+    <h1>Titulo4</h1>
+    <h1>Titulo5</h1>
+    <h1>Titulo6</h1>
+    <h1>Titulo7</h1>
+
+    Texto: <input type="text" name="" id="texto">
+</body>
+
+</html>

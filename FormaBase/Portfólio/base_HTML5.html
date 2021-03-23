@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Styles_Portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5_CSS3</title>
+</head>
+<body>
+
+<h1>
+	Titulo 1
+</h1>
+
+<h2>
+	Titulo 2
+</h2>
+
+<h3>
+	Titulo 3
+</h3>
+
+<h4>
+	Titulo 4
+</h4>
+
+<h5>
+	Titulo 5
+</h5>
+
+<h6>
+	Titulo 6
+</h6>
+
+<p>
+	Parágrafo que contém texto <span class="bold_text">importante</span>, com algum <span class="italic_text">êmfase</span> e até <a href="#">ligações</a>
+</p>
+
+<p>
+	Aqui temos uma sigla ou abreviatura como <abbr title="World Wide Web">WWW</abbr>. A palavra <span class="italic_text">browser</span> trata-se de um
+	estrangeirismo e <span class="bold_text">Formabase</span> é o nome de um serviço. Uma vez que não possuem relevância no contexto do parágrafo, 
+	foram usadas as etiquetas <code>&lt;i&gt;</code> e <code>&lt;b&gt;</code> para que o utilizador preste alguma atenção.
+</p>
+
+
+<pre>
+<div class="bloco_texto">
+Deste deste bloco
+podemos escrever livremente       espaços,
+	tabulações e 
+	
+	quebras de linha, que serão mostradas sempre no browser.
+	
+Especialmente útil para representar código de computador e
+linhas de programação.
+</div>
+</pre>
+
+	
+<hr>
+
+<p>
+	A etiqueta <code>&lt;hr&gt;</code> corresponde a uma mudança temática do conteúdo. Podemos fazer pequenas citações 
+	ao longo do texto como: <q cite="Quem disse isto">Isto é uma pequena citação!</q>
+</p>
+
+<blockquote class="blockquote_syle">
+    <div class="blockquote_p_syle">
+	<p>Aqui temos um comentário ou uma citação. Um comentário pode conter vários parágrafos.</p>
+	<p>Dentro deste blobo deve constar o autor do comentário</p>
+    <cite class="bold_text">A pessoa que comentou ou autor da citação</cite>
+    </div>
+</blockquote>
+
+<dl>
+	<dt>Lista de definições</dt>
+	<dd>É uma lista composta por termos ou expressões e respetiva descrição.</dd>
+	<dt>Lista ordenada</dt>
+	<dd>Trata-se de uma lista numerada de itens. Cada item pode conter sub-listas.</dd>
+	<dt>Lista não ordenada</dt>
+	<dd>Trata-se de uma lista de itens sem qualquer numeração. Cada item pode conter sub-listas.</dd>
+</dl>
+
+<ul class="outer">
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Este Item tem uma sub-lista
+		<ul class="inner">
+			<li>Item da sub-lista</li>		
+			<li>Este Item tem também uma sub-lista
+				<ul class="inner_2">
+					<li>Item da sub-sub-lista</li>
+					<li>Item da sub-sub-lista</li>
+				</ul>
+			</li>	
+			<li>Item da sub-lista</li>	
+		</ul>
+	</li>
+</ul>
+
+<ol>
+	<li>Primeiro Item</li>
+	<li>Segundo Item com sub-lista
+		<ol>
+			<li>Primeiro Item da sub-lista</li>
+			<li>Segundo Item da sub-lista com outra sub-lista
+				<ol>
+					<li>Primeiro Item da sub-sub-lista</li>		
+					<li>Segundo Item da sub-sub-lista</li>			
+				</ol>
+			</li>
+			<li>Terceiro Item da sub-lista</li>
+		</ol>
+	</li>
+	<li>Terceiro Item</li>
+	<li>Quarto Item</li>
+	<li>Quinto Item</li>
+</ol>
+
+<div class="inline_display">  
+<ul class="inline_links"> 
+	<li><a href="#">Item 1</a></li>
+	<li><a href="#">Item 2</a></li>
+	<li><a href="#">Item 3</a></li>
+	<li><a href="#">Item 4</a></li>
+</ul>
+</div> 
+
+<address>
+	Nome da Rua ou Avenida, número e andar <br />
+	Código Postal, Localidade <br />
+	País <br />
+    <span class="address_details">
+    Número de telefone</b> <br />
+   <a href="mailto:email@servidor.com">Endereço de E-mail</a>
+</span>
+
+</address>
+
+<div class="center-content">
+	<h1 class="title">Formulário</h1>
+	
+	<form>
+		<fieldset><legend>Legenda</legend>
+			<dl>
+				<dt><label for="caixa-grande">Caixa de Texto Grande</label></dt>
+				<dd><input type="text" name="caixa-grande" id="caixa-grande" class="input-big"></dd>
+				
+				<dt><label for="caixa-media">Caixa de Texto Média</label></dt>
+				<dd><input type="text" name="caixa-media" id="caixa-media" class="input-medium"></dd>
+				
+				<dt><label for="caixa-pequena">Caixa de Texto Pequena</label></dt>
+				<dd><input type="text" name="caixa-pequena" id="caixa-pequena" class="input-small"></dd>
+				
+				<dt><label for="caixa-muito-pequena">Caixa de Texto Muito Pequena</label></dt>
+				<dd><input type="text" name="caixa-muito-pequena" id="caixa-muito-pequena" class="input-tiny"></dd>
+				
+				<dt>Escolha Única</dt>
+				<dd>
+					<label><input type="radio" name="escolha-unica" value="valor1"> Valor 1</label>
+					<label><input type="radio" name="escolha-unica" value="valor2"> Valor 2</label>
+					<label><input type="radio" name="escolha-unica" value="valor3"> Valor 3</label>
+					<label><input type="radio" name="escolha-unica" value="valor4"> Valor 4</label>
+					<label><input type="radio" name="escolha-unica" value="valor5"> Valor 5</label>
+				</dd>
+				
+				<dt>Escolha Múltipla</dt>
+				<dd class="options-inline">
+					<label><input type="checkbox" name="escolha-multipla" value="valor1"> Valor 1</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor2"> Valor 2</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor3"> Valor 3</label>
+				</dd>
+				
+				<dt><label for="caixa-selecao">País</label></dt>
+				<dd>
+					<select name="caixa-selecao" id="caixa-selecao" class="input-medium">
+						<option value="">- Opções -</option>
+						<option value="valor1">Valor 1</option>
+						<option value="valor2">Valor 2</option>
+						<option value="valor3">Valor 3</option>
+					</select>
+				</dd>
+				
+				<dt><label for="area-texto">Área de Texto</label></dt>
+				<dd><textarea name="area-texto" id="area-texto" class="input-big"></textarea></dd>
+				
+				<dt><label for="ficheiro">Ficheiro</label></dt>
+				<dd><input type="file" name="ficheiro" id="ficheiro"></dd>
+
+				<dt><label for="caixa-grande">Nome:</label></dt>
+				<dd><input type="text" name="nome_utilizador" id="nome_utilizador" class="input-big"></dd>
+				
+				<dt><label for="caixa-media">E-mail</label></dt>
+				<dd><input type="e-mail" name="e_mail" id="e_mail" class="input-medium"></dd>
+				
+				<dt><label for="caixa-pequena">Telefone</label></dt>
+				<dd><input type="tel" name="telefone" id="telefone" class="input-small"></dd>
+				
+				<dt><label for="caixa-muito-pequena">Hora de Conveniência</label></dt>
+				<dd><input type="time" name="hora" id="hora" class="input-tiny"></dd>
+
+				<dt><label for="area-texto">Sugestão/Comentário</label></dt>
+				<dd><textarea name="comentario" id="comentario" class="input-big"></textarea></dd>
+
+				<dd>
+					<input type="submit" name="botao-principal" class="button-main" id="botao-principal" value="Submeter">
+					<input type="reset" name="botao-secundario" id="botao-secundario" value="Limpar">
+				</dd>
+
+				
+			</dl>
+		</fieldset>
+	</form>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Menu Horizontal</h1>
+	
+	<ul class="menu menu-horizontal">
+		<li class="current"><a href="#">Item 1</a></li>
+		<li><a href="#">Item 2</a>
+			<ul>
+				<li><a href="#">Subitem 2.1</a></li>
+				<li><a href="#">Subitem 2.2</a>
+					<ul>
+						<li><a href="#">Subitem 2.2.1</a></li>
+						<li><a href="#">Subitem 2.2.2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Subitem 2.3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 3</a>
+			<ul>
+				<li><a href="#">Subitem 3.1</a></li>
+				<li><a href="#">Subitem 3.2</a></li>
+				<li><a href="#">Subitem 3.3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 4</a></li>
+	</ul>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Menu Vertical</h1>
+	
+	<ul class="menu menu-vertical">
+		<li class="current"><a href="#">Item 1</a></li>
+		<li><a href="#">Item 2</a></li>
+		<li><a href="#">Item 3</a></li>
+		<li><a href="#">Item 4</a></li>
+	</ul>
+</div>
+
+
+<div class="center-content">
+	<h1 class="title">Menu Horizontal Principal</h1>
+	
+	<ul class="menu menu-horizontal menu-main">
+		<li class="current"><a href="#">Item 1</a></li>
+		<li id="vertical-main-2">
+			<a href="#vertical-main-2">Item 2</a>
+			<ul>
+				<li><a href="#">Subitem 2.1</a></li>
+				<li><a href="#">Subitem 2.2</a>
+					<ul>
+						<li><a href="#">Subitem 2.2.1</a></li>
+						<li><a href="#">Subitem 2.2.2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Subitem 2.3</a></li>
+			</ul>
+		</li>
+		<li id="vertical-main-3"><a href="#vertical-main-3">Item 3</a>
+			<ul>
+				<li><a href="#">Subitem 3.1</a></li>
+				<li><a href="#">Subitem 3.2</a></li>
+				<li><a href="#">Subitem 3.3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 4</a></li>
+	</ul>
+</div>
+
+<div class="center-content">
+	<h1 class="title">Menu Vertical Principal</h1>
+	
+	<ul class="menu menu-vertical menu-main">
+		<li class="current"><a href="#">Item 1</a></li>
+		<li id="item2"><a href="#item2">Item 2</a>
+			<ul>
+				<li><a href="#">Subitem 2.1</a></li>
+				<li><a href="#">Subitem 2.2</a></li>
+				<li><a href="#">Subitem 2.3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 3</a></li>
+		<li><a href="#">Item 4</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

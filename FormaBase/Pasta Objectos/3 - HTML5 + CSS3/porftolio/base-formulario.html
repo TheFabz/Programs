@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulário</title>
+<style>
+
+	form dt {
+		float: left;
+		width: 190px;
+		text-align: right;
+		padding: 6px 0;
+		font-weight: normal;
+	}
+	
+	form dd {
+		margin-left: 200px;
+		margin-bottom: 20px;
+	}
+	
+	fieldset {
+		margin-bottom: 20px;
+	}
+	
+	legend {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	
+	dd label {
+		padding: 6px 20px 6px 0;
+		display: block;
+	}
+	
+	dd.options-inline label { display: inline-block; }
+	
+	input, textarea, select {
+		border: 1px solid #ccc;
+		padding: 6px;
+		font-size: 14px;
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		background-color: #ffffff;
+	}
+	
+	input:focus, textarea:focus, select:focus, button {
+		border-color: #0FA2FF;
+		outline: none;
+	}
+	
+	input[type="submit"], input[type="button"], button {
+		color: #2E2E2E;
+		border: 1px solid #ccc;
+	    padding: 6px 20px;
+	    margin-right: 20px;
+		background: #ebebeb;
+	}
+	
+	input.button-main, button.button-main {
+		color: #FFFFFF;
+		border-color: #0FA2FF;
+		background: #0FA2FF;
+	}
+	
+	.input-big { width: 400px; }
+	.input-medium { width: 200px; }
+	.input-small { width: 100px; }
+	.input-tiny { width: 50px; }
+	
+</style>
+</head>
+<body>
+<div class="center-content">
+	<h1 class="title">Formulário</h1>
+	
+	<form>
+		<fieldset><legend>Legenda</legend>
+			<dl>
+				<dt><label for="caixa-grande">Caixa de Texto Grande</label></dt>
+				<dd><input type="text" name="caixa-grande" id="caixa-grande" class="input-big"></dd>
+				
+				<dt><label for="caixa-media">Caixa de Texto Média</label></dt>
+				<dd><input type="text" name="caixa-media" id="caixa-media" class="input-medium"></dd>
+				
+				<dt><label for="caixa-pequena">Caixa de Texto Pequena</label></dt>
+				<dd><input type="text" name="caixa-pequena" id="caixa-pequena" class="input-small"></dd>
+				
+				<dt><label for="caixa-muito-pequena">Caixa de Texto Muito Pequena</label></dt>
+				<dd><input type="text" name="caixa-muito-pequena" id="caixa-muito-pequena" class="input-tiny"></dd>
+				
+				<dt>Escolha Única</dt>
+				<dd>
+					<label><input type="radio" name="escolha-unica" value="valor1"> Valor 1</label>
+					<label><input type="radio" name="escolha-unica" value="valor2"> Valor 2</label>
+					<label><input type="radio" name="escolha-unica" value="valor3"> Valor 3</label>
+					<label><input type="radio" name="escolha-unica" value="valor4"> Valor 4</label>
+					<label><input type="radio" name="escolha-unica" value="valor5"> Valor 5</label>
+				</dd>
+				
+				<dt>Escolha Múltipla</dt>
+				<dd class="options-inline">
+					<label><input type="checkbox" name="escolha-multipla" value="valor1"> Valor 1</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor2"> Valor 2</label>
+					<label><input type="checkbox" name="escolha-multipla" value="valor3"> Valor 3</label>
+				</dd>
+				
+				<dt><label for="caixa-selecao">País</label></dt>
+				<dd>
+					<select name="caixa-selecao" id="caixa-selecao" class="input-medium">
+						<option value="">- Opções -</option>
+						<option value="valor1">Valor 1</option>
+						<option value="valor2">Valor 2</option>
+						<option value="valor3">Valor 3</option>
+					</select>
+				</dd>
+				
+				<dt><label for="area-texto">Área de Texto</label></dt>
+				<dd><textarea name="area-texto" id="area-texto" class="input-big"></textarea></dd>
+				
+				<dt><label for="ficheiro">Ficheiro</label></dt>
+				<dd><input type="file" name="ficheiro" id="ficheiro"></dd>
+				
+				<dd>
+					<input type="submit" name="botao-principal" class="button-main" id="botao-principal" value="Botão Principal">
+					<input type="button" name="botao-secundario" id="botao-secundario" value="Botão Secundário">
+				</dd>
+			</dl>
+		</fieldset>
+	</form>
+</div>
+</body>
+</html>

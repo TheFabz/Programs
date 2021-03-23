@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        var dataAtual = new Date();
+        var anoAtual = dataAtual.getFullYear();
+        var mesAtual = dataAtual.getMonth() +1;
+        var diaAtual = dataAtual.getUTCDate();
+
+        function calcularIdade(diaEscolhido, mesEscolhido, anoEscolhido) {
+            var idade = anoAtual - anoEscolhido;
+
+            if (mesEscolhido > mesAtual || (mesEscolhido == mesAtual && diaEscolhido > diaAtual)){
+                idade--;
+            }
+
+            return idade;
+        }
+
+        function verificarIdade() {
+            var anoSelecionado = parseInt (document.verificacao.ano_nascimento.value);
+            var mesSelecionado = parseInt(document.verificacao.mes_nascimento.value);
+            var diaSelecionado = parseInt(document.verificacao.dia_nascimento.value);
+
+            var idade = calcularIdade(diaSelecionado,mesSelecionado,anoSelecionado);
+
+            if (idade < 18 || idade > 130) {
+                alert('Idade inválida!');
+            }
+
+            else {
+                //redirecionar para outro site
+                window.location = 'http://www.formabase.com';
+            } 
+
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciclos</title>
+</head>
+<body>
+   
+    <form name="verificacao">
+
+        Data de nascimento:
+
+        <select name="ano_nascimento">
+            <option value="0">- Ano -</option>
+            <script>
+                for ( var contador = anoAtual; contador >= 1900; contador--) {
+                    document.write(`<option value = "${contador}" > ${contador} </option>` );
+                }
+            </script>
+        </select>
+
+        <select name="mes_nascimento">
+            <option value="0">- mês -</option>
+            <script>
+                for ( var contador = 1; contador < 13; contador++) {
+                    document.write(`<option value = "${contador}" > ${contador} </option>` );
+                }
+            </script>
+        </select>
+
+        <select name="dia_nascimento">
+            <option value="0">- dia -</option>
+            <script>
+                for ( var contador = 1; contador < 32 ; contador++) {
+                    document.write(`<option value = "${contador}" > ${contador} </option>` );
+                }
+            </script>
+        </select>
+
+        <input type="button" value="Entrar" 
+        
+        onclick="verificarIdade()"/>
+ 
+    </form>    
+
+    
+    
+<!--comentário
+<script>
+ 
+    var numero = 0;
+    while (numero < 10) {
+        numero = parseInt(prompt(`Insira um número `));
+    }
+
+    for (var contador = 0; contador < 5; contador++){
+        document.write(`<br> Execução do ciclo, valor do contador ${contador}`);
+    }
+
+</script>
+//-->    
+
+</body>
+</html>

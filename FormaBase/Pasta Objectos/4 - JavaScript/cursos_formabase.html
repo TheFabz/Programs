@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        table#informacao {
+            width: 500px;
+            margin: 2px;
+            border-spacing: 0px;
+            text-align: center;
+        }
+
+        table#informacao th {
+            background-color: #51a2e6;
+            color: white;
+            border: 1px solid #e3e3e3;
+            font-size: 20px;
+            padding: 2%;
+        }
+
+        table#informacao td {
+            padding: 1%;
+            border: 1px solid #ddd;
+        }
+
+        #formulario * {
+            padding: 5px;
+        }
+
+        #formulario {
+            width: 400px;
+            border: 1px solid #ddd;
+        }
+
+        form table td:first-child {
+            width: 30%;
+        }
+
+        #informacao tr:hover {
+            background-color: #c0d7f3;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" id="formulario">
+        <table>
+            <tr>
+                <td>Nome do curso:</td>
+                <td><input type="text" name="" id="nome"></td>
+            </tr>
+            <tr>
+                <td>Categoria</td>
+                <td>
+                    <select name="" id="categoria">
+                        <option value="Utilizadores">Utilizadores</option>
+                        <option value="Expert">Expert</option>
+                        <option value="Programação">Programação</option>
+                        <option value="Web Creation">Web Creation</option>
+                        <option value="Grafismo">Grafismo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Duracao</td>
+                <td><input type="number" name="" id="duracao"></td>
+            </tr>
+            <tr>
+                <td>Preco</td>
+                <td><input type="number" name="" id="preco"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; margin: auto">
+                    <input type="button" id="adicionar" value="Adicionar Novo Curso">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table id="informacao">
+        <thead>
+            <tr>
+                <th>Nome curso</th>
+                <th>Categoria</th>
+                <th>Duração</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Excel</td>
+                <td>Office</td>
+                <td>22</td>
+                <td>220</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+Designação	Código	Preço Unit.	IVA
+Toshiba Satellite P300-194	1	1299	0,21
+Apple MacBook 13 polegadas	2	1219	0,21
+Toshiba Satellite A300-1ID	3	1099	0,21
+Toshiba Satellite L300-18G	4	599	0,21
+Asus Eee PC 4G White Linux	5	229	0,21
+Texas Instruments TI 84 PLUS	6	589	0,21
+Belkin Gateway Wireless N + 	7	499	0,21
+"Iomega Disco 500GB 3.5"" "	8	409	0,21
+SanDisk Cruzer Micro U3 Pen 	9	319	0,21
+"LG Monitor TFT 22"" "	10	229	0,21
+"Acer Monitor TFT 19"" PW193B"	11	139	0,21
+"Benq Monitor TFT 19"""	12	139	0,21

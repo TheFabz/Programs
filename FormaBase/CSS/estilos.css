@@ -1,0 +1,28 @@
+
+p {
+    color: green;
+    font-size: 120%;
+}
+
+h1 {
+    font-family: verdana, sans-serif;
+    color: red;
+    font-size:20px;
+}
+
+
+.titulo {
+    font-family: verdana;
+    font-size: 12pt;
+    color: red;
+}
+
+#cabecalho {
+    background: yellow;
+    font-size: 25px;
+    color: orange;
+}
+
+ul a {
+    color:red;
+}

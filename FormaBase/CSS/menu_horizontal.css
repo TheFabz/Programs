@@ -1,0 +1,78 @@
+#menu {
+    width: 100%;
+    float: left;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 12em;
+    float: left;
+}
+
+#menu a,
+#menu h2 {
+    font: bold 11px/16px arial, helvetica, sans-serif;
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #949494;
+    margin: 0;
+    padding: 3px 5px;
+}
+
+#menu li {
+    background-image: url(imagens/fundo_item.gif);
+    background-repeat: repeat-x;
+}
+
+#menu h2 {
+    background-image: url(imagens/fundo_titulo.gif);
+    background-repeat: repeat-x;
+    color: #fff;
+    border-color: #606060;
+    text-transform: uppercase;
+}
+
+#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #4e4e4e;
+    background: #f0f0f0;
+}
+
+#menu li .mais {
+    background-image: url(imagens/seta.gif);
+    background-repeat: no-repeat;
+    background-position: 16em;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu ul ul {
+    position: absolute;
+    z-index: 500;
+}
+
+#menu ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+#menu ul ul, /*a página começa com a segunda lista e descendentes escondidas*/
+#menu ul li:hover ul ul, /*esconder a terceira lista quando o rato passa na primeira*/
+#menu ul ul li:hover ul ul { /*esconder a quarta lista quando o rato passa na segunda*/
+    display: none; /*esconder*/
+}
+
+#menu ul li:hover ul, /*mostrar a segunda lista quando o rato passa na primeira*/ 
+#menu ul ul li:hover ul, /*mostrar a terceira lista quando o rato passa na segunda*/ 
+#menu ul ul ul li:hover ul { /*mostrar a quarta lista quando o rato passa na terceira*/
+    display: block; /*mostrar*/
+}

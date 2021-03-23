@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+    form {
+        width: 40%;
+        margin: 3%;
+    }
+    form dt {
+        float: left;
+        width: 220px;
+        text-align: right;
+    }
+    form dd {
+        margin-left: 250px;
+        margin-bottom: 20px;
+    }
+    legend {
+        font-size: 24px;
+    }
+    input[type="button"]{
+        margin-left: 35%;
+    }
+</style>
+
+<script>
+ var resultado_classificacao;
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício IMC</title>
+</head>
+<body>
+ 
+<form name="dados_imc">
+    <fieldset><legend>Calcular IMC</legend>
+        <dl>
+        <dt><label for="peso">Peso (kg):</label></dt>
+        <dd><input type="text" name="peso"/></dd>
+        <dt><label for="altura">Altura (m):</label></dt>
+        <dd><input type="text" name="altura"/></dd>
+        <dt><label for="resultado">Resultado IMC:</label></dt>
+        <dd><textarea cols="18" rows="2" name="resultado"></textarea></dd>
+
+        
+        </dl>
+        <input type="button" value="Calcular IMC" 
+        
+        onclick= "
+        var peso = parseInt(document.dados_imc.peso.value);
+        var altura = parseFloat (document.dados_imc.altura.value);
+        var resultado_calculo = parseFloat (peso / (altura*altura));
+
+            if (resultado_calculo <= 18.5) {
+                resultado_classificacao = ('peso baixo');
+            }
+
+            else if (resultado_calculo > 18.5 && resultado_calculo <= 24.9) {
+                resultado_classificacao = ('Peso normal');
+               
+            }
+
+            else if (resultado_calculo >= 25 && resultado_calculo <= 29.9) {
+                resultado_classificacao =('Pré-Obesidade');
+            
+            }
+        
+            else if (resultado_calculo >= 30 && resultado_calculo <= 34.9) {
+                resultado_classificacao =('Obesidade grau I');
+            }
+        
+            else if (resultado_calculo >= 35 && resultado_calculo <= 39.9) {
+                resultado_classificacao =('Obesidade grau II');
+            }
+        
+            else if (resultado_calculo >= 40) {
+                resultado_classificacao =('Obesiade grau III');
+            }
+
+            else {
+                resultado_classificacao =('dado inválido.');
+            }
+            
+            document.dados_imc.resultado.value =
+            `${resultado_calculo} ${resultado_classificacao}` ;
+
+            ">
+
+            
+    </fieldset>
+</form>    
+
+</body>
+</html>

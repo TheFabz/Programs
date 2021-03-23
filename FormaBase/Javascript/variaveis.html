@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var nome = "Manel";
+        var apelido = "Afonso";
+        var numCarros = 2 ;
+        var numCliques = 0;
+        var texto = `Olá "mundo", olá 'mundo'`;
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Variáveis</h1>
+
+<p>
+    <input type="button" value="Saber número de carros" onclick="alert('O ' + nome + ' ' + apelido + ' tem ' + numCarros + ' automóveis');">
+</p>
+
+<p>
+    <input type="button" value="Número de cliques" onclick="numCliques = numCliques +1; alert('já clicou ' + numCliques + ' vezes.');">
+</p>
+
+<form name="dados_utilizador">
+    Nome: <input type="text" name="nome_utilizador"/><br>
+    Apelido: <input type="text" name="apelido_utilizador"/><br>
+    <input type="button" value="Olá"
+    onclick="var nome = document.dados_utilizador.nome_utilizador.value;
+            var apelido = document.dados_utilizador.apelido_utilizador.value;
+            alert('Olá '+ nome + ' ' + apelido + '.\n;bem-vindo!');"/>
+</form>
+
+<p>
+<input type="button" value="mensagem"
+    onclick="alert(`Boa tarde, venho por este meio comunicar que estou a gostar muito de javascript.
+    Obrigado!`);">
+</p>
+
+<p>
+    <input type="button" value="Media dos testes" 
+    onclick="
+    var primeiroTeste = 10;
+    var segundoTeste = 15.5;
+alert(`A media dos testes é ${(primeiroTeste + segundoTeste) / 2}`);">
+</p>
+
+<p>
+    <input type="button" value="Expressao Logica"
+    onclick="
+    var numero1 = 10;
+    var numero2 = 50;
+    alert(`O ${numero1} é maior do que ${numero2}? -> ${numero1} > ${numero2}`); ">
+</p>
+
+<p>
+    <input type="button" value="texto com aspas e plicas"
+    onclick="alert(texto);">
+</p>
+
+</body>
+</html>

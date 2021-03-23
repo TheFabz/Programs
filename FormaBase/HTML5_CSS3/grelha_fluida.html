@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+
+.row {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: auto;
+}
+.column {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .row {
+        width: 710px; 
+    }
+    .column {
+        margin-left: 5%; 
+    }
+    .column.occupies_3_of_3 {
+        width: 100%; 
+    }
+    .column.occupies_2_of_3 {
+        width: 65%; 
+    }
+    .column.occupies_1_of_3 {
+        width: 30%; 
+    }
+    .row > .column:first-child {
+        margin-left: 0; 
+    }
+}
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grelha Fluída</title>
+</head>
+<body>
+
+<div class="row">   
+<div class="column occupies_1_of_3" style="background-color: orange">
+    Conteúdo da primeira coluna! 
+</div>
+
+
+<div class="column occupies_1_of_3" style="background-color: skyblue">
+    Conteúdo da segunda coluna! 
+</div>
+
+
+<div class="column occupies_1_of_3" style="background-color: yellow">
+	Conteúdo da terceira coluna!
+</div>
+</div> 
+
+<div class="row">
+    <div class="column occupies_1_of_3" style="background-color: coral">
+        Conteúdo da quarta coluna!
+    </div>
+    <div class=" column occupies_2_of_3" style="background-color: aqua">
+        Conteúdo da quinta coluna!
+    </div>
+    <div class="column occupies_3_of_3" style="background-color: wheat">
+        Conteúdo da sexta coluna!
+    </div>
+</div>
+
+</body>
+</html>

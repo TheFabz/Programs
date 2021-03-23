@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+        let posicaoEsquerda = 0;
+        let direcao = "direita";
+
+        function iniciarmovimento() {
+        let divCaixa = document.getElementById("caixa");
+        setInterval(function () {
+            divCaixa.style.left = posicaoEsquerda + "px";
+
+            if (direcao == "direita"){
+                posicaoEsquerda++;
+            }
+            else {
+                posicaoEsquerda--;
+            }
+            
+        }, 10);
+    }
+
+    function mudaDirecao(){
+        direcao = direcao== "direita" ? "esquerda" : "direita";
+    }
+</script>    
+
+<style>
+    #caixa {
+        position: absolute;
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Deslizante</title>
+</head>
+<body>
+
+<div id="caixa" onclick="mudaDirecao()">
+    <img src="img/www.png" />
+</div>
+<script>
+    iniciarmovimento();
+</script>    
+
+    
+</body>
+</html>

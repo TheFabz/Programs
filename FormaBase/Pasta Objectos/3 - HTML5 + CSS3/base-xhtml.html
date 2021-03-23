@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Elementos HTML 4</title>
+</head>
+<body bgcolor="#EFEFEF" text="#444444"
+	link="#0FA2FF" alink="#0E7FC7" vlink="#0C598A"
+	style="line-height: 20px; font-family:'Trebuchet MS',Helvetica,sans-serif; font-size:14px">
+
+<h1 style="font-family:Tahoma,Geneva,sans-serif;font-size:60px;margin-bottom: 20px;line-height: normal;font-weight:normal">
+	<font color="#0FA2FF">Titulo 1</font>
+</h1>
+
+<h2 style="font-family:Tahoma,Geneva,sans-serif;font-size:40px;margin-bottom: 20px;line-height: normal;font-weight:normal">
+	Titulo 2
+</h2>
+
+<h3 style="font-family:Tahoma,Geneva,sans-serif;font-size:30px;margin-bottom: 20px;line-height: normal;font-weight:normal">
+	<font color="#9B9B9B">Titulo 3</font>
+</h3>
+
+<h4 style="font-family:Tahoma,Geneva,sans-serif;font-size:24px;margin-bottom: 10px;line-height: normal;font-weight:normal">
+	Titulo 4
+</h4>
+
+<h5 style="font-family:Tahoma,Geneva,sans-serif;font-size:20px;margin-bottom: 10px;line-height: normal;font-weight:normal">
+	Titulo 5
+</h5>
+
+<h6 style="font-family:Tahoma,Geneva,sans-serif;font-size:18px;margin-bottom: 10px;line-height: normal;font-weight:normal">
+	<font color="#9B9B9B">Titulo 6</font>
+</h6>
+
+<p style="margin:20px 0;">
+	Parágrafo que contém texto <strong>importante</strong>, com algum <em>êmfase</em> e até <a href="#">ligações</a>
+</p>
+
+<p style="margin:20px 0;">
+	Aqui temos uma sigla ou abreviatura como <abbr title="World Wide Web">WWW</abbr>. A palavra <i>browser</i> trata-se de um
+	estrangeirismo e <b>Formabase</b> é o nome de um serviço. Uma vez que não possuem relevância no contexto do parágrafo, 
+	foram usadas as etiquetas <code>&lt;i&gt;</code> e <code>&lt;b&gt;</code> para que o utilizador preste alguma atenção.
+</p>
+
+<pre style="background-color:#2D2D2D;color:#9B9B9B;font-family:'Courier New',Courier,monospace;padding:20px">
+Deste deste bloco
+podemos escrever livremente       espaços,
+	tabulações e 
+	
+	quebras de linha, que serão mostradas sempre no browser.
+	
+Especialmente útil para representar código de computador e
+linhas de programação.
+</pre>
+	
+<hr>
+
+<p style="margin:20px 0;">
+	A etiqueta <code>&lt;hr&gt;</code> corresponde a uma mudança temática do conteúdo. Podemos fazer pequenas citações 
+	ao longo do texto como: <q cite="Quem disse isto">Isto é uma pequena citação!</q>
+</p>
+
+<blockquote style="padding-left:40px;">
+	<p style="margin:0 0 20px;">Aqui temos um comentário ou uma citação. Um comentário pode conter vários parágrafos.</p>
+	<p style="margin:0 0 20px;">Dentro deste blobo deve constar o autor do comentário</p>
+	<cite style="font-weight:bold;">A pessoa que comentou ou autor da citação</cite>
+</blockquote>
+
+<dl style="padding-left: 20px;margin-bottom: 20px;">
+	<dt style="font-weight: bold;">Lista de definições</dt>
+	<dd style="margin-left: 20px;">É uma lista composta por termos ou expressões e respetiva descrição.</dd>
+	<dt style="font-weight: bold;">Lista ordenada</dt>
+	<dd style="margin-left: 20px;">Trata-se de uma lista numerada de itens. Cada item pode conter sub-listas.</dd>
+	<dt style="font-weight: bold;">Lista não ordenada</dt>
+	<dd style="margin-left: 20px;">Trata-se de uma lista de itens sem qualquer numeração. Cada item pode conter sub-listas.</dd>
+</dl>
+
+<ul style="list-style:disc;padding-left:20px;margin-bottom:20px;">
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Este Item tem uma sub-lista
+		<ul style="list-style:square;padding-left:20px;margin-bottom:0;">
+			<li>Item da sub-lista</li>		
+			<li>Este Item tem também uma sub-lista
+				<ul style="list-style:circle;padding-left:20px;margin-bottom:0;">
+					<li>Item da sub-sub-lista</li>
+					<li>Item da sub-sub-lista</li>
+				</ul>
+			</li>	
+			<li>Item da sub-lista</li>	
+		</ul>
+	</li>
+</ul>
+
+<ol style="list-style:decimal;padding-left:20px;margin-bottom:20px;">
+	<li>Primeiro Item</li>
+	<li>Segundo Item com sub-lista
+		<ol style="padding-left:20px;margin-bottom:0;">
+			<li>Primeiro Item da sub-lista</li>
+			<li>Segundo Item da sub-lista com outra sub-lista
+				<ol style="padding-left:20px;margin-bottom:0;">
+					<li>Primeiro Item da sub-sub-lista</li>		
+					<li>Segundo Item da sub-sub-lista</li>			
+				</ol>
+			</li>
+			<li>Terceiro Item da sub-lista</li>
+		</ol>
+	</li>
+	<li>Terceiro Item</li>
+	<li>Quarto Item</li>
+	<li>Quinto Item</li>
+</ol>
+
+<ul class="inline-list" style="margin: 20px 0;padding-left:20px;">
+	<li style="padding-right:20px;display:inline;"><a href="#">Item 1</a></li>
+	<li style="padding-right:20px;display:inline;"><a href="#">Item 2</a></li>
+	<li style="padding-right:20px;display:inline;"><a href="#">Item 3</a></li>
+	<li style="padding-right:20px;display:inline;"><a href="#">Item 4</a></li>
+</ul>
+
+<address style="font-style:italic">
+	Nome da Rua ou Avenida, número e andar <br />
+	Código Postal, Localidade <br />
+	País <br />
+	<b style="font-size:24px;line-height:30px">Número de telefone</b> <br />
+	<b style="font-size:24px;line-height:30px"><a href="mailto:email@servidor.com">Endereço de E-mail</a></b> 
+</address>
+</body>
+</html>

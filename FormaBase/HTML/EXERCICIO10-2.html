@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11.1</title>
+</head>
+<body>
+
+    <body bgcolor="#c8daf7" link="#cfcf19" background="https://ae01.alicdn.com/kf/HTB1SGNlKFXXXXbrXpXXq6xXFXXXB/C-u-azul-nuvem-branca-de-mergulho-de-gua-filme-de-impress-o-de-transfer-ncia.jpg">
+    
+        <table border="3" width="1000" align="center" bordercolor="#5489de" bgcolor="#cddefa" cellspacing="5">
+        
+            <tr>
+                <td id="cabeçalho" bacground="imagens/fundo_cab.gif" colspan="2" height="150">
+                    <a href="EXERCICIO9-1.html" alt="Pelican Airlines"> <img src= "imagens/pelican_logo.gif" alt="Pelican Airlines" align="left"> </a> 
+                    <a href="marcar_voo.html">
+                        <img src="imagens/marque_voo.gif" alt="Marcar Voo" align="right" />
+                    </a>
+        
+                    <h1 align="center"><font color="#021ef0">Viage com conforto</font></h1>
+                    <p align="center"><font color="#3f5d8f">Os melhores preços, as melhores condições</font></p>
+                    <p align="center"><font color="#3f5d8f">Voe connosco!</font></p>
+                    </td>
+            </tr>
+        
+            <tr>
+                <td id="menu" valign="top" background="imagens/fundo_menu.gif" width="200" height="500">
+                    <br><br><br>
+                    <ul>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="empresa-html">Empresa</a>
+                            <ul>
+                                <li><a href="empresa.html#frota">Frota</a></li>
+                                <li><a href="empresa.html#historia">História</a></li>
+                                <li><a href="empresa.html#museu">Museu</a></li>
+                                <li><a href="empresa.html#recrutamento">Recrutamento</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="voar.html">Voar</a></li>
+                        <li><a href="top_exec.html">Top Executivo</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        
+                            <ul>
+                                <li><a href="destinos.html#africa">África</a></li>
+                                <li><a href="destinos.html#africa">América</a></li>
+                                <li><a href="destinos.html#africa">Ásia</a></li>
+                                <li><a href="destinos.html#africa">Europa</a></li>
+                                <li><a href="destinos.html#africa">Oceânia</a></li>
+        
+                            </ul>
+                        </li>    
+                    </ul>
+                    <br><br><br>
+                    <img src="imagens/promocoes.gif" alt="Promoções" height="215" width="215"/>
+        
+        
+                </td>
+                <td id="conteúdo">
+                    <form name="registo" method="post" action="mailto:o_seu_email@servico.com">
+
+                        <fieldset><legend><font color="#0f8a8c">Dados Pessoais</font></legend>
+                        <br>
+                        
+                        <table align="center">
+                            <tr>
+                                <td align="right">Nome:</td> 
+                                <td><input type="text" tabindex="1" name="nome" size="40" maxlength="50" value="introduza o seu nome completo" /></td>
+                                <td><font color="#ff0000">*</font></td>
+                            </tr>
+                
+                            <tr>
+
+                                <td align="right">Sexo:<br></td>     
+
+                            <td>
+
+                            <input type="radio" id="sexo_m"  tabindex="2" name="sexo" value="m" checked="checked"/> 
+                            <label for="sexo_m">Masculino </label>
+                            <input type="radio" id="sexo_f"  tabindex="3" name="sexo" value="f" /> 
+                            <label for="sexo_f">Feminino </label>
+                            <td><font color="#ff0000">*</font></td>
+
+                            </td>
+
+                            </tr>
+                
+                            <tr>
+                
+                                <td align="right">Telefone</td>
+                                <td><input type="text" name="telefone" size="10" /></td>
+                
+                            </tr>
+
+                            <tr>
+                
+                                <td align="right">Fax</td>
+                                <td><input type="text" name="fax" size="10" /></td>
+                
+                            </tr>
+                
+                            <tr>
+                
+                                <td align="right">E-mail</td>
+                                <td><input type="text" tabindex="4" name="email" size="40" /></td>
+                                <td><font color="#ff0000">*</font></td>
+                
+                            </tr>
+                
+                        </table>
+                        </fieldset>
+                
+                        <br>
+                        
+                        <fieldset><legend><font color="#0f8a8c">Marcação do Vôo</font></legend>
+                        <br>
+                
+                        <table align="center">
+                
+                        <tr>
+                
+                           <td align="right">País de Origem:</td>
+                
+                            <td>
+                
+                                <select tabindex="5" name="lista_países">
+                                    <option value="">--Escolha uma opção--</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="es">Espanha</option>
+                                    <option value="fr">França</option>
+                                    <option value="it">Itália</option>
+                                    <option value="gb">Inglaterra</option>
+                                    <option value="br">Brasil</option>
+                        
+                                </select>
+                
+                            </td>
+
+                            <td><font color="#ff0000">*</font></td>
+
+                        </tr>
+                
+                        <tr>
+                
+                            <td align="right">País de Destino:</td>
+                 
+                             <td >
+                 
+                                 <select tabindex="6" name="lista_países">
+                                     <option value="">--Escolha uma opção--</option>
+                                     <option value="pt">Portugal</option>
+                                     <option value="es">Espanha</option>
+                                     <option value="fr">França</option>
+                                     <option value="it">Itália</option>
+                                     <option value="gb">Inglaterra</option>
+                                     <option value="br">Brasil</option>
+                         
+                                 </select>
+                 
+                             </td>
+
+                             <td><font color="#ff0000">*</font></td>
+
+                         </tr>
+
+                         <tr >
+                            <td align="right">Data:</td> 
+                            <td><input type="text" tabindex="7" name="data" size="10" maxlength="12" value="dd/mm/aaaa" /></td>
+                        </tr>
+
+                        <tr >
+                            <td align="right">Hora:</td> 
+                            <td><input type="text" tabindex="8" name="hora" size="10" maxlength="12" value="hh/mm" /></td>
+                        </tr>
+                        
+                        <tr>
+
+                            <td align="right">Classe:</td>
+
+                            <td>
+
+                            <input type="radio" id="biz" name="classe" value="biz" checked="checked"/> 
+                            <label for="biz">Business </label>
+                            <input type="radio" id="1_class" name="classe" value="1_class" /> 
+                            <label for="1_class">Primeira Classe </label>
+                            <input type="radio" id="eco" name="classe" value="eco" />
+                            <label for="eco">Económica </label>
+
+                        </td>
+                        </tr>
+                
+                
+                        </table>   
+                
+                    </fieldset>    
+                
+                    <fieldset><legend><font color="#0f8a8c">Extras</font></legend>
+
+                        <table>
+                        <tr>
+
+                            <td>Dentro das seguintes opções, escolha qual ou quais pretende durante a sua viagem:</td>
+                    
+                            </tr>
+                    
+                            <tr><td><input type="checkbox" name="linguas" value="fumar" />Zona de fumadores</td></tr>
+                            <tr><td><input type="checkbox" name="linguas" value="menu" />Escolha de Menu</td></tr>
+                            <tr><td><input type="checkbox" name="linguas" value="filme" />Escolha de Filme</td></tr>
+                            <tr><td><input type="checkbox" name="linguas" value="net" />Acesso à Internet</td></tr>                      
+                            <tr><td><input type="checkbox" name="linguas" value="tlf" />Telefone a bordo</td></tr>
+                               
+                
+                        </table>   
+                
+                    </fieldset>
+
+                    <fieldset><legend><font color="#0f8a8c">Questões</font></legend>
+
+                        <table align="center">
+
+                        <tr>
+
+                        <td valign="top" align="right">Preencha este campo caso tenha alguma questão ou comentário:</td>
+                       
+                        </tr>
+                    
+                        <tr>
+
+                        <td><textarea cols="52" rows="6" name="morada"></textarea></td>
+
+                        </tr>
+
+                        </table>
+                        
+                    </fieldset>
+
+                    <table align="center">
+                    <tr>    
+                        <td><p>
+               
+                            <input type="submit" name="enviar" value="Enviar"/>
+                            <input type="reset" name="limpar" value="Limpar"/>
+                            <input type="button" name="imprimir" value="Imprimir" onClick="window.print();"/>
+                
+                
+                        </p>    
+                        </td>
+            
+                    </tr>
+                    
+                    </table>
+
+                    <table align="left">
+                    <tr>
+                        <td><font color="#ff0000">*</font>Campo obrigatório</td>
+                    </tr>
+
+                    </table>
+
+                </table>
+
+
+                    </form>
+                </td>    
+            </tr>
+        </table>
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+body {
+	background-color: #FFFFFF;
+	background-image: url(imagens/fundo.gif);
+	background-repeat: repeat-x;
+	font-family: Tahoma, Arial, Verdana;
+	color: #4f4f4f;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+.erro{ color: red; }
+
+a {
+	color: #1f6198;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img{
+	border: none;
+}
+
+#geral {
+	text-align: left;
+	width: 936px;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+
+#cab {
+	width: 936px;
+	height: 112px;
+	background-image: url(imagens/topo_admin.jpg);
+	background-repeat: no-repeat;
+	display:block;
+}
+
+#logoff {
+	float: right;
+	padding: 5px;
+}
+
+#menu {
+	width: 200px;
+	float: left;
+	background-color: #ffffff;
+}
+
+#menu ul {
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0;
+}
+
+#menu li {
+	list-style:none;
+	height: 28px;
+	width: 196px;
+	padding: 2px;
+	background-image: url(imagens/fundo_menu.gif);
+	background-repeat: repeat-x;
+}
+
+#menu li a{
+	font-size: 12px;
+	font-weight: bold;
+	color: #595959;
+	background-image: url(imagens/fundo_item.gif);
+	background-repeat: repeat-x;
+	height: 24px;
+	width: 170px;
+	display:block;
+	padding-top: 6px;
+	padding-left: 26px;
+}
+
+#menu li a:hover{
+	background-image: url(imagens/fundo_item_over.gif);
+}
+
+#menu img{
+	padding-top: 10px;
+}
+
+#cont {
+	background-color: #ffffff;
+	width: 716px;
+	padding: 10px;
+	float: left;
+}
+
+#benvindo {
+	width: 310px;
+	float: left;
+}
+
+h1 {
+	font-size: 16px;
+	color: #8f8f8f;
+	padding: 0px;
+	margin: 0px;
+	text-align:center;
+}
+
+#ligacoes {
+	width: 186px;	
+	float: left;
+}
+
+#ligacoes li{
+	list-style-image: url(imagens/marca.gif);
+	padding-top: 6px;
+}
+
+#grupo_destaques{
+	margin-top: 20px;
+	padding-top: 4px;
+	background-image: url(imagens/fundo_destaque.gif);
+	background-repeat: repeat-x;
+	width: 510px;
+	border: 2px solid #c7c7c7;
+	float:left;
+}
+
+.destaque {
+	width: 490px;
+	float: left;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;	
+}
+
+.destaque a{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.preco {
+	color: #df7e00;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.botao {
+	width: 90px;
+	height: 23px;
+	background-image:url(imagens/botao.jpg);
+	background-repeat: no-repeat;
+	float: right;
+	padding-right: 20px;
+	text-align: center;
+	color: #595959;
+	padding-top: 3px;
+}
+
+#rodape {
+	width: 936px;
+	height: 34px;
+	background-image: url(imagens/fundo_rodape.gif);
+	background-repeat: repeat-x;
+	float:left;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#rodape ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+#rodape li{
+	display: inline;
+	list-style-type: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#rodape a{
+	color: #595959;
+}
+
+.lista th{
+	text-align: center;
+	background-color:#E5E5E5;
+	border-bottom-width:1px;
+	border-bottom-color:#CCCCCC;
+	border-bottom-style:solid;
+}
+
+.item{
+	border-bottom-width:1px;
+	border-bottom-color:#CCCCCC;
+	border-bottom-style:solid;
+}
+
+.opcao {
+	width:170px;
+	text-align:left;
+	float:left;
+	padding:15px;
+	padding-left:50px;
+}
+
+.opcao ul {
+	padding:0;
+	margin:0;
+}
+
+.opcao li {
+	margin-left: 20px;
+}
